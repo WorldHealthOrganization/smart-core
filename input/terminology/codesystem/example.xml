@@ -5,7 +5,7 @@
     <title value="Example"/>
     <status value="draft"/>
     <experimental value="false"/>
-    <description value="Example"/>
+    <description value="Example Code System Description"/>
     <caseSensitive value="true"/>
     <content value="complete"/>
 		<concept>

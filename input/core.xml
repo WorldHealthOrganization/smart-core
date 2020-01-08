@@ -17,16 +17,6 @@
     <grouping>
       <name value="WHO Core Implementation Guide Package" />
     </grouping>
-    <resource>
-      <reference>
-        <reference value="CodeSystem/example" />
-      </reference>
-    </resource>
-    <resource>
-      <reference>
-        <reference value="ValueSet/example" />
-      </reference>
-    </resource>
     <page>
       <nameUrl value="toc.html" />
       <title value="Table of Contents" />
