@@ -1,1 +1,1 @@
-  {%  include list-simple-profiles.xhtml %}
+  {% include list-simple-profiles.xhtml %}
