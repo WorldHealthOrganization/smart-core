@@ -23,8 +23,8 @@
       <generation value="html" />
       <page>
         <nameUrl value="index.html" />
-        <title value="WHO Core Implementation Guide" />
-        <generation value="html" />
+        <title value="Home" />
+        <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="profiles.html" />
@@ -34,7 +34,7 @@
       <page>
         <nameUrl value="terminology.html" />
         <title value="Terminology" />
-        <generation value="html" />
+        <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="examples.html" />
@@ -44,7 +44,7 @@
       <page>
         <nameUrl value="test.html" />
         <title value="Test Data" />
-        <generation value="html" />
+        <generation value="markdown" />
       </page>
       <page>
         <nameUrl value="documentation.html" />
