@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "any-other-detail-of-clinical-significance",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/any-other-detail-of-clinical-significance",
+  "name": "Any other detail of clinical significance",
+  "title": "Any other detail of clinical significance",
+  "status": "draft",
+  "experimental": false,
+  "description": "Any additional relevant details for the referral facility to provide care.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "mustSupport": false
+      },
+      {
+        "id": "ServiceRequest.note",
+        "path": "ServiceRequest.note",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

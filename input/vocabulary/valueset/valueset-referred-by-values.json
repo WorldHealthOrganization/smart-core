@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "referred-by-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/referred-by-values",
+  "name": "Referred by_values",
+  "title": "Referred by values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Referred by element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "309015008",
+            "display": "Facility"
+          }
+        ]
+      }
+    ]
+  }
+}

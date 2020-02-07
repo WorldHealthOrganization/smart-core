@@ -1,0 +1,179 @@
+{
+  "resourceType": "ValueSet",
+  "id": "contraceptive-history-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/contraceptive-history-values",
+  "name": "Contraceptive history_values",
+  "title": "Contraceptive history values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Contraceptive history element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA27902-8",
+            "display": "Levonorgestrel IUD (LNG-IUD)"
+          },
+          {
+            "code": "LA27903-6",
+            "display": "Copper-bearing intrauterine device (Cu-IUD)"
+          },
+          {
+            "code": "LA27904-4",
+            "display": "Unspecified IUD"
+          },
+          {
+            "code": "LA27901-0",
+            "display": "Implant"
+          },
+          {
+            "code": "LA27907-7",
+            "display": "DMPA-IM \n DMPA, administered intramuscularly"
+          },
+          {
+            "code": "LA16573-0 morning after pil",
+            "display": "Emergency contraceptive pills (ECPs)"
+          },
+          {
+            "code": "LA27909-3",
+            "display": "Progestogen-only pills (POP)"
+          },
+          {
+            "code": "LA27908-5",
+            "display": "Combined oral contraceptives (COCs)"
+          },
+          {
+            "code": "LA27905-1",
+            "display": "Female sterilization"
+          },
+          {
+            "code": "LA14549-2",
+            "display": "Withdrawal"
+          },
+          {
+            "code": "LA27918-4",
+            "display": "Fertility awareness-based methods (FAB)"
+          },
+          {
+            "code": "LA27919-2",
+            "display": "Lactational amenorrhea method (LAM)"
+          },
+          {
+            "code": "LA27920-0",
+            "display": "Male relying on female method"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "63.60 ICD 9",
+            "display": "Male sterilization"
+          },
+          {
+            "code": "Z30.49",
+            "display": "Female condom"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "169450001",
+            "display": "No method"
+          },
+          {
+            "code": "449038007",
+            "display": "Levonorgestrel IUD (LNG-IUD)"
+          },
+          {
+            "code": "448962006",
+            "display": "Copper-bearing intrauterine device (Cu-IUD)"
+          },
+          {
+            "code": "312081001",
+            "display": "Unspecified IUD"
+          },
+          {
+            "code": "428987008",
+            "display": "Implant"
+          },
+          {
+            "code": "709457002",
+            "display": "DMPA-SC \nDMPA, administered subcutaneously"
+          },
+          {
+            "code": "702587005",
+            "display": "Emergency contraceptive pills (ECPs)"
+          },
+          {
+            "code": "169467008",
+            "display": "Progestogen-only pills (POP)"
+          },
+          {
+            "code": "268458002",
+            "display": "Combined oral contraceptives (COCs)"
+          },
+          {
+            "code": "275572005",
+            "display": "Female sterilization"
+          },
+          {
+            "code": "399141000",
+            "display": "Male sterilization"
+          },
+          {
+            "code": "89780004",
+            "display": "Combined injectable contraception"
+          },
+          {
+            "code": "225370004",
+            "display": "Barrier method"
+          },
+          {
+            "code": "275831001",
+            "display": "Male condom"
+          },
+          {
+            "code": "228479001",
+            "display": "Female condom"
+          },
+          {
+            "code": "169513000",
+            "display": "Withdrawal"
+          },
+          {
+            "code": "455501000124105",
+            "display": "Fertility awareness-based methods (FAB)"
+          },
+          {
+            "code": "454441000124107",
+            "display": "Lactational amenorrhea method (LAM)"
+          },
+          {
+            "code": "455491000124102",
+            "display": "Male relying on female method"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "2109022",
+            "display": "Progesterone-releasing vaginal ring (PVR)"
+          },
+          {
+            "code": "483325- high does estrogen",
+            "display": "Emergency contraceptive pills (ECPs)"
+          }
+        ]
+      }
+    ]
+  }
+}

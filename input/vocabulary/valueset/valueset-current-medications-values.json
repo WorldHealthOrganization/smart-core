@@ -1,0 +1,11 @@
+{
+  "resourceType": "ValueSet",
+  "id": "current-medications-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/current-medications-values",
+  "name": "Current medications_values",
+  "title": "Current medications values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Current medications element",
+  "immutable": true
+}

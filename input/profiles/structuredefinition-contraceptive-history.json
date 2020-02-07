@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "contraceptive-history",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/contraceptive-history",
+  "name": "Contraceptive history",
+  "title": "Contraceptive history",
+  "status": "draft",
+  "experimental": false,
+  "description": "Reported use of method at intake",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/contraceptive-history-values"
+        }
+      }
+    ]
+  }
+}

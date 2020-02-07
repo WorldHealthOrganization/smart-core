@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "client-address",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-address",
+  "name": "Client address",
+  "title": "Client address",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

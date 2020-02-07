@@ -1,0 +1,1111 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No CarePlan-based method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:dc75d975-9b7d-4d73-a416-fa6c955b86a0",
+    "timestamp" : "2020-02-07T02:29:51.846Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No CarePlan-based method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "167252002",
+        "display" : "Urine Test"
+      },
+      {
+        "code" : "166434005",
+        "display" : "Blood Test"
+      },
+      {
+        "code" : "169563005",
+        "display" : "Pregnancy checklist"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:179ae1f2-aa94-4b8a-8a52-73b55f3a4896",
+    "timestamp" : "2020-02-07T02:29:52.471Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "167252002",
+      "display" : "Urine Test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "166434005",
+      "display" : "Blood Test"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "169563005",
+      "display" : "Pregnancy checklist"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Medication-based method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:0a2cce50-a99d-4de0-abb9-5ccfdcf008da",
+    "timestamp" : "2020-02-07T02:29:52.815Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No Medication-based method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "162171002",
+        "display" : "Sexual abstinence    "
+      },
+      {
+        "code" : "77386006",
+        "display" : "Currently pregnant"
+      },
+      {
+        "code" : "454361000124100",
+        "display" : "Same sex partner    "
+      },
+      {
+        "code" : "74964007",
+        "display" : "Other    "
+      },
+      {
+        "code" : "182856006",
+        "display" : "Out of stock"
+      },
+      {
+        "code" : "15296000; 9789007-natural sterility",
+        "display" : "Sterile for non-contraceptive reasons    "
+      },
+      {
+        "code" : "454411000124108",
+        "display" : "Seeking pregnancy   "
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:b3a77e83-9ec4-4794-9bfe-668272372451",
+    "timestamp" : "2020-02-07T02:29:54.205Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "162171002",
+      "display" : "Sexual abstinence    "
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "77386006",
+      "display" : "Currently pregnant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "454361000124100",
+      "display" : "Same sex partner    "
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "74964007",
+      "display" : "Other    "
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "182856006",
+      "display" : "Out of stock"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "15296000; 9789007-natural sterility",
+      "display" : "Sterile for non-contraceptive reasons    "
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "454411000124108",
+      "display" : "Seeking pregnancy   "
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "309015008",
+        "display" : "Facility"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:6dfddb0d-4d4a-4591-832e-898cfadb837b",
+    "timestamp" : "2020-02-07T02:29:54.862Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "309015008",
+      "display" : "Facility"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "260413007",
+        "display" : "None"
+      },
+      {
+        "code" : "95837007",
+        "display" : "Central cyanosis"
+      },
+      {
+        "code" : "91175000",
+        "display" : "Convulsing"
+      },
+      {
+        "code" : "386661006",
+        "display" : "Fever"
+      },
+      {
+        "code" : "63102001",
+        "display" : "Visual disturbance"
+      },
+      {
+        "code" : "302772006",
+        "display" : "Looks very ill"
+      },
+      {
+        "code" : "76948002",
+        "display" : "Severe pain"
+      },
+      {
+        "code" : "418107008",
+        "display" : "Unconscious"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:dd954d0e-1a31-4096-9a8a-c0a716d49bae",
+    "timestamp" : "2020-02-07T02:29:56.112Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "260413007",
+      "display" : "None"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "95837007",
+      "display" : "Central cyanosis"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "91175000",
+      "display" : "Convulsing"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "386661006",
+      "display" : "Fever"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "63102001",
+      "display" : "Visual disturbance"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "302772006",
+      "display" : "Looks very ill"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "76948002",
+      "display" : "Severe pain"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "418107008",
+      "display" : "Unconscious"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "77386006",
+        "display" : "Pregnant"
+      },
+      {
+        "code" : "60001007",
+        "display" : "Not pregnant"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:d9f6f893-4de1-4a50-ad83-2a74e1db85f0",
+    "timestamp" : "2020-02-07T02:29:56.909Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77386006",
+      "display" : "Pregnant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "60001007",
+      "display" : "Not pregnant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "261665006",
+      "display" : "Unknown"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No method"
+      },
+      {
+        "code" : "449038007",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "448962006",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "312081001",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "428987008",
+        "display" : "Implant"
+      },
+      {
+        "code" : "709457002",
+        "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+      },
+      {
+        "code" : "702587005",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "169467008",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "268458002",
+        "display" : "Combined oral contraceptives (COCs)"
+      },
+      {
+        "code" : "275572005",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "399141000",
+        "display" : "Male sterilization"
+      },
+      {
+        "code" : "89780004",
+        "display" : "Combined injectable contraception"
+      },
+      {
+        "code" : "225370004",
+        "display" : "Barrier method"
+      },
+      {
+        "code" : "275831001",
+        "display" : "Male condom"
+      },
+      {
+        "code" : "228479001",
+        "display" : "Female condom"
+      },
+      {
+        "code" : "169513000",
+        "display" : "Withdrawal"
+      },
+      {
+        "code" : "455501000124105",
+        "display" : "Fertility awareness-based methods (FAB)"
+      },
+      {
+        "code" : "454441000124107",
+        "display" : "Lactational amenorrhea method (LAM)"
+      },
+      {
+        "code" : "455491000124102",
+        "display" : "Male relying on female method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:9eafb971-e387-4997-b187-dbd4d3fb1841",
+    "timestamp" : "2020-02-07T02:29:58.752Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No method"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "449038007",
+      "display" : "Levonorgestrel IUD (LNG-IUD)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "448962006",
+      "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "312081001",
+      "display" : "Unspecified IUD"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "428987008",
+      "display" : "Implant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "709457002",
+      "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "702587005",
+      "display" : "Emergency contraceptive pills (ECPs)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "169467008",
+      "display" : "Progestogen-only pills (POP)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "268458002",
+      "display" : "Combined oral contraceptives (COCs)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275572005",
+      "display" : "Female sterilization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "399141000",
+      "display" : "Male sterilization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "89780004",
+      "display" : "Combined injectable contraception"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "225370004",
+      "display" : "Barrier method"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275831001",
+      "display" : "Male condom"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "228479001",
+      "display" : "Female condom"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "169513000",
+      "display" : "Withdrawal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "455501000124105",
+      "display" : "Fertility awareness-based methods (FAB)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "454441000124107",
+      "display" : "Lactational amenorrhea method (LAM)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "455491000124102",
+      "display" : "Male relying on female method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Device-based method"
+      },
+      {
+        "code" : "449038007",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "448962006",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "312081001",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "428987008",
+        "display" : "Implant"
+      },
+      {
+        "code" : "225370004",
+        "display" : "Barrier method"
+      },
+      {
+        "code" : "275831001",
+        "display" : "Male condom"
+      },
+      {
+        "code" : "228479001",
+        "display" : "Female condom"
+      },
+      {
+        "code" : "709457002",
+        "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+      },
+      {
+        "code" : "169467008",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "268458002",
+        "display" : "Combined oral contraceptives (COCs)"
+      },
+      {
+        "code" : "275572005",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "169513000",
+        "display" : "Withdrawal"
+      },
+      {
+        "code" : "455501000124105",
+        "display" : "Fertility awareness-based methods (FAB)"
+      },
+      {
+        "code" : "454441000124107",
+        "display" : "Lactational amenorrhea method (LAM)"
+      },
+      {
+        "code" : "455491000124102",
+        "display" : "Male relying on female method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:e1a8c93d-7fcb-496e-9b74-949edd30aa20",
+    "timestamp" : "2020-02-07T02:30:00.643Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No Device-based method"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "449038007",
+      "display" : "Levonorgestrel IUD (LNG-IUD)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "448962006",
+      "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "312081001",
+      "display" : "Unspecified IUD"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "428987008",
+      "display" : "Implant"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "225370004",
+      "display" : "Barrier method"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275831001",
+      "display" : "Male condom"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "228479001",
+      "display" : "Female condom"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "709457002",
+      "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "169467008",
+      "display" : "Progestogen-only pills (POP)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "268458002",
+      "display" : "Combined oral contraceptives (COCs)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "275572005",
+      "display" : "Female sterilization"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "169513000",
+      "display" : "Withdrawal"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "455501000124105",
+      "display" : "Fertility awareness-based methods (FAB)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "454441000124107",
+      "display" : "Lactational amenorrhea method (LAM)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "455491000124102",
+      "display" : "Male relying on female method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No CarePlan-based method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2019</p><p>All codes from system <a href=\"http://hl7.org/fhir/R4/codesystem-snomedct.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169450001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=169450001\">169450001</a></td><td>No CarePlan-based method</td><td/></tr></table></div>"
+  },
+  "expansion" : {
+    "identifier" : "urn:uuid:65dd0a2d-544b-4cc1-83fc-9931e3b333f5",
+    "timestamp" : "2020-02-07T02:36:17.722Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No CarePlan-based method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Procedure-based method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:59a02cc7-a19f-40a0-8c26-86244698a029",
+    "timestamp" : "2020-02-07T03:01:15.005Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No Procedure-based method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "86395003; referral for family planning 305930006",
+        "display" : "Family planning procedure"
+      },
+      {
+        "code" : "306228005",
+        "display" : "Screening referral"
+      },
+      {
+        "code" : "306206005",
+        "display" : "Other referral"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:f775d341-6f1a-4eb4-8820-c313298e148b",
+    "timestamp" : "2020-02-07T03:01:15.317Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "excludeNested",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "86395003; referral for family planning 305930006",
+      "display" : "Family planning procedure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "306228005",
+      "display" : "Screening referral"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "306206005",
+      "display" : "Other referral"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Medication-based method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:b72ccfdd-8ec9-4495-84e1-7365070f8c3d",
+    "timestamp" : "2020-02-07T03:01:18.973Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No Medication-based method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "309015008",
+        "display" : "Facility"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:254e56eb-e831-411d-9e15-d23a53b9b8a3",
+    "timestamp" : "2020-02-07T03:01:19.301Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "309015008",
+      "display" : "Facility"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Procedure-based method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:6351d840-f5ba-4ee9-99e1-6334f4a31945",
+    "timestamp" : "2020-02-07T03:01:20.067Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "169450001",
+      "display" : "No Procedure-based method"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "86395003; referral for family planning 305930006",
+        "display" : "Family planning procedure"
+      },
+      {
+        "code" : "306228005",
+        "display" : "Screening referral"
+      },
+      {
+        "code" : "306206005",
+        "display" : "Other referral"
+      }]
+    }]
+  }
+}}####
+e: {
+  "valueSet" : {
+  "resourceType" : "ValueSet",
+  "expansion" : {
+    "identifier" : "urn:uuid:da8edac9-2a81-41be-8db4-b8264c4e8de2",
+    "timestamp" : "2020-02-07T03:01:20.427Z",
+    "parameter" : [{
+      "name" : "limitedExpansion",
+      "valueString" : "-1"
+    },
+    {
+      "name" : "version",
+      "valueString" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20190731"
+    }],
+    "contains" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "86395003; referral for family planning 305930006",
+      "display" : "Family planning procedure"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "306228005",
+      "display" : "Screening referral"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "306206005",
+      "display" : "Other referral"
+    }]
+  }
+},
+  "error" : ""
+}
+-------------------------------------------------------------------------------------

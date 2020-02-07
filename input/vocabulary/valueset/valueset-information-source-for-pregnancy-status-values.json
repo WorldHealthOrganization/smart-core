@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "id": "information-source-for-pregnancy-status-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/information-source-for-pregnancy-status-values",
+  "name": "Information source for pregnancy status_values",
+  "title": "Information source for pregnancy status values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Information source for pregnancy status element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2106-3, 2112-1",
+            "display": "Urine Test"
+          },
+          {
+            "code": "2118-8, 2110-5",
+            "display": "Blood Test"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "167252002",
+            "display": "Urine Test"
+          },
+          {
+            "code": "166434005",
+            "display": "Blood Test"
+          },
+          {
+            "code": "169563005",
+            "display": "Pregnancy checklist"
+          }
+        ]
+      }
+    ]
+  }
+}

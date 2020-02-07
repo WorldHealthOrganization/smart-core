@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "marital-status-codes",
+  "url": "http://fhir.org/guides/who/anc-cds/CodeSystem/marital-status-codes",
+  "name": "Marital Status_codes",
+  "title": "Marital Status codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Marital Status element",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "5615AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "code": "1055AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "code": "1058AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    },
+    {
+      "code": "1059AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    }
+  ]
+}

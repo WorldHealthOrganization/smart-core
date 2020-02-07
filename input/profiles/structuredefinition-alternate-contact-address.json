@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "alternate-contact-address",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-address",
+  "name": "Alternate contact address",
+  "title": "Alternate contact address",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.contact.address.text",
+        "path": "Patient.contact.address.text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
