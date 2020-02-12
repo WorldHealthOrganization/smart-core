@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "id": "marital-status-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/marital-status-values",
+  "name": "Marital Status_values",
+  "title": "Marital Status values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Marital Status element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "concept": [
+          {
+            "code": "U",
+            "display": "Unmarried"
+          },
+          {
+            "code": "M",
+            "display": "Married"
+          },
+          {
+            "code": "D",
+            "display": "Divorced"
+          },
+          {
+            "code": "W",
+            "display": "Widowed"
+          },
+          {
+            "code": "UNK",
+            "display": "Unknown"
+          }
+        ]
+      }
+    ]
+  }
+}

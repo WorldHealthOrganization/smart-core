@@ -1,11 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "alternate-contact-address",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-address",
-  "name": "Alternate contact address",
-  "title": "Alternate contact address",
+  "id": "marital-status",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/marital-status",
+  "name": "Marital Status",
+  "title": "Marital Status",
   "status": "draft",
   "experimental": false,
+  "description": "Client’s current marital status ",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -20,16 +21,20 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.contact.address.text",
-        "path": "Patient.contact.address.text",
+        "id": "Patient.maritalStatus",
+        "path": "Patient.maritalStatus",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/marital-status-values"
+        }
       }
     ]
   }

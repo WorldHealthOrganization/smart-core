@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "visit-type",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/visit-type",
+  "name": "Visit type",
+  "title": "Visit type",
+  "status": "draft",
+  "experimental": false,
+  "description": "If the client is returning, was referred, or is a new client. ",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment",
+        "path": "Appointment",
+        "mustSupport": false
+      },
+      {
+        "id": "Appointment.appointmentType",
+        "path": "Appointment.appointmentType",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/visit-type-values"
+        }
+      }
+    ]
+  }
+}
