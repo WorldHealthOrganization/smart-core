@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "highest-level-of-education-achieved-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/highest-level-of-education-achieved-values",
+  "name": "Highest level of education achieved_values",
+  "title": "Highest level of education achieved values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Highest level of education achieved element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+        "concept": [
+          {
+            "code": "HS",
+            "display": "High School"
+          },
+          {
+            "code": "ELEM",
+            "display": "Elementary education"
+          }
+        ]
+      }
+    ]
+  }
+}

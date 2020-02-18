@@ -1,0 +1,73 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.who.int/fhir/CodeSystem/core-codes",
+      "concept" : [{
+        "code" : "Other",
+        "display" : "Other"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.who.int/fhir/CodeSystem/core-codes",
+      "concept" : [{
+        "code" : "Other",
+        "display" : "Other (specify)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.who.int/fhir/CodeSystem/core-codes",
+      "concept" : [{
+        "code" : "Other",
+        "display" : "Other antibiotics"
+      },
+      {
+        "code" : "Other",
+        "display" : "Other (specify)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://www.who.int/fhir/CodeSystem/core-codes",
+      "concept" : [{
+        "code" : "Other",
+        "display" : "Other antibiotics"
+      },
+      {
+        "code" : "Other",
+        "display" : "Other (specify)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

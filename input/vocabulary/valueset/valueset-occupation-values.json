@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "occupation-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/occupation-values",
+  "name": "Occupation_values",
+  "title": "Occupation values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Occupation element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "73438004",
+            "display": "Unemployed"
+          },
+          {
+            "code": "224363007",
+            "display": "Formal employment"
+          }
+        ]
+      },
+      {
+        "system": "http://www.who.int/fhir/CodeSystem/core-codes",
+        "concept": [
+          {
+            "code": "Other",
+            "display": "Other (specify)"
+          }
+        ]
+      }
+    ]
+  }
+}

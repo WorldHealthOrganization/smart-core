@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "id": "gender-values",
+  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/gender-values",
+  "name": "Gender_values",
+  "title": "Gender values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Gender element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.hl7.org/fhir/codesystem-administrative-gender.html",
+        "concept": [
+          {
+            "code": "female",
+            "display": "Female"
+          },
+          {
+            "code": "male",
+            "display": "Male"
+          },
+          {
+            "code": "other",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

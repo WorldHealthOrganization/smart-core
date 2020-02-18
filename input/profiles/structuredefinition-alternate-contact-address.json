@@ -1,12 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "client-last-name",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-last-name",
-  "name": "Client last name",
-  "title": "Client last name",
+  "id": "alternate-contact-address",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-address",
+  "name": "Alternate contact address",
+  "title": "Alternate contact address",
   "status": "draft",
   "experimental": false,
-  "description": "family or last name",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,13 +20,13 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.name",
-        "path": "Patient.name",
+        "id": "Patient.contact.address",
+        "path": "Patient.contact.address",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "HumanName"
+            "code": "Address"
           }
         ],
         "mustSupport": true

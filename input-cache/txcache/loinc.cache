@@ -879,3 +879,175 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA14549-2",
+        "display" : "Withdrawal"
+      },
+      {
+        "code" : "LA27918-4",
+        "display" : "Fertility awareness-based methods (FAB)"
+      },
+      {
+        "code" : "LA27919-2",
+        "display" : "Lactational amenorrhea method (LAM)"
+      },
+      {
+        "code" : "LA27920-0",
+        "display" : "Male relying on female method"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27907-7",
+        "display" : "DMPA-IM \n DMPA, administered intramuscularly"
+      },
+      {
+        "code" : "LA16573-0",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "LA27909-3",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "LA27908-5",
+        "display" : "Combined oral contraceptives (COCs)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA 14550-0",
+        "display" : "Sexual abstinence"
+      },
+      {
+        "code" : "LA 27925-9",
+        "display" : "Same sex partner"
+      },
+      {
+        "code" : "LA 46-8",
+        "display" : "Other"
+      },
+      {
+        "code" : "LA 27927-5",
+        "display" : "Sterile for non-contraceptive reasons"
+      },
+      {
+        "code" : "LA 27928-3",
+        "display" : "Seeking pregnancy"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27902-8",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "LA27903-6",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "LA27904-4",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "LA27901-0",
+        "display" : "Implant"
+      },
+      {
+        "code" : "LA16581-3",
+        "display" : "Combined contraceptive patch"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27905-1",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "LA14534-4",
+        "display" : "Male sterilization"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA 14550-0",
+        "display" : "Sexual abstinence"
+      },
+      {
+        "code" : "LA 27925-9",
+        "display" : "Same sex partner"
+      },
+      {
+        "code" : "LA 46-8",
+        "display" : "Other"
+      },
+      {
+        "code" : "LA 27927-5",
+        "display" : "Sterile for non-contraceptive reasons"
+      },
+      {
+        "code" : "LA 27928-3",
+        "display" : "Seeking pregnancy"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

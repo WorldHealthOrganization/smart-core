@@ -218,3 +218,27 @@ e: {
   "error" : ""
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "concept" : [{
+        "code" : "T38.4",
+        "display" : "Side effects from contraception"
+      },
+      {
+        "code" : "Z76.89",
+        "display" : "Out of stock"
+      },
+      {
+        "code" : "Z31.9",
+        "display" : "Sterile for non-contraceptive reasons"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

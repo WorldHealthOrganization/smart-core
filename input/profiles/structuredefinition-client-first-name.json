@@ -21,13 +21,13 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.name.given",
-        "path": "Patient.name.given",
+        "id": "Patient.name",
+        "path": "Patient.name",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "HumanName"
           }
         ],
         "mustSupport": true

@@ -20,13 +20,13 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.address.line",
-        "path": "Patient.address.line",
+        "id": "Patient.address",
+        "path": "Patient.address",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "string"
+            "code": "Address"
           }
         ],
         "mustSupport": true
