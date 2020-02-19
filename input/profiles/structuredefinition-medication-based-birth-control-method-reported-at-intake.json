@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medication-based-birth-control-method-reported-at-intake",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/medication-based-birth-control-method-reported-at-intake",
+  "name": "Medication-based Birth control method reported at intake",
+  "title": "Medication-based Birth control method reported at intake",
+  "status": "draft",
+  "experimental": false,
+  "description": "Method the client reports currently using at intake. ",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement",
+        "path": "MedicationStatement",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/medication-based-birth-control-method-reported-at-intake-values"
+        }
+      }
+    ]
+  }
+}

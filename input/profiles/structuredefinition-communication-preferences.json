@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "communication-preferences",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/communication-preferences",
+  "name": "Communication preferences",
+  "title": "Communication preferences",
+  "status": "draft",
+  "experimental": false,
+  "description": "How the client would like to receive family planning communications.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.communication.preferred",
+        "path": "Patient.communication.preferred",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

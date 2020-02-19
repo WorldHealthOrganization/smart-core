@@ -21,15 +21,10 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.name",
-        "path": "Patient.name",
+        "id": "Patient.name.family",
+        "path": "Patient.name.family",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "HumanName"
-          }
-        ],
         "mustSupport": true
       }
     ]

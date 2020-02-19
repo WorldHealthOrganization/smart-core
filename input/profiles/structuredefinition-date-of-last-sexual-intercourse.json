@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "date-of-last-sexual-intercourse",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/date-of-last-sexual-intercourse",
+  "name": "Date of last sexual intercourse",
+  "title": "Date of last sexual intercourse",
+  "status": "draft",
+  "experimental": false,
+  "description": "When the client last had sexual intercourse.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "min": 1,
+        "max": "1",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "449331006",
+              "display": "Date of last sexual intercourse (SNOMED-CT)"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

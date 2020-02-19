@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "drug-name",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/drug-name",
+  "name": "Drug name",
+  "title": "Drug name",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationDispense",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationDispense",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationDispense",
+        "path": "MedicationDispense",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationDispense.dosageInstruction.timing",
+        "path": "MedicationDispense.dosageInstruction.timing",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

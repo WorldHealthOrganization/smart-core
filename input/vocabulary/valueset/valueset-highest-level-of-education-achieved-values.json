@@ -22,6 +22,15 @@
             "display": "Elementary education"
           }
         ]
+      },
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "NONE",
+            "display": "No education"
+          }
+        ]
       }
     ]
   }

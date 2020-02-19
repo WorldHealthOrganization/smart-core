@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "insurance-id",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/insurance-id",
+  "name": "Insurance ID",
+  "title": "Insurance ID",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Coverage",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Coverage",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Coverage",
+        "path": "Coverage",
+        "mustSupport": false
+      },
+      {
+        "id": "Coverage.subscriberID",
+        "path": "Coverage.subscriberID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

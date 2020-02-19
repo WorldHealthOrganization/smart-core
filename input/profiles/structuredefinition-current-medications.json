@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "current-medications",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/current-medications",
+  "name": "Current medications",
+  "title": "Current medications",
+  "status": "draft",
+  "experimental": false,
+  "description": "Detemine what medications the client is currently taking. ",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement",
+        "path": "MedicationStatement",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/current-medications-values"
+        }
+      }
+    ]
+  }
+}

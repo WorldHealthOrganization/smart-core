@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "prior-contraceptive-methods-used-careplan-based",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/prior-contraceptive-methods-used-careplan-based",
+  "name": "Prior contraceptive methods used - CarePlan-based",
+  "title": "Prior contraceptive methods used - CarePlan-based",
+  "status": "draft",
+  "experimental": false,
+  "description": "Contraceptive methods the client has a history of using",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan",
+        "path": "CarePlan",
+        "mustSupport": false
+      },
+      {
+        "id": "CarePlan.activity.detail.code",
+        "path": "CarePlan.activity.detail.code",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "referred-by",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/referred-by",
+  "name": "Referred by",
+  "title": "Referred by",
+  "status": "draft",
+  "experimental": false,
+  "description": "How the client was referred",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "mustSupport": false
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/referred-by-values"
+        }
+      }
+    ]
+  }
+}

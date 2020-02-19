@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "other-specify-drug-allergies",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/other-specify-drug-allergies",
+  "name": "Other (specify) - Drug allergies",
+  "title": "Other (specify) - Drug allergies",
+  "status": "draft",
+  "experimental": false,
+  "description": "Write in the medication not included in the list.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance",
+        "path": "AllergyIntolerance",
+        "mustSupport": false
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

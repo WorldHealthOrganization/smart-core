@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "contraceptive-history-procedure-based",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/contraceptive-history-procedure-based",
+  "name": "Contraceptive history - Procedure-based",
+  "title": "Contraceptive history - Procedure-based",
+  "status": "draft",
+  "experimental": false,
+  "description": "Reported use of method at intake",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "mustSupport": false
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

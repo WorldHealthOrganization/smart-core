@@ -1,12 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "client-first-name",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-first-name",
-  "name": "Client first name",
-  "title": "Client first name",
+  "id": "alternate-contact-relationship",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-relationship",
+  "name": "Alternate contact relationship",
+  "title": "Alternate contact relationship",
   "status": "draft",
   "experimental": false,
-  "description": "first name",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,10 +20,15 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.name.given",
-        "path": "Patient.name.given",
+        "id": "Patient.contact.relationship",
+        "path": "Patient.contact.relationship",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       }
     ]

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "device-based-birth-control-method-reported-at-intake",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/device-based-birth-control-method-reported-at-intake",
-  "name": "Device-based Birth control method reported at intake",
-  "title": "Device-based Birth control method reported at intake",
+  "id": "prior-contraceptive-methods-used-device-based",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/prior-contraceptive-methods-used-device-based",
+  "name": "Prior contraceptive methods used - Device-based",
+  "title": "Prior contraceptive methods used - Device-based",
   "status": "draft",
   "experimental": false,
-  "description": "Method the client reports currently using at intake. ",
+  "description": "Contraceptive methods the client has a history of using",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -25,11 +25,7 @@
         "path": "DeviceUseStatement.device.type",
         "min": 0,
         "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/device-based-birth-control-method-reported-at-intake-values"
-        }
+        "mustSupport": true
       }
     ]
   }

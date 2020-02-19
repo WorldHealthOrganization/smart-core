@@ -1,12 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "client-first-name",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-first-name",
-  "name": "Client first name",
-  "title": "Client first name",
+  "id": "client-address-line",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-address-line",
+  "name": "Client address line",
+  "title": "Client address line",
   "status": "draft",
   "experimental": false,
-  "description": "first name",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,8 +20,8 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.name.given",
-        "path": "Patient.name.given",
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
         "min": 0,
         "max": "1",
         "mustSupport": true

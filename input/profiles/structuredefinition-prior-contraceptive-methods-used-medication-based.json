@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "prior-contraceptive-methods-used-medication-based",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/prior-contraceptive-methods-used-medication-based",
+  "name": "Prior contraceptive methods used - Medication-based",
+  "title": "Prior contraceptive methods used - Medication-based",
+  "status": "draft",
+  "experimental": false,
+  "description": "Contraceptive methods the client has a history of using",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement",
+        "path": "MedicationStatement",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
