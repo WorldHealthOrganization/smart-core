@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "current-medications-values",
   "url": "http://fhir.org/guides/who/anc-cds/ValueSet/current-medications-values",
-  "name": "Current medications_values",
+  "name": "current-medications-values",
   "title": "Current medications values",
   "status": "draft",
   "experimental": false,

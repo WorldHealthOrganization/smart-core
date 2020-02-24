@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "number-of-pregnancies",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/number-of-pregnancies",
-  "name": "Number of pregnancies",
-  "title": "Number of pregnancies",
+  "id": "reason-for-no-contraceptive-method-reported-at-intake",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/reason-for-no-contraceptive-method-reported-at-intake",
+  "name": "Reason for no contraceptive method - Reported at intake",
+  "title": "Reason for no contraceptive method - Reported at intake",
   "status": "draft",
   "experimental": false,
-  "description": "The number of pregnancies (gravidity), current and past, regardless of pregnancy outcome.",
+  "description": "If not currently using a method, the reason why.",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "11996-6",
-              "display": "Number of pregnancies (LOINC)"
+              "code": "86650-9; ll4579-1",
+              "display": "Reason for no contraceptive method - Reported at intake (LOINC)"
             }
           ]
         },

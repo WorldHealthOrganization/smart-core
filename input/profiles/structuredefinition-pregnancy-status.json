@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "number-of-pregnancies",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/number-of-pregnancies",
-  "name": "Number of pregnancies",
-  "title": "Number of pregnancies",
+  "id": "pregnancy-status",
+  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/pregnancy-status",
+  "name": "Pregnancy status",
+  "title": "Pregnancy status",
   "status": "draft",
   "experimental": false,
-  "description": "The number of pregnancies (gravidity), current and past, regardless of pregnancy outcome.",
+  "description": "Pregnancy status at visit",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "11996-6",
-              "display": "Number of pregnancies (LOINC)"
+              "code": "82810-3",
+              "display": "Pregnancy status (LOINC)"
             }
           ]
         },

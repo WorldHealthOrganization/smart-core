@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "occupation-values",
   "url": "http://fhir.org/guides/who/anc-cds/ValueSet/occupation-values",
-  "name": "Occupation_values",
+  "name": "occupation-values",
   "title": "Occupation values",
   "status": "draft",
   "experimental": false,
@@ -20,6 +20,15 @@
           {
             "code": "224363007",
             "display": "Formal employment"
+          }
+        ]
+      },
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Sex Worker",
+            "display": "Informal employment (sex worker)"
           }
         ]
       },

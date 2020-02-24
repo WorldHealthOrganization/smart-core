@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "medication-based-birth-control-method-reported-at-intake-values",
   "url": "http://fhir.org/guides/who/anc-cds/ValueSet/medication-based-birth-control-method-reported-at-intake-values",
-  "name": "Medication-based Birth control method reported at intake_values",
+  "name": "medication-based-birth-control-method-reported-at-intake-values",
   "title": "Medication-based Birth control method reported at intake values",
   "status": "draft",
   "experimental": false,
