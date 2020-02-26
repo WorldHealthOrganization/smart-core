@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "careplan-based-birth-control-method-reported-at-intake-values",
-  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/careplan-based-birth-control-method-reported-at-intake-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/careplan-based-birth-control-method-reported-at-intake-values",
   "name": "careplan-based-birth-control-method-reported-at-intake-values",
   "title": "CarePlan-based Birth control method reported at intake values",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "prior-contraceptive-methods-used-careplan-based",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/prior-contraceptive-methods-used-careplan-based",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/prior-contraceptive-methods-used-careplan-based",
   "name": "Prior contraceptive methods used - CarePlan-based",
   "title": "Prior contraceptive methods used - CarePlan-based",
   "status": "draft",

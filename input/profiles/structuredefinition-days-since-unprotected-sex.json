@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "days-since-unprotected-sex",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/days-since-unprotected-sex",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/days-since-unprotected-sex",
   "name": "Days since unprotected sex",
   "title": "Days since unprotected sex",
   "status": "draft",

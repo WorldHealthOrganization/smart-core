@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "information-source-for-pregnancy-status",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/information-source-for-pregnancy-status",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/information-source-for-pregnancy-status",
   "name": "Information source for pregnancy status",
   "title": "Information source for pregnancy status",
   "status": "draft",

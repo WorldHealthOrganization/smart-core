@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "reason-for-referral",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/reason-for-referral",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reason-for-referral",
   "name": "Reason for referral",
   "title": "Reason for referral",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/reason-for-referral-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/reason-for-referral-values"
         }
       }
     ]

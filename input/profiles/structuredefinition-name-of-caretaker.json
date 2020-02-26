@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "name-of-caretaker",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/name-of-caretaker",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/name-of-caretaker",
   "name": "Name of caretaker",
   "title": "Name of caretaker",
   "status": "draft",

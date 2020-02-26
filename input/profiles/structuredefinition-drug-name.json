@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "drug-name",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/drug-name",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/drug-name",
   "name": "Drug name",
   "title": "Drug name",
   "status": "draft",

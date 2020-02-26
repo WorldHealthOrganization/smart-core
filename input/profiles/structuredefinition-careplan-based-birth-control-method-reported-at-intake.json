@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "careplan-based-birth-control-method-reported-at-intake",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/careplan-based-birth-control-method-reported-at-intake",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/careplan-based-birth-control-method-reported-at-intake",
   "name": "CarePlan-based Birth control method reported at intake",
   "title": "CarePlan-based Birth control method reported at intake",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/careplan-based-birth-control-method-reported-at-intake-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/careplan-based-birth-control-method-reported-at-intake-values"
         }
       }
     ]

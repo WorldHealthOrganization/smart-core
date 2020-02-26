@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "manufacturer",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/manufacturer",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/manufacturer",
   "name": "manufacturer",
   "title": "manufacturer",
   "status": "draft",

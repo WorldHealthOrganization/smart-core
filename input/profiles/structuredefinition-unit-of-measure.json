@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "unit-of-measure",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/unit-of-measure",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/unit-of-measure",
   "name": "Unit of measure",
   "title": "Unit of measure",
   "status": "draft",

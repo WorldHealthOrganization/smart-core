@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "procedure-based-birth-control-method-reported-at-intake",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/procedure-based-birth-control-method-reported-at-intake",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/procedure-based-birth-control-method-reported-at-intake",
   "name": "Procedure-based Birth control method reported at intake",
   "title": "Procedure-based Birth control method reported at intake",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/procedure-based-birth-control-method-reported-at-intake-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/procedure-based-birth-control-method-reported-at-intake-values"
         }
       }
     ]

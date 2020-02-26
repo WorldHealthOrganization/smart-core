@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "administrative-area",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/administrative-area",
+  "name": "[Administrative Area]",
+  "title": "[Administrative Area]",
+  "status": "draft",
+  "experimental": false,
+  "description": "Village, district, etc.",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient",
+        "path": "Patient",
+        "mustSupport": false
+      },
+      {
+        "id": "Patient.address.district",
+        "path": "Patient.address.district",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      }
+    ]
+  }
+}

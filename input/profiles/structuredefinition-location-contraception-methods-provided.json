@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "location-contraception-methods-provided",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/location-contraception-methods-provided",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/location-contraception-methods-provided",
   "name": "Location - Contraception Methods provided",
   "title": "Location - Contraception Methods provided",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "phone-number-of-caretaker",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/phone-number-of-caretaker",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/phone-number-of-caretaker",
   "name": "Phone number of caretaker",
   "title": "Phone number of caretaker",
   "status": "draft",

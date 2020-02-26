@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "alternate-contact-phone-numbercontact-of-next-of-kin",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-phone-numbercontact-of-next-of-kin",
-  "name": "Alternate contact phone number\nContact of next of Kin",
-  "title": "Alternate contact phone number\nContact of next of Kin",
+  "id": "deceased",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/deceased",
+  "name": "Deceased",
+  "title": "Deceased",
   "status": "draft",
   "experimental": false,
-  "description": "Phone number of the alternate contact.",
+  "description": "Indicates if the individual is deceased or not",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,10 +21,15 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.contact.telecom.value",
-        "path": "Patient.contact.telecom.value",
+        "id": "Patient.deceased[x]",
+        "path": "Patient.deceased[x]",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
         "mustSupport": true
       }
     ]

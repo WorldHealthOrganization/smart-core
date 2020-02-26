@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "any-other-detail-of-clinical-significance",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/any-other-detail-of-clinical-significance",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/any-other-detail-of-clinical-significance",
   "name": "Any other detail of clinical significance",
   "title": "Any other detail of clinical significance",
   "status": "draft",

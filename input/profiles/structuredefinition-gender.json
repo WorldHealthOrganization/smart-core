@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "gender",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/gender",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/gender",
   "name": "Gender",
   "title": "Gender",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/gender-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/gender-values"
         }
       }
     ]

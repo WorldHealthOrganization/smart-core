@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "estimated-age",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/estimated-age",
-  "name": "Estimated age",
-  "title": "Estimated age",
+  "id": "alternate-contact-phone-number-contact-of-next-of-kin",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/alternate-contact-phone-number-contact-of-next-of-kin",
+  "name": "Alternate contact phone number - Contact of next of Kin",
+  "title": "Alternate contact phone number - Contact of next of Kin",
   "status": "draft",
   "experimental": false,
-  "description": "If DOB is unknown, enter the client's age. Note displaying the client's age in years.",
+  "description": "Phone number of the alternate contact.",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,15 +21,10 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.birthDate",
-        "path": "Patient.birthDate",
+        "id": "Patient.contact.telecom.value",
+        "path": "Patient.contact.telecom.value",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "date"
-          }
-        ],
         "mustSupport": true
       }
     ]

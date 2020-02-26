@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "alternate-contact-address",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-address",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/alternate-contact-address",
   "name": "Alternate contact address",
   "title": "Alternate contact address",
   "status": "draft",

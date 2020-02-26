@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "insurance-type",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/insurance-type",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-type",
   "name": "Insurance type",
   "title": "Insurance type",
   "status": "draft",

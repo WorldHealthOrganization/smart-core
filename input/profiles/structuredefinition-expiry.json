@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "expiry",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/expiry",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/expiry",
   "name": "expiry",
   "title": "expiry",
   "status": "draft",

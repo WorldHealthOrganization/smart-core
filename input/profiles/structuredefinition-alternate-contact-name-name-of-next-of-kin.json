@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
   "id": "alternate-contact-name-name-of-next-of-kin",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-name-name-of-next-of-kin",
-  "name": "Alternate contact name \n\nName of next Of Kin",
-  "title": "Alternate contact name \n\nName of next Of Kin",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/alternate-contact-name-name-of-next-of-kin",
+  "name": "Alternate contact name  - Name of next Of Kin",
+  "title": "Alternate contact name  - Name of next Of Kin",
   "status": "draft",
   "experimental": false,
   "description": "Name of an alternate contact or next of kin (e.g. partner, husband, mother, etc).\n\nWho can we contact in case need arises?",

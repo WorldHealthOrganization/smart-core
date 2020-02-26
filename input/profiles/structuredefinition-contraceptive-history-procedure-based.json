@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "contraceptive-history-procedure-based",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/contraceptive-history-procedure-based",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/contraceptive-history-procedure-based",
   "name": "Contraceptive history - Procedure-based",
   "title": "Contraceptive history - Procedure-based",
   "status": "draft",

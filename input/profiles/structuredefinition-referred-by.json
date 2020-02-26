@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "referred-by",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/referred-by",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/referred-by",
   "name": "Referred by",
   "title": "Referred by",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/referred-by-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/referred-by-values"
         }
       }
     ]

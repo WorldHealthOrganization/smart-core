@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "marital-status",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/marital-status",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/marital-status",
   "name": "Marital Status",
   "title": "Marital Status",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/marital-status-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/marital-status-values"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "insurance-id",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/insurance-id",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-id",
   "name": "Insurance ID",
   "title": "Insurance ID",
   "status": "draft",

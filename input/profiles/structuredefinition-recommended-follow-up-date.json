@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "recommended-follow-up-date",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/recommended-follow-up-date",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/recommended-follow-up-date",
   "name": "Recommended follow-up date",
   "title": "Recommended follow-up date",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "date-of-last-sexual-intercourse",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/date-of-last-sexual-intercourse",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/date-of-last-sexual-intercourse",
   "name": "Date of last sexual intercourse",
   "title": "Date of last sexual intercourse",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "contraceptive-history-careplan-based",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/contraceptive-history-careplan-based",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/contraceptive-history-careplan-based",
   "name": "Contraceptive history - CarePlan-based",
   "title": "Contraceptive history - CarePlan-based",
   "status": "draft",

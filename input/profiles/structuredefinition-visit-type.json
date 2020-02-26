@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "visit-type",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/visit-type",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/visit-type",
   "name": "Visit type",
   "title": "Visit type",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/visit-type-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/visit-type-values"
         }
       }
     ]

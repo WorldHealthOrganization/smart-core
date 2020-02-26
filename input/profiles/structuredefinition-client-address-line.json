@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "client-address-line",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-address-line",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/client-address-line",
   "name": "Client address line",
   "title": "Client address line",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "contraceptive-history-device-based",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/contraceptive-history-device-based",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/contraceptive-history-device-based",
   "name": "Contraceptive history - Device-based",
   "title": "Contraceptive history - Device-based",
   "status": "draft",

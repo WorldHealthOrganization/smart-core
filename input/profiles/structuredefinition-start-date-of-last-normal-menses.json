@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "start-date-of-last-normal-menses",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/start-date-of-last-normal-menses",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/start-date-of-last-normal-menses",
   "name": "Start date of last normal menses",
   "title": "Start date of last normal menses",
   "status": "draft",

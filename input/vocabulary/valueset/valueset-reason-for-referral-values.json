@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "reason-for-referral-values",
-  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/reason-for-referral-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/reason-for-referral-values",
   "name": "reason-for-referral-values",
   "title": "Reason for referral values",
   "status": "draft",

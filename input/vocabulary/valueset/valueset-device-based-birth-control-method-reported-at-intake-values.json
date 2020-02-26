@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "device-based-birth-control-method-reported-at-intake-values",
-  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/device-based-birth-control-method-reported-at-intake-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/device-based-birth-control-method-reported-at-intake-values",
   "name": "device-based-birth-control-method-reported-at-intake-values",
   "title": "Device-based Birth control method reported at intake values",
   "status": "draft",

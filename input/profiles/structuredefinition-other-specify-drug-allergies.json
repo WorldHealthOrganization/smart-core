@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "other-specify-drug-allergies",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/other-specify-drug-allergies",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/other-specify-drug-allergies",
   "name": "Other (specify) - Drug allergies",
   "title": "Other (specify) - Drug allergies",
   "status": "draft",

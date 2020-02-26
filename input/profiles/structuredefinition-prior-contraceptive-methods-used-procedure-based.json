@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "prior-contraceptive-methods-used-procedure-based",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/prior-contraceptive-methods-used-procedure-based",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/prior-contraceptive-methods-used-procedure-based",
   "name": "Prior contraceptive methods used - Procedure-based",
   "title": "Prior contraceptive methods used - Procedure-based",
   "status": "draft",

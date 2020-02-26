@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "other-specify-current-medications",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/other-specify-current-medications",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/other-specify-current-medications",
   "name": "Other (specify) - Current medications",
   "title": "Other (specify) - Current medications",
   "status": "draft",

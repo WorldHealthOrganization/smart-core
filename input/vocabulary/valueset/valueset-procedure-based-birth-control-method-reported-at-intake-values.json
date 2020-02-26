@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "procedure-based-birth-control-method-reported-at-intake-values",
-  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/procedure-based-birth-control-method-reported-at-intake-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/procedure-based-birth-control-method-reported-at-intake-values",
   "name": "procedure-based-birth-control-method-reported-at-intake-values",
   "title": "Procedure-based Birth control method reported at intake values",
   "status": "draft",

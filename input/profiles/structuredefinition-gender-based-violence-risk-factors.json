@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "gender-based-violence-risk-factors",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/gender-based-violence-risk-factors",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/gender-based-violence-risk-factors",
   "name": "Gender-based violence risk factors",
   "title": "Gender-based violence risk factors",
   "status": "draft",

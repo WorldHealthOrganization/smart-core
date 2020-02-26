@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "number-of-pregnancies",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/number-of-pregnancies",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/number-of-pregnancies",
   "name": "Number of pregnancies",
   "title": "Number of pregnancies",
   "status": "draft",

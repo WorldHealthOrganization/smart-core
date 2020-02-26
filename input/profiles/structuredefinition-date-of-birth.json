@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "date-of-birth",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/date-of-birth",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/date-of-birth",
   "name": "Date of birth",
   "title": "Date of birth",
   "status": "draft",

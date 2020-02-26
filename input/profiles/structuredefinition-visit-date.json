@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "visit-date",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/visit-date",
+  "name": "Visit Date",
+  "title": "Visit Date",
+  "status": "draft",
+  "experimental": false,
+  "description": "The date and time of the client's visit",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment",
+        "path": "Appointment",
+        "mustSupport": false
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

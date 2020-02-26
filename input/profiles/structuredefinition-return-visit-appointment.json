@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "return-visit-appointment",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/return-visit-appointment",
+  "name": "Return Visit Appointment",
+  "title": "Return Visit Appointment",
+  "status": "draft",
+  "experimental": false,
+  "description": "Date and time of return visit appointment",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment",
+        "path": "Appointment",
+        "mustSupport": false
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

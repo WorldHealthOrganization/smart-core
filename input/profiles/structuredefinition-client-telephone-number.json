@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "client-telephone-number",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-telephone-number",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/client-telephone-number",
   "name": "Client Telephone number",
   "title": "Client Telephone number",
   "status": "draft",

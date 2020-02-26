@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "visit-type-values",
-  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/visit-type-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/visit-type-values",
   "name": "visit-type-values",
   "title": "Visit type values",
   "status": "draft",

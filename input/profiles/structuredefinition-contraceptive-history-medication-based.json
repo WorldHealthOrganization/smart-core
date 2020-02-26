@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "contraceptive-history-medication-based",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/contraceptive-history-medication-based",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/contraceptive-history-medication-based",
   "name": "Contraceptive history - Medication-based",
   "title": "Contraceptive history - Medication-based",
   "status": "draft",

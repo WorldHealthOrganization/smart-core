@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "date-of-death",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/date-of-death",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/date-of-death",
   "name": "Date_of_Death",
   "title": "Date_of_Death",
   "status": "draft",

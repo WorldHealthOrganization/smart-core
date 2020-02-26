@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "level-of-urgency-for-the-referral",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/level-of-urgency-for-the-referral",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/level-of-urgency-for-the-referral",
   "name": "Level of urgency for the referral",
   "title": "Level of urgency for the referral",
   "status": "draft",

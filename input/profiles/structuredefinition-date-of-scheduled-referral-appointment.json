@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "date-of-scheduled-referral-appointment",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/date-of-scheduled-referral-appointment",
+  "name": "Date of scheduled referral appointment",
+  "title": "Date of scheduled referral appointment",
+  "status": "draft",
+  "experimental": false,
+  "description": "When the referral is scheduled",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment",
+        "path": "Appointment",
+        "mustSupport": false
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

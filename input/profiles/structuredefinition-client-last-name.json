@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "client-last-name",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/client-last-name",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/client-last-name",
   "name": "Client last name",
   "title": "Client last name",
   "status": "draft",

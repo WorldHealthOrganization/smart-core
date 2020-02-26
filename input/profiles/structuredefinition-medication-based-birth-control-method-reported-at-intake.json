@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "medication-based-birth-control-method-reported-at-intake",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/medication-based-birth-control-method-reported-at-intake",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/medication-based-birth-control-method-reported-at-intake",
   "name": "Medication-based Birth control method reported at intake",
   "title": "Medication-based Birth control method reported at intake",
   "status": "draft",
@@ -33,7 +33,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/anc-cds/ValueSet/medication-based-birth-control-method-reported-at-intake-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/medication-based-birth-control-method-reported-at-intake-values"
         }
       }
     ]

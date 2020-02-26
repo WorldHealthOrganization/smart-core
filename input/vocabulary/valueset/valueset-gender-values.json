@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "gender-values",
-  "url": "http://fhir.org/guides/who/anc-cds/ValueSet/gender-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/gender-values",
   "name": "gender-values",
   "title": "Gender values",
   "status": "draft",

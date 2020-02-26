@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "alternate-contact-relationship",
-  "url": "http://fhir.org/guides/who/anc-cds/StructureDefinition/alternate-contact-relationship",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/alternate-contact-relationship",
   "name": "Alternate contact relationship",
   "title": "Alternate contact relationship",
   "status": "draft",
