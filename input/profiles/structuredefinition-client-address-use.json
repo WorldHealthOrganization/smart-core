@@ -1,12 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "administrative-area",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/administrative-area",
-  "name": "Administrative Area",
-  "title": "Administrative Area",
+  "id": "client-address-use",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/client-address-use",
+  "name": "Client address use",
+  "title": "Client address use",
   "status": "draft",
   "experimental": false,
-  "description": "Village, district, etc.",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,8 +20,8 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.address.district",
-        "path": "Patient.address.district",
+        "id": "Patient.address.use",
+        "path": "Patient.address.use",
         "min": 0,
         "max": "1",
         "mustSupport": true

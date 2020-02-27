@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "communication-method",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-method",
+  "name": "Communication method",
+  "title": "Communication method",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Communication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Communication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Communication",
+        "path": "Communication",
+        "mustSupport": false
+      },
+      {
+        "id": "Communication.medium",
+        "path": "Communication.medium",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

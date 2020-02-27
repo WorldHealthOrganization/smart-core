@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gallbladder-disease",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/gallbladder-disease",
+  "name": "Gallbladder disease",
+  "title": "Gallbladder disease",
+  "status": "draft",
+  "experimental": false,
+  "description": "Client has a history of gallbladder disease",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "mustSupport": false
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

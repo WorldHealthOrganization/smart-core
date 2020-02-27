@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "hiv-referral-recommended-date",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/hiv-referral-recommended-date",
+  "name": "HIV Referral Recommended Date",
+  "title": "HIV Referral Recommended Date",
+  "status": "draft",
+  "experimental": false,
+  "description": "A date at which a clinician identifies that a clinical or laboratory finding on HIV status requires a referral to a different provider for a medical visit and the client has been provided knowledge of that referral. The referred provider and location is summarized as well as any relevant diagnostic or billing codes that help document the need for the referral. This date would be considered the start date for a performance measure that evaluates the time that it takes for a necessary referral period to be completed. ",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest",
+        "path": "ServiceRequest",
+        "mustSupport": false
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

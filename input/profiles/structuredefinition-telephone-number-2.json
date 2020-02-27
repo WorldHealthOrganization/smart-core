@@ -1,12 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "administrative-area",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/administrative-area",
-  "name": "Administrative Area",
-  "title": "Administrative Area",
+  "id": "telephone-number-2",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/telephone-number-2",
+  "name": "Telephone number -2",
+  "title": "Telephone number -2",
   "status": "draft",
   "experimental": false,
-  "description": "Village, district, etc.",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,8 +20,8 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.address.district",
-        "path": "Patient.address.district",
+        "id": "Patient.telecom.value",
+        "path": "Patient.telecom.value",
         "min": 0,
         "max": "1",
         "mustSupport": true

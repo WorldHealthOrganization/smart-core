@@ -465,3 +465,111 @@ e: {
   "error" : "java.lang.NullPointerException"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "73438004",
+        "display" : "Unemployed"
+      },
+      {
+        "code" : "224363007",
+        "display" : "Formal employment"
+      }]
+    },
+    {
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Sex Worker",
+        "display" : "Informal employment (sex worker)"
+      }]
+    },
+    {
+      "system" : "http://www.who.int/fhir/CodeSystem/core-codes",
+      "concept" : [{
+        "code" : "Other",
+        "display" : "Other (specify)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Procedure-based method"
+      },
+      {
+        "code" : "275572005; 60890002",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "22523008; 399141000",
+        "display" : "Male sterilization"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27905-1",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "LA14534-4",
+        "display" : "Male sterilization"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Returning Client",
+        "display" : "Returning client"
+      },
+      {
+        "code" : "Referral",
+        "display" : "Referral"
+      },
+      {
+        "code" : "New Client",
+        "display" : "New client"
+      },
+      {
+        "code" : "First visit for symptoms",
+        "display" : "First visit for symptoms"
+      },
+      {
+        "code" : "Follow up",
+        "display" : "Follow up for STI management"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+      "concept" : [{
+        "code" : "FOLLOWUP",
+        "display" : "Follow up appointment"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

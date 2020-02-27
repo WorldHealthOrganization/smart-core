@@ -1573,3 +1573,51 @@ e: {
   "error" : "java.lang.NullPointerException"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Procedure-based method"
+      },
+      {
+        "code" : "275572005; 60890002",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "22523008; 399141000",
+        "display" : "Male sterilization"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Procedure-based method"
+      },
+      {
+        "code" : "275572005; 60890002",
+        "display" : "Female sterilization"
+      },
+      {
+        "code" : "22523008; 399141000",
+        "display" : "Male sterilization"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

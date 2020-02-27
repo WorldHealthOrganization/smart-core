@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "number-of-births",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/number-of-births",
-  "name": "Number of births",
-  "title": "Number of births",
+  "id": "clinical-observations",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/clinical-observations",
+  "name": "Clinical observations",
+  "title": "Clinical observations",
   "status": "draft",
   "experimental": false,
-  "description": "The number of pregnancies reaching parity.",
+  "description": "Observations made during an exam or visit.",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -23,17 +23,13 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "min": 1,
+        "min": 0,
         "max": "1",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "11640-0",
-              "display": "Number of births (LOINC)"
-            }
-          ]
-        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       }
     ]

@@ -1,0 +1,36 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "location-latitude",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/location-latitude",
+  "name": "Location - Latitude",
+  "title": "Location - Latitude",
+  "status": "draft",
+  "experimental": false,
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location",
+        "path": "Location",
+        "mustSupport": false
+      },
+      {
+        "id": "Location.position.latitude",
+        "path": "Location.position.latitude",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

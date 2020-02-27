@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "number-of-births",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/number-of-births",
-  "name": "Number of births",
-  "title": "Number of births",
+  "id": "sti-risk-assessment-factors",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/sti-risk-assessment-factors",
+  "name": "STI risk assessment factors",
+  "title": "STI risk assessment factors",
   "status": "draft",
   "experimental": false,
-  "description": "The number of pregnancies reaching parity.",
+  "description": "STI risk factors relevant to the population (e.g., sexually active, new partner in the past three months, partner has an STI, etc.)",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "11640-0",
-              "display": "Number of births (LOINC)"
+              "code": "LA6508-1",
+              "display": "STI risk assessment factors (LOINC)"
             }
           ]
         },

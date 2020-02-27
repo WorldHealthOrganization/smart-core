@@ -1,0 +1,81 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Sex Worker",
+        "display" : "Informal employment (sex worker)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Returning Client",
+        "display" : "Returning client"
+      },
+      {
+        "code" : "Referral",
+        "display" : "Referral"
+      },
+      {
+        "code" : "New Client",
+        "display" : "New client"
+      },
+      {
+        "code" : "First visit for symptoms",
+        "display" : "First visit for symptoms"
+      },
+      {
+        "code" : "Follow up",
+        "display" : "Follow up for STI management"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Returning Client",
+        "display" : "Returning client"
+      },
+      {
+        "code" : "Referral",
+        "display" : "Referral"
+      },
+      {
+        "code" : "New Client",
+        "display" : "New client"
+      },
+      {
+        "code" : "First visit for symptoms",
+        "display" : "First visit for symptoms"
+      },
+      {
+        "code" : "Follow up",
+        "display" : "Follow up for STI management"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

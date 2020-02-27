@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "administrative-area",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/administrative-area",
-  "name": "Administrative Area",
-  "title": "Administrative Area",
+  "id": "patient-unique-identification",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/patient-unique-identification",
+  "name": "Patient Unique identification",
+  "title": "Patient Unique identification",
   "status": "draft",
   "experimental": false,
-  "description": "Village, district, etc.",
+  "description": "Unique identifier generated for new clients or a universal ID, if used in the country.",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,8 +21,8 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.address.district",
-        "path": "Patient.address.district",
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
         "min": 0,
         "max": "1",
         "mustSupport": true

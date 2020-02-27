@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "location-fac-type",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/location-fac-type",
+  "name": "Location - fac_type",
+  "title": "Location - fac_type",
+  "status": "draft",
+  "experimental": false,
+  "description": "Type of facility, based on country terminology (e.g., health center, dispensary, hospital)",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location",
+        "path": "Location",
+        "mustSupport": false
+      },
+      {
+        "id": "Location.type",
+        "path": "Location.type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

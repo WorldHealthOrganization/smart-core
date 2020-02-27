@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "number-of-births",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/number-of-births",
-  "name": "Number of births",
-  "title": "Number of births",
+  "id": "hiv-status",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/hiv-status",
+  "name": "HIV Status",
+  "title": "HIV Status",
   "status": "draft",
   "experimental": false,
-  "description": "The number of pregnancies reaching parity.",
+  "description": "Finding of human immunodeficiency virus status",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -28,9 +28,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "11640-0",
-              "display": "Number of births (LOINC)"
+              "system": "http://snomed.info/sct",
+              "code": "278977008",
+              "display": "HIV Status (SNOMED-CT)"
             }
           ]
         },

@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "number-of-births",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/number-of-births",
-  "name": "Number of births",
-  "title": "Number of births",
+  "id": "hiv-stage",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/hiv-stage",
+  "name": "HIV Stage",
+  "title": "HIV Stage",
   "status": "draft",
   "experimental": false,
-  "description": "The number of pregnancies reaching parity.",
+  "description": "WHO HIV clinical stage",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "11640-0",
-              "display": "Number of births (LOINC)"
+              "code": "45233-4",
+              "display": "HIV Stage (LOINC)"
             }
           ]
         },
