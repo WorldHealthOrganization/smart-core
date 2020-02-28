@@ -22,6 +22,10 @@
             "display": "DMPA-SC \nDMPA, administered subcutaneously"
           },
           {
+            "code": "782025007",
+            "display": "Norethisterone enanthate (NET-EN) injectable"
+          },
+          {
             "code": "702587005",
             "display": "Emergency contraceptive pills (ECPs)"
           },
@@ -63,6 +67,10 @@
       {
         "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
         "concept": [
+          {
+            "code": "1359235",
+            "display": "Norethisterone enanthate (NET-EN) injectable"
+          },
           {
             "code": "483325",
             "display": "Emergency contraceptive pills (ECPs)"

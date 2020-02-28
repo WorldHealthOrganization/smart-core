@@ -11,6 +11,19 @@
   "compose": {
     "include": [
       {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Community",
+            "display": "Community"
+          },
+          {
+            "code": "Facility",
+            "display": "Facility"
+          }
+        ]
+      },
+      {
         "system": "http://snomed.info/sct",
         "concept": [
           {

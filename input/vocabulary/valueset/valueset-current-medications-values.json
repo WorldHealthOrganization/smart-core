@@ -11,6 +11,15 @@
   "compose": {
     "include": [
       {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "409516001",
+            "display": "PrEP"
+          }
+        ]
+      },
+      {
         "system": "http://www.who.int/fhir/CodeSystem/core-codes",
         "concept": [
           {

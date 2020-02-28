@@ -42,6 +42,10 @@
             "display": "Combined contraceptive patch"
           },
           {
+            "code": "702680002",
+            "display": "Combined contraceptive vaginal ring (CVR)"
+          },
+          {
             "code": "225370004",
             "display": "Barrier method"
           },
@@ -77,6 +81,10 @@
           {
             "code": "LA16581-3",
             "display": "Combined contraceptive patch"
+          },
+          {
+            "code": "LA14546-8",
+            "display": "Combined contraceptive vaginal ring (CVR)"
           }
         ]
       },
@@ -90,6 +98,10 @@
           {
             "code": "393401; 646249",
             "display": "Etonogestrel (ETG) one-rod implant"
+          },
+          {
+            "code": "710529",
+            "display": "Combined contraceptive vaginal ring (CVR)"
           },
           {
             "code": "2109022",

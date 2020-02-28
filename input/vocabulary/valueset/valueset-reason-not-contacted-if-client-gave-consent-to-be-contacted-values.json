@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "id": "reason-not-contacted-if-client-gave-consent-to-be-contacted-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/reason-not-contacted-if-client-gave-consent-to-be-contacted-values",
+  "name": "reason-not-contacted-if-client-gave-consent-to-be-contacted-values",
+  "title": "Reason not contacted if client gave consent to be contacted values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason not contacted if client gave consent to be contacted element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Invalid Address",
+            "display": "Contact information is no longer valid"
+          },
+          {
+            "code": "No longer in the service area",
+            "display": "Client has moved from the service area"
+          },
+          {
+            "code": "Deceased",
+            "display": "Client deceased."
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/ValueSet/communication-not-done-reason",
+        "concept": [
+          {
+            "code": "patient-objection",
+            "display": "Client asks to not be contacted again."
+          }
+        ]
+      }
+    ]
+  }
+}

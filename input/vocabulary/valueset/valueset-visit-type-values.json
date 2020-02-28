@@ -30,7 +30,7 @@
             "display": "First visit for symptoms"
           },
           {
-            "code": "Follow up",
+            "code": "STI Follow up",
             "display": "Follow up for STI management"
           }
         ]
