@@ -1051,3 +1051,39 @@ e: {
   "error" : "java.lang.NullPointerException"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27902-8",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "LA27903-6",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "LA27904-4",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "LA27901-0",
+        "display" : "Implant"
+      },
+      {
+        "code" : "LA16581-3",
+        "display" : "Combined contraceptive patch"
+      },
+      {
+        "code" : "LA14546-8",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

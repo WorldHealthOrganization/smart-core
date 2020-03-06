@@ -573,3 +573,306 @@ e: {
   "error" : "java.lang.NullPointerException"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Medication-based method"
+      },
+      {
+        "code" : "709457002",
+        "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+      },
+      {
+        "code" : "782025007",
+        "display" : "Norethisterone enanthate (NET-EN) injectable"
+      },
+      {
+        "code" : "702587005; 275813002",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "169467008",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "268458002",
+        "display" : "Combined oral contraceptives (COCs)"
+      },
+      {
+        "code" : "89780004",
+        "display" : "Combined injectable contraception"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27907-7",
+        "display" : "DMPA-IM \n DMPA, administered intramuscularly"
+      },
+      {
+        "code" : "LA16573-0",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "LA27909-3",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "LA27908-5",
+        "display" : "Combined oral contraceptives (COCs)"
+      }]
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "1359235",
+        "display" : "Norethisterone enanthate (NET-EN) injectable"
+      },
+      {
+        "code" : "483325",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Community",
+        "display" : "Community"
+      },
+      {
+        "code" : "Facility",
+        "display" : "Facility"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "309015008",
+        "display" : "Facility"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Device-based method"
+      },
+      {
+        "code" : "449038007",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "448962006",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "312081001",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "428987008",
+        "display" : "Implant"
+      },
+      {
+        "code" : "396050000",
+        "display" : "Etonogestrel (ETG) one-rod implant"
+      },
+      {
+        "code" : "450881000124106",
+        "display" : "Combined contraceptive patch"
+      },
+      {
+        "code" : "702680002",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      },
+      {
+        "code" : "225370004",
+        "display" : "Barrier method"
+      },
+      {
+        "code" : "275831001",
+        "display" : "Male condom"
+      },
+      {
+        "code" : "228479001",
+        "display" : "Female condom"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA27902-8",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "LA27903-6",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "LA27904-4",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "LA27901-0",
+        "display" : "Implant"
+      },
+      {
+        "code" : "LA16581-3",
+        "display" : "Combined contraceptive patch"
+      },
+      {
+        "code" : "LA14546-8",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      }]
+    },
+    {
+      "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+      "concept" : [{
+        "code" : "3127785",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "393401; 646249",
+        "display" : "Etonogestrel (ETG) one-rod implant"
+      },
+      {
+        "code" : "710529",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      },
+      {
+        "code" : "2109022",
+        "display" : "Progesterone-releasing vaginal ring (PVR)"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10",
+      "concept" : [{
+        "code" : "Z30.49",
+        "display" : "Female condom"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Invalid Address",
+        "display" : "Contact information is no longer valid"
+      },
+      {
+        "code" : "No longer in the service area",
+        "display" : "Client has moved from the service area"
+      },
+      {
+        "code" : "Deceased",
+        "display" : "Client deceased."
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/ValueSet/communication-not-done-reason",
+      "concept" : [{
+        "code" : "patient-objection",
+        "display" : "Client asks to not be contacted again."
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://who.int/cg/CodeSystem/extended-content",
+      "concept" : [{
+        "code" : "Returning Client",
+        "display" : "Returning client"
+      },
+      {
+        "code" : "Referral",
+        "display" : "Referral"
+      },
+      {
+        "code" : "New Client",
+        "display" : "New client"
+      },
+      {
+        "code" : "First visit for symptoms",
+        "display" : "First visit for symptoms"
+      },
+      {
+        "code" : "STI Follow up",
+        "display" : "Follow up for STI management"
+      }]
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+      "concept" : [{
+        "code" : "FOLLOWUP",
+        "display" : "Follow up appointment"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "409516001",
+        "display" : "PrEP"
+      }]
+    },
+    {
+      "system" : "http://www.who.int/fhir/CodeSystem/core-codes",
+      "concept" : [{
+        "code" : "Other",
+        "display" : "Other antibiotics"
+      },
+      {
+        "code" : "Other",
+        "display" : "Other (specify)"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------

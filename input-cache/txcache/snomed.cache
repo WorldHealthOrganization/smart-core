@@ -1621,3 +1621,227 @@ e: {
   "error" : "java.lang.NullPointerException"
 }
 -------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Medication-based method"
+      },
+      {
+        "code" : "709457002",
+        "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+      },
+      {
+        "code" : "782025007",
+        "display" : "Norethisterone enanthate (NET-EN) injectable"
+      },
+      {
+        "code" : "702587005; 275813002",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "169467008",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "268458002",
+        "display" : "Combined oral contraceptives (COCs)"
+      },
+      {
+        "code" : "89780004",
+        "display" : "Combined injectable contraception"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Device-based method"
+      },
+      {
+        "code" : "449038007",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "448962006",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "312081001",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "428987008",
+        "display" : "Implant"
+      },
+      {
+        "code" : "396050000",
+        "display" : "Etonogestrel (ETG) one-rod implant"
+      },
+      {
+        "code" : "450881000124106",
+        "display" : "Combined contraceptive patch"
+      },
+      {
+        "code" : "702680002",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      },
+      {
+        "code" : "225370004",
+        "display" : "Barrier method"
+      },
+      {
+        "code" : "275831001",
+        "display" : "Male condom"
+      },
+      {
+        "code" : "228479001",
+        "display" : "Female condom"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : false, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "409516001",
+        "display" : "PrEP"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Medication-based method"
+      },
+      {
+        "code" : "709457002",
+        "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+      },
+      {
+        "code" : "782025007",
+        "display" : "Norethisterone enanthate (NET-EN) injectable"
+      },
+      {
+        "code" : "702587005; 275813002",
+        "display" : "Emergency contraceptive pills (ECPs)"
+      },
+      {
+        "code" : "169467008",
+        "display" : "Progestogen-only pills (POP)"
+      },
+      {
+        "code" : "268458002",
+        "display" : "Combined oral contraceptives (COCs)"
+      },
+      {
+        "code" : "89780004",
+        "display" : "Combined injectable contraception"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "169450001",
+        "display" : "No Device-based method"
+      },
+      {
+        "code" : "449038007",
+        "display" : "Levonorgestrel IUD (LNG-IUD)"
+      },
+      {
+        "code" : "448962006",
+        "display" : "Copper-bearing intrauterine device (Cu-IUD)"
+      },
+      {
+        "code" : "312081001",
+        "display" : "Unspecified IUD"
+      },
+      {
+        "code" : "428987008",
+        "display" : "Implant"
+      },
+      {
+        "code" : "396050000",
+        "display" : "Etonogestrel (ETG) one-rod implant"
+      },
+      {
+        "code" : "450881000124106",
+        "display" : "Combined contraceptive patch"
+      },
+      {
+        "code" : "702680002",
+        "display" : "Combined contraceptive vaginal ring (CVR)"
+      },
+      {
+        "code" : "225370004",
+        "display" : "Barrier method"
+      },
+      {
+        "code" : "275831001",
+        "display" : "Male condom"
+      },
+      {
+        "code" : "228479001",
+        "display" : "Female condom"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "409516001",
+        "display" : "PrEP"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "java.lang.NullPointerException"
+}
+-------------------------------------------------------------------------------------
