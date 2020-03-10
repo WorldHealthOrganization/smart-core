@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "prior-contraceptive-methods-used-medication-based",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/prior-contraceptive-methods-used-medication-based",
-  "name": "Prior contraceptive methods used - Medication-based",
-  "title": "Prior contraceptive methods used - Medication-based",
+  "id": "who-core-current-medication",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-current-medication",
+  "name": "who-core-current-medication",
+  "title": "who-core-current-medication",
   "status": "draft",
   "experimental": false,
-  "description": "Contraceptive methods the client has a history of using",
+  "description": "who-core-current-medication",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -24,7 +24,7 @@
         "id": "MedicationStatement.medication[x]",
         "path": "MedicationStatement.medication[x]",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"

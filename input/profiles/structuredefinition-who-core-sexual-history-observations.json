@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ever-had-sex-reported",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/ever-had-sex-reported",
-  "name": "Ever had sex - Reported",
-  "title": "Ever had sex - Reported",
+  "id": "who-core-sexual-history-observations",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-sexual-history-observations",
+  "name": "who-core-sexual-history-observations",
+  "title": "who-core-sexual-history-observations",
   "status": "draft",
   "experimental": false,
-  "description": "If the client has been sexually active",
+  "description": "who-core-sexual-history-observations",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -29,7 +29,7 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "86646-7",
+              "code": "86646-7  ; yes LA 33-6; no La 32-8",
               "display": "Ever had sex - Reported (LOINC)"
             }
           ]

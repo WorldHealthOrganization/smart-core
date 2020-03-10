@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "visit-date",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/visit-date",
-  "name": "Visit Date",
-  "title": "Visit Date",
+  "id": "who-core-visit",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-visit",
+  "name": "who-core-visit",
+  "title": "who-core-visit",
   "status": "draft",
   "experimental": false,
-  "description": "The date and time of the client's visit",
+  "description": "who-core-visit",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -19,6 +19,22 @@
         "id": "Appointment",
         "path": "Appointment",
         "mustSupport": false
+      },
+      {
+        "id": "Appointment.appointmentType",
+        "path": "Appointment.appointmentType",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/visit-type-values"
+        }
       },
       {
         "id": "Appointment.start",

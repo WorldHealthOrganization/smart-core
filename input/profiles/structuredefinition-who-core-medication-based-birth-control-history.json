@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "injection-date",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/injection-date",
-  "name": "Injection Date",
-  "title": "Injection Date",
+  "id": "who-core-medication-based-birth-control-history",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medication-based-birth-control-history",
+  "name": "who-core-medication-based-birth-control-history",
+  "title": "who-core-medication-based-birth-control-history",
   "status": "draft",
   "experimental": false,
-  "description": "Date of last injection if currently using the method.",
+  "description": "who-core-medication-based-birth-control-history",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -21,13 +21,13 @@
         "mustSupport": false
       },
       {
-        "id": "MedicationStatement.effective[x]",
-        "path": "MedicationStatement.effective[x]",
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
           }
         ],
         "mustSupport": true
