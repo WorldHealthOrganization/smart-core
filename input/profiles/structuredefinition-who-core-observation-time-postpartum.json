@@ -1,11 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "enrollment-date-into-hiv-care",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/enrollment-date-into-hiv-care",
-  "name": "Enrollment date into HIV care",
-  "title": "Enrollment date into HIV care",
+  "id": "who-core-observation-time-postpartum",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-time-postpartum",
+  "name": "who-core-observation-time-postpartum",
+  "title": "who-core-observation-time-postpartum",
   "status": "draft",
   "experimental": false,
+  "description": "who-core-observation-time-postpartum",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -27,9 +28,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "45235-9",
-              "display": "Enrollment date into HIV care (LOINC)"
+              "system": "http://snomed.info/sct",
+              "code": "86569001",
+              "display": "Time postpartum (SNOMED-CT)"
             }
           ]
         },

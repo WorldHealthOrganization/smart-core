@@ -1,11 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "enrollment-date-into-hiv-care",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/enrollment-date-into-hiv-care",
-  "name": "Enrollment date into HIV care",
-  "title": "Enrollment date into HIV care",
+  "id": "suggested-who-core-observation-hiv-stage",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-hiv-stage",
+  "name": "suggested-who-core-observation-hiv-stage",
+  "title": "suggested-who-core-observation-hiv-stage",
   "status": "draft",
   "experimental": false,
+  "description": "suggested-who-core-observation-hiv-stage",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -28,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "45235-9",
-              "display": "Enrollment date into HIV care (LOINC)"
+              "code": "45233-4",
+              "display": "HIV Stage (LOINC)"
             }
           ]
         },

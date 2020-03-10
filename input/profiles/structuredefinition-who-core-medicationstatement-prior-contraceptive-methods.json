@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-medicationstatement-prior-contraceptive-methods",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medicationstatement-prior-contraceptive-methods",
+  "name": "who-core-medicationstatement-prior-contraceptive-methods",
+  "title": "who-core-medicationstatement-prior-contraceptive-methods",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-medicationstatement-prior-contraceptive-methods",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement",
+        "path": "MedicationStatement",
+        "mustSupport": false
+      },
+      {
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

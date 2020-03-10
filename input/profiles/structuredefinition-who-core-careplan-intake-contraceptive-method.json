@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-careplan-intake-contraceptive-method",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-careplan-intake-contraceptive-method",
+  "name": "who-core-careplan-intake-contraceptive-method",
+  "title": "who-core-careplan-intake-contraceptive-method",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-careplan-intake-contraceptive-method",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan",
+        "path": "CarePlan",
+        "mustSupport": false
+      },
+      {
+        "id": "CarePlan.activity.detail.code",
+        "path": "CarePlan.activity.detail.code",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/careplan-based-birth-control-method-reported-at-intake-values"
+        }
+      }
+    ]
+  }
+}

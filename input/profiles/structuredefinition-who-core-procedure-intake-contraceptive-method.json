@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-procedure-intake-contraceptive-method",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-procedure-intake-contraceptive-method",
+  "name": "who-core-procedure-intake-contraceptive-method",
+  "title": "who-core-procedure-intake-contraceptive-method",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-procedure-intake-contraceptive-method",
+  "fhirVersion": "4.0.0",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure",
+        "path": "Procedure",
+        "mustSupport": false
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/procedure-based-birth-control-method-reported-at-intake-values"
+        }
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,11 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "enrollment-date-into-hiv-care",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/enrollment-date-into-hiv-care",
-  "name": "Enrollment date into HIV care",
-  "title": "Enrollment date into HIV care",
+  "id": "suggested-who-core-observation-clinical-observations",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-clinical-observations",
+  "name": "suggested-who-core-observation-clinical-observations",
+  "title": "suggested-who-core-observation-clinical-observations",
   "status": "draft",
   "experimental": false,
+  "description": "suggested-who-core-observation-clinical-observations",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -22,17 +23,13 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "min": 1,
+        "min": 0,
         "max": "1",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "45235-9",
-              "display": "Enrollment date into HIV care (LOINC)"
-            }
-          ]
-        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       }
     ]

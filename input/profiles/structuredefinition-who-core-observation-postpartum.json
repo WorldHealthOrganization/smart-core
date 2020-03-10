@@ -1,11 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "enrollment-date-into-hiv-care",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/enrollment-date-into-hiv-care",
-  "name": "Enrollment date into HIV care",
-  "title": "Enrollment date into HIV care",
+  "id": "who-core-observation-postpartum",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-postpartum",
+  "name": "who-core-observation-postpartum",
+  "title": "who-core-observation-postpartum",
   "status": "draft",
   "experimental": false,
+  "description": "who-core-observation-postpartum",
   "fhirVersion": "4.0.0",
   "kind": "resource",
   "abstract": false,
@@ -28,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "45235-9",
-              "display": "Enrollment date into HIV care (LOINC)"
+              "code": "LP20597-8",
+              "display": "Postpartum (LOINC)"
             }
           ]
         },
