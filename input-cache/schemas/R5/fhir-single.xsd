@@ -47,7 +47,7 @@
   POSSIBILITY OF SUCH DAMAGE.
   
 
-  Generated on Sat, Feb 29, 2020 07:59+0000 for FHIR v4.2.0 
+  Generated on Wed, Mar 11, 2020 14:05+0000 for FHIR v4.2.0 
 -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://hl7.org/fhir" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="http://hl7.org/fhir" elementFormDefault="qualified" version="4.2.0">
   <!-- Note: When using this schema with some tools, it may also be necessary to declare xmlns:xml="http://www.w3.org/XML/1998/namespace", however this causes performance issues with other tools and thus is not in the base schemas. -->
@@ -12629,7 +12629,12 @@ into another (possibly the same) biological entity.</xs:documentation>
           </xs:element>
           <xs:element name="type" minOccurs="1" maxOccurs="1" type="ClinicalUseIssueType">
             <xs:annotation>
-              <xs:documentation xml:lang="en">indication | contraindication | interaction | undesirable-effect | other.</xs:documentation>
+              <xs:documentation xml:lang="en">indication | contraindication | interaction | undesirable-effect | warning.</xs:documentation>
+           </xs:annotation>
+          </xs:element>
+          <xs:element name="category" minOccurs="0" maxOccurs="1" type="CodeableConcept">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">A categorisation of the issue, primarily for dividing warnings into subject heading areas such as &quot;Pregnancy and Lactation&quot;, &quot;Overdose&quot;, &quot;Effects Ability to Drive and Use Machines&quot;.</xs:documentation>
            </xs:annotation>
           </xs:element>
           <xs:element name="subject" minOccurs="0" maxOccurs="unbounded" type="Reference">
@@ -12883,9 +12888,9 @@ into another (possibly the same) biological entity.</xs:documentation>
           <xs:documentation xml:lang="en">Undesirable Effect</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
-      <xs:enumeration value="other">
+      <xs:enumeration value="warning">
         <xs:annotation>
-          <xs:documentation xml:lang="en">Other</xs:documentation>
+          <xs:documentation xml:lang="en">Warning</xs:documentation>
         </xs:annotation>
       </xs:enumeration>
     </xs:restriction>

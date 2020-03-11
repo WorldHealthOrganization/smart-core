@@ -21,20 +21,6 @@
         "mustSupport": false
       },
       {
-        "id": "Patient.address.city",
-        "path": "Patient.address.city",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address.country",
-        "path": "Patient.address.country",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
         "id": "Patient.address.district",
         "path": "Patient.address.district",
         "min": 0,
@@ -49,27 +35,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.address.postalCode",
-        "path": "Patient.address.postalCode",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address.state",
-        "path": "Patient.address.state",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.address.use",
-        "path": "Patient.address.use",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
         "min": 0,
@@ -77,26 +42,6 @@
         "type": [
           {
             "code": "date"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.contact",
-        "path": "Patient.contact",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "relationship"
-            }
-          ]
-        },
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "BackboneElement"
           }
         ],
         "mustSupport": true
@@ -142,45 +87,6 @@
         "path": "Patient.contact.telecom.value",
         "min": 0,
         "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.contact:Caretaker",
-        "path": "Patient.contact",
-        "sliceName": "Caretaker",
-        "min": 0,
-        "max": "1",
-        "fixedString": "'T'"
-      },
-      {
-        "id": "Patient.contact:Caretaker.name",
-        "path": "Patient.contact.name",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "HumanName"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.contact:Caretaker.telecom.value",
-        "path": "Patient.contact.telecom.value",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.deceased[x]",
-        "path": "Patient.deceased[x]",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -237,50 +143,7 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.telecom",
-        "path": "Patient.telecom",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "rank"
-            }
-          ]
-        },
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "ContactPoint"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.telecom:Telecom1",
-        "path": "Patient.telecom",
-        "sliceName": "Telecom1",
-        "min": 0,
-        "max": "1",
-        "fixedString": "1"
-      },
-      {
         "id": "Patient.telecom:Telecom1.value",
-        "path": "Patient.telecom.value",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.telecom:Telecom2\n",
-        "path": "Patient.telecom",
-        "sliceName": "Telecom2\n",
-        "min": 0,
-        "max": "1",
-        "fixedString": "2"
-      },
-      {
-        "id": "Patient.telecom:Telecom2.value",
         "path": "Patient.telecom.value",
         "min": 0,
         "max": "1",
