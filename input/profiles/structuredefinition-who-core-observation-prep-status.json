@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "suggested-who-core-observation-hiv-status",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-hiv-status",
-  "name": "suggested-who-core-observation-hiv-status",
-  "title": "suggested-who-core-observation-hiv-status",
+  "id": "who-core-observation-prep-status",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-prep-status",
+  "name": "who-core-observation-prep-status",
+  "title": "who-core-observation-prep-status",
   "status": "draft",
   "experimental": false,
-  "description": "suggested-who-core-observation-hiv-status",
-  "fhirVersion": "4.0.0",
+  "description": "who-core-observation-prep-status",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -28,9 +28,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://snomed.info/sct",
-              "code": "278977008",
-              "display": "HIV Status (SNOMED-CT)"
+              "system": "http://who.int/cg/CodeSystem/extended-content",
+              "code": "PrEP status",
+              "display": "PrEP status (FHIR)"
             }
           ]
         },

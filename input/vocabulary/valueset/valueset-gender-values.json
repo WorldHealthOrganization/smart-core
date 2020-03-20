@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.hl7.org/fhir/codesystem-administrative-gender.html",
+        "system": "http://hl7.org/fhir/administrative-gender",
         "concept": [
           {
             "code": "female",

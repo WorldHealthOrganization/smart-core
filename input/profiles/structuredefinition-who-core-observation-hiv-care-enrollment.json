@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "who-core-observation-date-of-delivery",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-date-of-delivery",
-  "name": "who-core-observation-date-of-delivery",
-  "title": "who-core-observation-date-of-delivery",
+  "id": "who-core-observation-hiv-care-enrollment",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-care-enrollment",
+  "name": "who-core-observation-hiv-care-enrollment",
+  "title": "who-core-observation-hiv-care-enrollment",
   "status": "draft",
   "experimental": false,
-  "description": "who-core-observation-date-of-delivery",
+  "description": "who-core-observation-hiv-care-enrollment",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "LP70949-0",
-              "display": "Date of delivery (LOINC)"
+              "code": "45235-9",
+              "display": "Enrollment date into HIV care (LOINC)"
             }
           ]
         },

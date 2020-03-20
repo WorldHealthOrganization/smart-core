@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "suggested-who-core-observation-sti-risk-factors",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-sti-risk-factors",
-  "name": "suggested-who-core-observation-sti-risk-factors",
-  "title": "suggested-who-core-observation-sti-risk-factors",
+  "id": "who-core-observation-last-normal-menses",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-last-normal-menses",
+  "name": "who-core-observation-last-normal-menses",
+  "title": "who-core-observation-last-normal-menses",
   "status": "draft",
   "experimental": false,
-  "description": "suggested-who-core-observation-sti-risk-factors",
-  "fhirVersion": "4.0.0",
+  "description": "who-core-observation-last-normal-menses",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -28,9 +28,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "LA6508-1",
-              "display": "STI risk assessment factors (LOINC)"
+              "system": "http://snomed.info/sct",
+              "code": "248957007",
+              "display": "Start date of last normal menses (SNOMED-CT)"
             }
           ]
         },

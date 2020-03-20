@@ -7,7 +7,7 @@
   "status": "draft",
   "experimental": false,
   "description": "who-core-coverage-insurance",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Coverage",
@@ -19,6 +19,21 @@
         "id": "Coverage",
         "path": "Coverage",
         "mustSupport": false
+      },
+      {
+        "id": "Coverage.extension:payment-method",
+        "path": "Coverage.extension",
+        "sliceName": "payment-method",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/payment-method"
+            ]
+          }
+        ]
       },
       {
         "id": "Coverage.status",

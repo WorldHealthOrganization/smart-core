@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "suggested-who-core-observation-temperature",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-temperature",
-  "name": "suggested-who-core-observation-temperature",
-  "title": "suggested-who-core-observation-temperature",
+  "id": "who-core-observation-pregnancy-status",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-pregnancy-status",
+  "name": "who-core-observation-pregnancy-status",
+  "title": "who-core-observation-pregnancy-status",
   "status": "draft",
   "experimental": false,
-  "description": "suggested-who-core-observation-temperature",
-  "fhirVersion": "4.0.0",
+  "description": "who-core-observation-pregnancy-status",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "8310-5",
-              "display": "Temperature (LOINC)"
+              "code": "82810-3",
+              "display": "Pregnancy status (LOINC)"
             }
           ]
         },

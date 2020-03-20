@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "reminder-messages",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages",
+  "name": "Reminder messages",
+  "title": "Reminder messages",
+  "status": "draft",
+  "experimental": false,
+  "description": "Whether client wants to receive text or other messages as follow-up for family planning",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Reminder messages",
+        "definition": "Whether client wants to receive text or other messages as follow-up for family planning",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Reminder messages",
+        "definition": "Whether client wants to receive text or other messages as follow-up for family planning",
+        "min": 1,
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

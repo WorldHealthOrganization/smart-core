@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "highest-level-of-education-achieved",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved",
+  "name": "Highest level of education achieved",
+  "title": "Highest level of education achieved",
+  "status": "draft",
+  "experimental": false,
+  "description": "The highest level of school the client has reached.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Highest level of education achieved",
+        "definition": "The highest level of school the client has reached.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "short": "Highest level of education achieved",
+        "definition": "The highest level of school the client has reached.",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      }
+    ]
+  }
+}

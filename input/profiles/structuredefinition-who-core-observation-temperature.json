@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "suggested-who-core-observation-hiv-stage",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-hiv-stage",
-  "name": "suggested-who-core-observation-hiv-stage",
-  "title": "suggested-who-core-observation-hiv-stage",
+  "id": "who-core-observation-temperature",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-temperature",
+  "name": "who-core-observation-temperature",
+  "title": "who-core-observation-temperature",
   "status": "draft",
   "experimental": false,
-  "description": "suggested-who-core-observation-hiv-stage",
-  "fhirVersion": "4.0.0",
+  "description": "who-core-observation-temperature",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -29,8 +29,8 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "45233-4",
-              "display": "HIV Stage (LOINC)"
+              "code": "8310-5",
+              "display": "Temperature (LOINC)"
             }
           ]
         },

@@ -7,7 +7,7 @@
   "status": "draft",
   "experimental": false,
   "description": "who-core-observation-number-of-births",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",

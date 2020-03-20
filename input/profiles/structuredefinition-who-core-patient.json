@@ -7,7 +7,7 @@
   "status": "draft",
   "experimental": false,
   "description": "who-core-patient",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
@@ -88,6 +88,111 @@
         "min": 0,
         "max": "1",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.extension:communication-consent",
+        "path": "Patient.extension",
+        "sliceName": "communication-consent",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:communication-preferences",
+        "path": "Patient.extension",
+        "sliceName": "communication-preferences",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-preferences"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:estimated-age",
+        "path": "Patient.extension",
+        "sliceName": "estimated-age",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimated-age"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:highest-level-of-education-achieved",
+        "path": "Patient.extension",
+        "sliceName": "highest-level-of-education-achieved",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:insurance-coverage",
+        "path": "Patient.extension",
+        "sliceName": "insurance-coverage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-coverage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:occupation",
+        "path": "Patient.extension",
+        "sliceName": "occupation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/occupation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:reminder-messages",
+        "path": "Patient.extension",
+        "sliceName": "reminder-messages",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages"
+            ]
+          }
+        ]
       },
       {
         "id": "Patient.gender",

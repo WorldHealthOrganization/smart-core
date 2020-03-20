@@ -7,11 +7,11 @@
   "status": "draft",
   "experimental": false,
   "description": "who-core-observation-body-height",
-  "fhirVersion": "4.0.0",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/bodyheight",
   "derivation": "constraint",
   "differential": {
     "element": [

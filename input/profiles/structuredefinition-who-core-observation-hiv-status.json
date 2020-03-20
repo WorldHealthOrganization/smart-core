@@ -1,13 +1,13 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "suggested-who-core-observation-pregnancy-status",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/suggested-who-core-observation-pregnancy-status",
-  "name": "suggested-who-core-observation-pregnancy-status",
-  "title": "suggested-who-core-observation-pregnancy-status",
+  "id": "who-core-observation-hiv-status",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-status",
+  "name": "who-core-observation-hiv-status",
+  "title": "who-core-observation-hiv-status",
   "status": "draft",
   "experimental": false,
-  "description": "suggested-who-core-observation-pregnancy-status",
-  "fhirVersion": "4.0.0",
+  "description": "who-core-observation-hiv-status",
+  "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -28,9 +28,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "82810-3",
-              "display": "Pregnancy status (LOINC)"
+              "system": "http://snomed.info/sct",
+              "code": "278977008",
+              "display": "HIV Status (SNOMED-CT)"
             }
           ]
         },
