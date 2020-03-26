@@ -18,11 +18,19 @@
             "display": "No Procedure-based method"
           },
           {
-            "code": "275572005; 60890002",
+            "code": "275572005",
             "display": "Female sterilization"
           },
           {
-            "code": "22523008; 399141000",
+            "code": "60890002",
+            "display": "Female sterilization"
+          },
+          {
+            "code": "22523008",
+            "display": "Male sterilization"
+          },
+          {
+            "code": "399141000",
             "display": "Male sterilization"
           }
         ]

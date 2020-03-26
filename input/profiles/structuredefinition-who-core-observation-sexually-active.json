@@ -29,11 +29,23 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "86647-5; 86648-3",
+              "code": "86647-5",
               "display": "Sexually active (LOINC)"
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
         "mustSupport": true
       }
     ]

@@ -14,7 +14,11 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "86395003; 305930006",
+            "code": "86395003",
+            "display": "Family planning procedure"
+          },
+          {
+            "code": "305930006",
             "display": "Family planning procedure"
           },
           {

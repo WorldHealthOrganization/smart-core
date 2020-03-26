@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "hiv-stage-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/hiv-stage-values",
+  "name": "hiv-stage-values",
+  "title": "HIV Stage values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the HIV Stage element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "103417004",
+            "display": "3"
+          },
+          {
+            "code": "103418009",
+            "display": "4"
+          }
+        ]
+      }
+    ]
+  }
+}

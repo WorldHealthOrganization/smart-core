@@ -47,6 +47,33 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.communication.extension:reminder",
+        "path": "Patient.communication.extension",
+        "sliceName": "reminder",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.communication.preferred",
+        "path": "Patient.communication.preferred",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.contact.address",
         "path": "Patient.contact.address",
         "min": 0,
@@ -90,84 +117,9 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:communication-consent",
+        "id": "Patient.extension:Occupation",
         "path": "Patient.extension",
-        "sliceName": "communication-consent",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:communication-preferences",
-        "path": "Patient.extension",
-        "sliceName": "communication-preferences",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-preferences"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:estimated-age",
-        "path": "Patient.extension",
-        "sliceName": "estimated-age",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimated-age"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:highest-level-of-education-achieved",
-        "path": "Patient.extension",
-        "sliceName": "highest-level-of-education-achieved",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:insurance-coverage",
-        "path": "Patient.extension",
-        "sliceName": "insurance-coverage",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-coverage"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Patient.extension:occupation",
-        "path": "Patient.extension",
-        "sliceName": "occupation",
+        "sliceName": "Occupation",
         "min": 0,
         "max": "1",
         "type": [
@@ -180,16 +132,61 @@
         ]
       },
       {
-        "id": "Patient.extension:reminder-messages",
+        "id": "Patient.extension:consentToContact",
         "path": "Patient.extension",
-        "sliceName": "reminder-messages",
+        "sliceName": "consentToContact",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:educationLevel",
+        "path": "Patient.extension",
+        "sliceName": "educationLevel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:estimatedAge",
+        "path": "Patient.extension",
+        "sliceName": "estimatedAge",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimated-age"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.extension:insurance",
+        "path": "Patient.extension",
+        "sliceName": "insurance",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-coverage"
             ]
           }
         ]

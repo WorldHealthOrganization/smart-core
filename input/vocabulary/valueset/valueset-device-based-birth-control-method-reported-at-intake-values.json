@@ -96,7 +96,11 @@
             "display": "Levonorgestrel IUD (LNG-IUD)"
           },
           {
-            "code": "393401; 646249",
+            "code": "393401",
+            "display": "Etonogestrel (ETG) one-rod implant"
+          },
+          {
+            "code": "646249",
             "display": "Etonogestrel (ETG) one-rod implant"
           },
           {

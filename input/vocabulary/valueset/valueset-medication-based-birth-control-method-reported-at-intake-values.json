@@ -26,7 +26,11 @@
             "display": "Norethisterone enanthate (NET-EN) injectable"
           },
           {
-            "code": "702587005; 275813002",
+            "code": "702587005",
+            "display": "Emergency contraceptive pills (ECPs)"
+          },
+          {
+            "code": "275813002",
             "display": "Emergency contraceptive pills (ECPs)"
           },
           {

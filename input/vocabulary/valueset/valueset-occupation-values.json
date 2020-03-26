@@ -27,15 +27,6 @@
         "system": "http://who.int/cg/CodeSystem/extended-content",
         "concept": [
           {
-            "code": "Sex Worker",
-            "display": "Informal employment (sex worker)"
-          }
-        ]
-      },
-      {
-        "system": "http://www.who.int/fhir/CodeSystem/core-codes",
-        "concept": [
-          {
             "code": "Other",
             "display": "Other (specify)"
           }

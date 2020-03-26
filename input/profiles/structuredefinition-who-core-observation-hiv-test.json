@@ -37,6 +37,18 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.method",
         "path": "Observation.method",
         "min": 0,

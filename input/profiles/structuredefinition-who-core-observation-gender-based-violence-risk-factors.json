@@ -21,8 +21,8 @@
         "mustSupport": false
       },
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
         "min": 0,
         "max": "*",
         "type": [

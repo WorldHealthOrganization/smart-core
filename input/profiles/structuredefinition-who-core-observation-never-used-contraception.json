@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "who-core-observation-ever-used-contraception",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-ever-used-contraception",
-  "name": "who-core-observation-ever-used-contraception",
-  "title": "who-core-observation-ever-used-contraception",
+  "id": "who-core-observation-never-used-contraception",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-never-used-contraception",
+  "name": "who-core-observation-never-used-contraception",
+  "title": "who-core-observation-never-used-contraception",
   "status": "draft",
   "experimental": false,
-  "description": "who-core-observation-ever-used-contraception",
+  "description": "who-core-observation-never-used-contraception",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -34,6 +34,18 @@
             }
           ]
         },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
         "mustSupport": true
       }
     ]
