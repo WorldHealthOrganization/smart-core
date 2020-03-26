@@ -11,24 +11,40 @@
   "compose": {
     "include": [
       {
-        "system": "http://snomed.info/sct",
+        "system": "http://who.int/cg/CodeSystem/extended-content",
         "concept": [
           {
-            "code": "409516001",
-            "display": "PrEP"
-          }
-        ]
-      },
-      {
-        "system": "http://www.who.int/fhir/CodeSystem/core-codes",
-        "concept": [
+            "code": "Don't know",
+            "display": "Don't know"
+          },
           {
-            "code": "Other",
+            "code": "STI medication",
+            "display": "STI medication"
+          },
+          {
+            "code": "Other Antibiotics",
             "display": "Other antibiotics"
           },
           {
             "code": "Other",
             "display": "Other (specify)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "788081006",
+            "display": "Antivirals"
+          },
+          {
+            "code": "788075003",
+            "display": "Antiretrovirals"
+          },
+          {
+            "code": "409516001",
+            "display": "PrEP"
           }
         ]
       }

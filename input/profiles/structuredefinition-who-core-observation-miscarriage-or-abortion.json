@@ -28,9 +28,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://hl7.org/fhir/sid/icd-10",
-              "code": "003.9",
-              "display": "Date of miscarriage or abortion (ICD-10-WHO)"
+              "system": "http://loinc.org",
+              "code": "LA14272-1",
+              "display": "Date of miscarriage or abortion (LOINC)"
             }
           ]
         },
