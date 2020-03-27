@@ -28,7 +28,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/device-based-birth-control-method-reported-at-intake-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/devicebirthcontrolmethods-values"
         }
       },
       {

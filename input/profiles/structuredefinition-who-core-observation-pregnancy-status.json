@@ -49,7 +49,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/pregnancy-status-values"
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/pregnancystatus-values"
         }
       }
     ]
