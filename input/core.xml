@@ -29,28 +29,33 @@
       <page>
         <nameUrl value="profiles.html" />
         <title value="Profiles" />
-        <generation value="markdown" />
+        <generation value="html" />
+      </page>
+      <page>
+        <nameUrl value="extensions.html" />
+        <title value="Extensions" />
+        <generation value="html" />
       </page>
       <page>
         <nameUrl value="terminology.html" />
         <title value="Terminology" />
-        <generation value="markdown" />
+        <generation value="html" />
       </page>
-      <page>
+      <!-- <page>
         <nameUrl value="examples.html" />
         <title value="Examples" />
-        <generation value="markdown" />
+        <generation value="html" />
       </page>
       <page>
         <nameUrl value="test.html" />
         <title value="Test Data" />
         <generation value="markdown" />
-      </page>
-      <page>
+      </page> -->
+      <!-- <page>
         <nameUrl value="documentation.html" />
         <title value="Documentation" />
         <generation value="markdown" />
-      </page>
+      </page> -->
       <page>
         <nameUrl value="downloads.html" />
         <title value="Downloads" />

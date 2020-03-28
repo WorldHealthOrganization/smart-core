@@ -3,10 +3,11 @@
   <li><a href="toc.html">Table of Contents</a></li>
   <li><a href="artifacts.html">Artifact Index</a></li>
   <li><a href="profiles.html">Profiles</a></li>
+  <li><a href="extensions.html">Extensions</a></li>
   <li><a href="terminology.html">Terminology</a></li>
-  <li><a href="examples.html">Examples</a></li>
+  <!-- <li><a href="examples.html">Examples</a></li>
   <li><a href="test.html">Test Data</a></li>
-  <li><a href="documentation.html">Documentation</a></li>
+  <li><a href="documentation.html">Documentation</a></li> -->
   <li><a href="downloads.html">Downloads</a></li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">

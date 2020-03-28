@@ -1,3 +1,5 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
+
 The following are examples for the WHO Core:
 
 {% include list-simple-careplans.xhtml %}
@@ -6,3 +8,4 @@ The following are examples for the WHO Core:
 {% include list-simple-observations.xhtml %}
 {% include list-simple-patients.xhtml %}
 {% include list-simple-requestgroups.xhtml %}
+</div>
