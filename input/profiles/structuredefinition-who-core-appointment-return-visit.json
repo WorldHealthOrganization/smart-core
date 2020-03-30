@@ -1,0 +1,37 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-appointment-return-visit",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-appointment-return-visit",
+  "name": "who-core-appointment-return-visit",
+  "title": "who-core-appointment-return-visit",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-appointment-return-visit",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment",
+        "path": "Appointment",
+        "mustSupport": false
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "instant"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

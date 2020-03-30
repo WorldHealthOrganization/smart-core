@@ -1,0 +1,86 @@
+{
+  "resourceType": "ValueSet",
+  "id": "medicationbirthcontrolmethods-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/medicationbirthcontrolmethods-values",
+  "name": "medicationbirthcontrolmethods-values",
+  "title": "Medication-based Birth control method reported at intake values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Medication-based Birth control method reported at intake element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "169450001",
+            "display": "No Medication-based method"
+          },
+          {
+            "code": "709457002",
+            "display": "DMPA-SC \nDMPA, administered subcutaneously"
+          },
+          {
+            "code": "782025007",
+            "display": "Norethisterone enanthate (NET-EN) injectable"
+          },
+          {
+            "code": "702587005",
+            "display": "Emergency contraceptive pills (ECPs)"
+          },
+          {
+            "code": "275813002",
+            "display": "Emergency contraceptive pills (ECPs)"
+          },
+          {
+            "code": "169467008",
+            "display": "Progestogen-only pills (POP)"
+          },
+          {
+            "code": "268458002",
+            "display": "Combined oral contraceptives (COCs)"
+          },
+          {
+            "code": "89780004",
+            "display": "Combined injectable contraception"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA27907-7",
+            "display": "DMPA-IM \n DMPA, administered intramuscularly"
+          },
+          {
+            "code": "LA16573-0",
+            "display": "Emergency contraceptive pills (ECPs)"
+          },
+          {
+            "code": "LA27909-3",
+            "display": "Progestogen-only pills (POP)"
+          },
+          {
+            "code": "LA27908-5",
+            "display": "Combined oral contraceptives (COCs)"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "1359235",
+            "display": "Norethisterone enanthate (NET-EN) injectable"
+          },
+          {
+            "code": "483325",
+            "display": "Emergency contraceptive pills (ECPs)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "occupation-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/occupation-values",
+  "name": "occupation-values",
+  "title": "Occupation values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Occupation element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "73438004",
+            "display": "Unemployed"
+          },
+          {
+            "code": "224363007",
+            "display": "Formal employment"
+          }
+        ]
+      },
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Other",
+            "display": "Other (specify)"
+          }
+        ]
+      }
+    ]
+  }
+}

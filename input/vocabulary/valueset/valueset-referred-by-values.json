@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "id": "referred-by-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/referred-by-values",
+  "name": "referred-by-values",
+  "title": "Referred by values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Referred by element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Community",
+            "display": "Community"
+          },
+          {
+            "code": "Facility",
+            "display": "Facility"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "309015008",
+            "display": "Facility"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-deviceusestatement-prior-contraceptive-methods",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-deviceusestatement-prior-contraceptive-methods",
+  "name": "who-core-deviceusestatement-prior-contraceptive-methods",
+  "title": "who-core-deviceusestatement-prior-contraceptive-methods",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-deviceusestatement-prior-contraceptive-methods",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceUseStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceUseStatement",
+        "path": "DeviceUseStatement",
+        "mustSupport": false
+      },
+      {
+        "id": "DeviceUseStatement.device.type",
+        "path": "DeviceUseStatement.device.type",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "ValueSet",
+  "id": "payment-method-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/payment-method-values",
+  "name": "payment-method-values",
+  "title": "Payment method values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Payment method element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "G",
+            "display": "Government"
+          },
+          {
+            "code": "I",
+            "display": "Insurance"
+          }
+        ]
+      }
+    ]
+  }
+}

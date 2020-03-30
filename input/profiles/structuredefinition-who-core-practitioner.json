@@ -1,0 +1,49 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-practitioner",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-practitioner",
+  "name": "who-core-practitioner",
+  "title": "who-core-practitioner",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-practitioner",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner",
+        "path": "Practitioner",
+        "mustSupport": false
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Address"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

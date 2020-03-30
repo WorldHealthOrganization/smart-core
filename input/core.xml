@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="core" />
+  <url value="http://fhir.org/guides/who/core/ImplementationGuide/core" />
+  <version value="0.1.0" />
+  <name value="Core" />
+  <title value="WHO Core Implementation Guide" />
+  <status value="draft" />
+  <experimental value="false" />
+  <date value="2017-02-06" />
+  <publisher value="World Health Organization (WHO)" />
+  <description value="WHO Core Implementation Guide" />
+  <packageId value="fhir.who.core" />
+  <license value="CC0-1.0" />
+  <fhirVersion value="4.0.1" />
+  <definition>
+    <grouping>
+      <name value="WHO Core Implementation Guide Package" />
+    </grouping>
+    <page>
+      <nameUrl value="toc.html" />
+      <title value="Table of Contents" />
+      <generation value="html" />
+      <page>
+        <nameUrl value="index.html" />
+        <title value="Home" />
+        <generation value="markdown" />
+      </page>
+      <page>
+        <nameUrl value="profiles.html" />
+        <title value="Profiles" />
+        <generation value="html" />
+      </page>
+      <page>
+        <nameUrl value="extensions.html" />
+        <title value="Extensions" />
+        <generation value="html" />
+      </page>
+      <page>
+        <nameUrl value="terminology.html" />
+        <title value="Terminology" />
+        <generation value="html" />
+      </page>
+      <!-- <page>
+        <nameUrl value="examples.html" />
+        <title value="Examples" />
+        <generation value="html" />
+      </page>
+      <page>
+        <nameUrl value="test.html" />
+        <title value="Test Data" />
+        <generation value="markdown" />
+      </page> -->
+      <!-- <page>
+        <nameUrl value="documentation.html" />
+        <title value="Documentation" />
+        <generation value="markdown" />
+      </page> -->
+      <page>
+        <nameUrl value="downloads.html" />
+        <title value="Downloads" />
+        <generation value="markdown" />
+      </page>
+    </page>
+    <!-- copyright year is a mandatory parameter -->
+    <parameter>
+      <code value="copyrightyear" />
+      <value value="2019+" />
+    </parameter>
+    <!-- releaselabel should be the ballot status for HL7-published IGs. -->
+    <parameter>
+      <code value="releaselabel" />
+      <value value="CI Build" />
+    </parameter>
+    <parameter>
+      <code value="find-other-resources" />
+      <value value="true" />
+    </parameter>
+    <parameter>
+      <code value="find-other-resources" />
+      <value value="true" />
+    </parameter>
+    <parameter>
+      <code value="path-pages" />
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/activitydefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/capabilitystatement"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/library"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/measure"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/plandefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/resources/questionnaire"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/vocabulary/codesystem"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource" />
+      <value value="input/vocabulary/valueset"/>
+    </parameter>
+    <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
+     <parameter>
+       <code value="excludexml"/>
+       <value value="true"/>
+     </parameter>
+     <parameter>
+       <code value="excludejson"/>
+       <value value="true"/>
+     </parameter>
+     <parameter>
+       <code value="excludettl"/>
+       <value value="true"/>
+     </parameter>
+     <parameter>
+       <code value="excludemap"/>
+       <value value="true"/>
+     </parameter>-->
+  </definition>
+</ImplementationGuide>

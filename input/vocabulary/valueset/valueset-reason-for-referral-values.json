@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "id": "reason-for-referral-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/reason-for-referral-values",
+  "name": "reason-for-referral-values",
+  "title": "Reason for referral values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Reason for referral element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "86395003",
+            "display": "Family planning procedure"
+          },
+          {
+            "code": "305930006",
+            "display": "Family planning procedure"
+          },
+          {
+            "code": "306228005",
+            "display": "Screening referral"
+          },
+          {
+            "code": "306206005",
+            "display": "Other referral"
+          }
+        ]
+      }
+    ]
+  }
+}

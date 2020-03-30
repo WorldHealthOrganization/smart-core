@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "visit-type-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/visit-type-values",
+  "name": "visit-type-values",
+  "title": "Visit type values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Visit type element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Returning Client",
+            "display": "Returning client"
+          },
+          {
+            "code": "Referral",
+            "display": "Referral"
+          },
+          {
+            "code": "New Client",
+            "display": "New client"
+          },
+          {
+            "code": "First visit for symptoms",
+            "display": "First visit for symptoms"
+          },
+          {
+            "code": "STI Follow up",
+            "display": "Follow up for STI management"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0276",
+        "concept": [
+          {
+            "code": "FOLLOWUP",
+            "display": "Follow up appointment"
+          }
+        ]
+      }
+    ]
+  }
+}

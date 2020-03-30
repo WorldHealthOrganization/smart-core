@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "procedure-based-birth-control-method-reported-at-intake-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/procedure-based-birth-control-method-reported-at-intake-values",
+  "name": "procedure-based-birth-control-method-reported-at-intake-values",
+  "title": "Procedure-based Birth control method reported at intake values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Procedure-based Birth control method reported at intake element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "169450001",
+            "display": "No Procedure-based method"
+          },
+          {
+            "code": "275572005",
+            "display": "Female sterilization"
+          },
+          {
+            "code": "60890002",
+            "display": "Female sterilization"
+          },
+          {
+            "code": "22523008",
+            "display": "Male sterilization"
+          },
+          {
+            "code": "399141000",
+            "display": "Male sterilization"
+          }
+        ]
+      },
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA27905-1",
+            "display": "Female sterilization"
+          },
+          {
+            "code": "LA14534-4",
+            "display": "Male sterilization"
+          }
+        ]
+      }
+    ]
+  }
+}

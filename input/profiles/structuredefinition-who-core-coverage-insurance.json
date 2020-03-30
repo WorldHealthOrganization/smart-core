@@ -1,0 +1,76 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-coverage-insurance",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-coverage-insurance",
+  "name": "who-core-coverage-insurance",
+  "title": "who-core-coverage-insurance",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-coverage-insurance",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Coverage",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Coverage",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Coverage",
+        "path": "Coverage",
+        "mustSupport": false
+      },
+      {
+        "id": "Coverage.extension:method",
+        "path": "Coverage.extension",
+        "sliceName": "method",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/payment-method"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.status",
+        "path": "Coverage.status",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Coverage.subscriberID",
+        "path": "Coverage.subscriberID",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Coverage.type",
+        "path": "Coverage.type",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

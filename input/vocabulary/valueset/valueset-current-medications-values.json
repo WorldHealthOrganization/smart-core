@@ -1,0 +1,53 @@
+{
+  "resourceType": "ValueSet",
+  "id": "current-medications-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/current-medications-values",
+  "name": "current-medications-values",
+  "title": "Current medications values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Current medications element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Don't know",
+            "display": "Don't know"
+          },
+          {
+            "code": "STI medication",
+            "display": "STI medication"
+          },
+          {
+            "code": "Other Antibiotics",
+            "display": "Other antibiotics"
+          },
+          {
+            "code": "Other",
+            "display": "Other (specify)"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "788081006",
+            "display": "Antivirals"
+          },
+          {
+            "code": "788075003",
+            "display": "Antiretrovirals"
+          },
+          {
+            "code": "409516001",
+            "display": "PrEP"
+          }
+        ]
+      }
+    ]
+  }
+}

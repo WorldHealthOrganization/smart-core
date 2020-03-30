@@ -1,0 +1,48 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-core-deviceusestatement-intake-contraceptive-method",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method",
+  "name": "who-core-deviceusestatement-intake-contraceptive-method",
+  "title": "who-core-deviceusestatement-intake-contraceptive-method",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-core-deviceusestatement-intake-contraceptive-method",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceUseStatement",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceUseStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceUseStatement",
+        "path": "DeviceUseStatement",
+        "mustSupport": false
+      },
+      {
+        "id": "DeviceUseStatement.device.type",
+        "path": "DeviceUseStatement.device.type",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/devicebirthcontrolmethods-values"
+        }
+      },
+      {
+        "id": "DeviceUseStatement.timing[x]",
+        "path": "DeviceUseStatement.timing[x]",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

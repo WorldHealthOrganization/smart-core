@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "id": "highest-level-of-education-achieved-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/highest-level-of-education-achieved-values",
+  "name": "highest-level-of-education-achieved-values",
+  "title": "Highest level of education achieved values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Highest level of education achieved element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "NONE",
+            "display": "No education"
+          }
+        ]
+      }
+    ]
+  }
+}
