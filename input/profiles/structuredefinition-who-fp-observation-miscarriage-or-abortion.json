@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "who-fp-observation-miscarriage-or-abortion",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-fp-observation-miscarriage-or-abortion",
+  "name": "who-fp-observation-miscarriage-or-abortion",
+  "title": "who-fp-observation-miscarriage-or-abortion",
+  "status": "draft",
+  "experimental": false,
+  "description": "who-fp-observation-miscarriage-or-abortion",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "Miscarriage or abortion stage of pregnancy",
+        "mustSupport": false
+      },
+      {
+        "id": "Observation.extension:stage",
+        "path": "Observation.extension",
+        "sliceName": "stage",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/miscarriage-or-abortion-stage-of-pregnancy"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

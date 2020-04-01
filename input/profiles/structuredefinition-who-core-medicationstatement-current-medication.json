@@ -51,7 +51,7 @@
         "id": "MedicationStatement.medication[x]",
         "path": "MedicationStatement.medication[x]",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "CodeableConcept"
@@ -62,6 +62,18 @@
           "strength": "extensible",
           "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/current-medications-values"
         }
+      },
+      {
+        "id": "MedicationStatement.medication[x].text",
+        "path": "MedicationStatement.medication[x].text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

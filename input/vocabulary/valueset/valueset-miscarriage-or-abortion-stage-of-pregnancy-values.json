@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "id": "miscarriage-or-abortion-stage-of-pregnancy-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values",
+  "name": "miscarriage-or-abortion-stage-of-pregnancy-values",
+  "title": "Miscarriage or abortion stage of pregnancy values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Miscarriage or abortion stage of pregnancy element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LP208035-8",
+            "display": "First trimester"
+          },
+          {
+            "code": "LA21197-1",
+            "display": "Second trimester"
+          },
+          {
+            "code": "LA21198-9",
+            "display": "Immediate post-septic abortion"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "19169002",
+            "display": "First trimester"
+          },
+          {
+            "code": "255246003",
+            "display": "First trimester"
+          },
+          {
+            "code": "85116003",
+            "display": "Second trimester"
+          },
+          {
+            "code": "255247007",
+            "display": "Second trimester"
+          },
+          {
+            "code": "67465009",
+            "display": "Immediate post-septic abortion"
+          },
+          {
+            "code": "255248002",
+            "display": "Immediate post-septic abortion"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "O03.37",
+            "display": "Immediate post-septic abortion"
+          }
+        ]
+      }
+    ]
+  }
+}
