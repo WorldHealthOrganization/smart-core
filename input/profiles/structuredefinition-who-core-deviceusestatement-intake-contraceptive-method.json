@@ -18,6 +18,7 @@
       {
         "id": "DeviceUseStatement",
         "path": "DeviceUseStatement",
+        "short": "Implant Date",
         "mustSupport": false
       },
       {
@@ -34,6 +35,13 @@
       {
         "id": "DeviceUseStatement.timing[x]",
         "path": "DeviceUseStatement.timing[x]",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/sid/icd-10",
+            "code": "z30.430",
+            "display": "IUD Insertion Date (ICD-10-WHO)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [

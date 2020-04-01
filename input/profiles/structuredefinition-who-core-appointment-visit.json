@@ -18,6 +18,8 @@
       {
         "id": "Appointment",
         "path": "Appointment",
+        "short": "Visit Date",
+        "comment": "The encounter date may be system generated, but there is a requirement to be able to backenter data.",
         "mustSupport": false
       },
       {
@@ -39,6 +41,13 @@
       {
         "id": "Appointment.start",
         "path": "Appointment.start",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "76427-4",
+            "display": "Visit Date (LOINC)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [

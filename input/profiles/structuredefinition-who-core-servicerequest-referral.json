@@ -18,6 +18,8 @@
       {
         "id": "ServiceRequest",
         "path": "ServiceRequest",
+        "label": "referred_by",
+        "short": "Referred by",
         "mustSupport": false
       },
       {
@@ -35,6 +37,13 @@
       {
         "id": "ServiceRequest.category",
         "path": "ServiceRequest.category",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "134403003",
+            "display": "Emergency referral (SNOMED-CT)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [
@@ -75,6 +84,13 @@
       {
         "id": "ServiceRequest.occurrence[x]",
         "path": "ServiceRequest.occurrence[x]",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "57202-4",
+            "display": "Date of scheduled referral appointment (LOINC)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [

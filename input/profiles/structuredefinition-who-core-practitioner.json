@@ -18,6 +18,7 @@
       {
         "id": "Practitioner",
         "path": "Practitioner",
+        "short": "Provider ",
         "mustSupport": false
       },
       {

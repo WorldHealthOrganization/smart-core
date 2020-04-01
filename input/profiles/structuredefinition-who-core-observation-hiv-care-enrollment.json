@@ -18,27 +18,19 @@
       {
         "id": "Observation",
         "path": "Observation",
+        "short": "Enrollment date into HIV care",
         "mustSupport": false
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "min": 1,
-        "max": "1",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "45235-9",
-              "display": "Enrollment date into HIV care (LOINC)"
-            }
-          ]
-        },
-        "mustSupport": true
       },
       {
         "id": "Observation.effective[x]",
         "path": "Observation.effective[x]",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "45235-9",
+            "display": "Enrollment date into HIV care (LOINC)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "communication-consent",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent",
-  "name": "Communication consent",
   "title": "Communication consent",
   "status": "draft",
   "experimental": false,

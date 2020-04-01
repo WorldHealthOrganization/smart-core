@@ -18,23 +18,8 @@
       {
         "id": "Observation",
         "path": "Observation",
+        "short": "STI risk-assessment factors",
         "mustSupport": false
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "min": 1,
-        "max": "1",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "LA6508-1",
-              "display": "STI risk assessment factors (LOINC)"
-            }
-          ]
-        },
-        "mustSupport": true
       },
       {
         "id": "Observation.value[x]",
@@ -46,7 +31,11 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/sti-risk-assessment-factors-values"
+        }
       }
     ]
   }

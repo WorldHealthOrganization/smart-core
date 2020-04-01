@@ -29,6 +29,23 @@
           {
             "code": "165815009",
             "display": "Negative"
+          },
+          {
+            "code": "719727000",
+            "display": "Indeterminate"
+          },
+          {
+            "code": "719767004",
+            "display": "Indeterminate"
+          }
+        ]
+      },
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Other",
+            "display": "Other"
           }
         ]
       }

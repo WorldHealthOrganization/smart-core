@@ -18,6 +18,7 @@
       {
         "id": "Procedure",
         "path": "Procedure",
+        "short": "Prior methods used",
         "mustSupport": false
       },
       {

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "insurance-coverage",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-coverage",
-  "name": "Insurance coverage",
   "title": "Insurance coverage",
   "status": "draft",
   "experimental": false,

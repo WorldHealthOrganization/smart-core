@@ -18,6 +18,7 @@
       {
         "id": "CarePlan",
         "path": "CarePlan",
+        "short": "Prior methods used",
         "mustSupport": false
       },
       {

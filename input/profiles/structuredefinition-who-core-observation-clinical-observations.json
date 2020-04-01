@@ -18,6 +18,7 @@
       {
         "id": "Observation",
         "path": "Observation",
+        "short": "Clinical observations",
         "mustSupport": false
       },
       {

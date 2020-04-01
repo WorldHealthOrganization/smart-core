@@ -18,11 +18,19 @@
       {
         "id": "MedicationStatement",
         "path": "MedicationStatement",
+        "short": "Other (specify)",
         "mustSupport": false
       },
       {
         "id": "MedicationStatement.dosage",
         "path": "MedicationStatement.dosage",
+        "code": [
+          {
+            "system": "http://who.int/cg/CodeSystem/extended-content",
+            "code": "Antiretroviral regimen (date and dose)",
+            "display": "Antiretroviral regimen (date and dose) (FHIR)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [
@@ -51,7 +59,7 @@
         ],
         "mustSupport": true,
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/current-medications-values"
         }
       }

@@ -14,6 +14,14 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
+            "code": "103415007",
+            "display": "1"
+          },
+          {
+            "code": "103416008",
+            "display": "2"
+          },
+          {
             "code": "103417004",
             "display": "3"
           },

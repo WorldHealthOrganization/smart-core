@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "occupation",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/occupation",
-  "name": "Occupation",
+  "name": "WorkClassificationODH",
   "title": "Occupation",
   "status": "draft",
   "experimental": false,
@@ -17,6 +17,7 @@
       {
         "id": "Extension",
         "path": "Extension",
+        "label": "WorkClassificationODH",
         "short": "Occupation",
         "min": 0,
         "max": "1",
@@ -52,7 +53,7 @@
           }
         ],
         "binding": {
-          "strength": "required",
+          "strength": "extensible",
           "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/occupation-values"
         }
       }

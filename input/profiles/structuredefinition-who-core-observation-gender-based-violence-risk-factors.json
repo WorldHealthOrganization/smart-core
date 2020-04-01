@@ -18,6 +18,7 @@
       {
         "id": "Observation",
         "path": "Observation",
+        "short": "Gender-based violence risk factors",
         "mustSupport": false
       },
       {

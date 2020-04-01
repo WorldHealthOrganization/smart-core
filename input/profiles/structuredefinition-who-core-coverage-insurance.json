@@ -18,6 +18,8 @@
       {
         "id": "Coverage",
         "path": "Coverage",
+        "label": "Coverage.status",
+        "short": "Insurance status",
         "mustSupport": false
       },
       {

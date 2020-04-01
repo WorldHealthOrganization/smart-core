@@ -18,6 +18,7 @@
       {
         "id": "Patient",
         "path": "Patient",
+        "short": "Alternate contact relationship",
         "mustSupport": false
       },
       {
@@ -37,6 +38,13 @@
       {
         "id": "Patient.birthDate",
         "path": "Patient.birthDate",
+        "code": [
+          {
+            "system": "http://loinc.org",
+            "code": "21112-8",
+            "display": "Date of birth (LOINC)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [
@@ -233,6 +241,13 @@
       {
         "id": "Patient.name.family",
         "path": "Patient.name.family",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "184096005",
+            "display": "Client last name (SNOMED-CT)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "mustSupport": true

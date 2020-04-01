@@ -18,11 +18,19 @@
       {
         "id": "CarePlan",
         "path": "CarePlan",
+        "short": "Follow up contact recommended date",
         "mustSupport": false
       },
       {
         "id": "CarePlan.activity.detail.kind",
         "path": "CarePlan.activity.detail.kind",
+        "code": [
+          {
+            "system": "http://hl7.org/fhir/resource-types",
+            "code": "CommunicationRequest",
+            "display": "Follow up recommended (FHIR)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [

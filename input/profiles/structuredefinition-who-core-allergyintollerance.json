@@ -18,6 +18,7 @@
       {
         "id": "AllergyIntolerance",
         "path": "AllergyIntolerance",
+        "short": "Other (specify)",
         "mustSupport": false
       },
       {
@@ -33,15 +34,10 @@
         "mustSupport": true
       },
       {
-        "id": "AllergyIntolerance.note",
-        "path": "AllergyIntolerance.note",
+        "id": "AllergyIntolerance.code.text",
+        "path": "AllergyIntolerance.code.text",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "Annotation"
-          }
-        ],
         "mustSupport": true
       }
     ]

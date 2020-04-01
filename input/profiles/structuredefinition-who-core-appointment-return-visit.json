@@ -18,11 +18,19 @@
       {
         "id": "Appointment",
         "path": "Appointment",
+        "short": "Return Visit Appointment",
         "mustSupport": false
       },
       {
         "id": "Appointment.start",
         "path": "Appointment.start",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "185353001",
+            "display": "Return Visit Appointment (SNOMED-CT)"
+          }
+        ],
         "min": 0,
         "max": "1",
         "type": [

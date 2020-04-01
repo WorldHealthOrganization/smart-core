@@ -1,0 +1,65 @@
+{
+  "resourceType": "ValueSet",
+  "id": "sti-risk-assessment-factors-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/sti-risk-assessment-factors-values",
+  "name": "sti-risk-assessment-factors-values",
+  "title": "STI risk assessment factors values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the STI risk assessment factors element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "449344001",
+            "display": "Sex worker"
+          },
+          {
+            "code": "171128005",
+            "display": "Referral for STI screening"
+          },
+          {
+            "code": "228467001",
+            "display": "Casual sexual partner"
+          },
+          {
+            "code": "473386008",
+            "display": "No condom use during sex"
+          },
+          {
+            "code": "225516002",
+            "display": "Patient with multiple sexual partners"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "Z20.6",
+            "display": "Sex with HIV+ person"
+          },
+          {
+            "code": "z13.9",
+            "display": "Referral for STI screening"
+          },
+          {
+            "code": "Z72.51",
+            "display": "Patient with multiple sexual partners"
+          },
+          {
+            "code": "Z72.52",
+            "display": "Patient with multiple sexual partners"
+          },
+          {
+            "code": "Z72.53",
+            "display": "Patient with multiple sexual partners"
+          }
+        ]
+      }
+    ]
+  }
+}

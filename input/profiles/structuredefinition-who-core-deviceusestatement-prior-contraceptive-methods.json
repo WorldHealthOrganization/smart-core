@@ -18,6 +18,7 @@
       {
         "id": "DeviceUseStatement",
         "path": "DeviceUseStatement",
+        "short": "Contraceptive history",
         "mustSupport": false
       },
       {

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "reminder-messages",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages",
-  "name": "Reminder messages",
   "title": "Reminder messages",
   "status": "draft",
   "experimental": false,

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "payment-method",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/payment-method",
-  "name": "Payment method",
   "title": "Payment method",
   "status": "draft",
   "experimental": false,
@@ -18,6 +17,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Payment method",
+        "comment": "Look up if there's a FHIR LOV here",
         "min": 0,
         "max": "1"
       },

@@ -18,6 +18,8 @@
       {
         "id": "CarePlan",
         "path": "CarePlan",
+        "short": "Method at intake",
+        "comment": "Also used by MEC to check if a woman is initiating a new method or continuing with an existing method.",
         "mustSupport": false
       },
       {
