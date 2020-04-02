@@ -53,11 +53,6 @@
         "path": "Observation.method",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true
       },
       {

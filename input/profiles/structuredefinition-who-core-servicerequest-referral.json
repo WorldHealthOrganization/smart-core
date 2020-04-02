@@ -27,11 +27,6 @@
         "path": "ServiceRequest.authoredOn",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -46,11 +41,6 @@
         ],
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -58,11 +48,6 @@
         "path": "ServiceRequest.code",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -74,11 +59,6 @@
         "path": "ServiceRequest.locationReference",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -105,11 +85,6 @@
         "path": "ServiceRequest.requester",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "Reference"
-          }
-        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",

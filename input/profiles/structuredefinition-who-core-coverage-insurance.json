@@ -42,11 +42,6 @@
         "path": "Coverage.status",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -54,11 +49,6 @@
         "path": "Coverage.subscriberID",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -66,11 +56,6 @@
         "path": "Coverage.type",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true
       }
     ]

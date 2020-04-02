@@ -26,11 +26,6 @@
         "path": "Procedure.code",
         "min": 0,
         "max": "*",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",

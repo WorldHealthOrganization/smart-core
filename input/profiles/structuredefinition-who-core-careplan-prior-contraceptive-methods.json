@@ -26,11 +26,6 @@
         "path": "CarePlan.activity.detail.code",
         "min": 0,
         "max": "*",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true
       }
     ]

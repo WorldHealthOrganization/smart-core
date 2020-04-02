@@ -47,11 +47,6 @@
         ],
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "date"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -74,11 +69,6 @@
         "path": "Patient.communication.preferred",
         "min": 0,
         "max": "*",
-        "type": [
-          {
-            "code": "boolean"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -86,11 +76,6 @@
         "path": "Patient.contact.address",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "Address"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -98,11 +83,6 @@
         "path": "Patient.contact.name",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "HumanName"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -110,11 +90,6 @@
         "path": "Patient.contact.relationship",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -204,11 +179,6 @@
         "path": "Patient.gender",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "code"
-          }
-        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",
@@ -227,11 +197,6 @@
         "path": "Patient.maritalStatus",
         "min": 0,
         "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
         "mustSupport": true,
         "binding": {
           "strength": "required",
