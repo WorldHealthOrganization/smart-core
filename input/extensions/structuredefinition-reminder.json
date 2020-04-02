@@ -1,7 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "reminder-messages",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages",
+  "id": "reminder",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder",
+  "name": "reminder",
   "title": "Reminder messages",
   "status": "draft",
   "experimental": false,
@@ -31,7 +32,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages"
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder"
       },
       {
         "id": "Extension.value[x]",

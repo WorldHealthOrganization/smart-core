@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "highest-level-of-education-achieved",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved",
-  "name": "EducationLevel",
+  "id": "educationlevel",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/educationlevel",
+  "name": "educationLevel",
   "title": "Highest level of education achieved",
   "status": "draft",
   "experimental": false,
@@ -33,7 +33,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved"
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/educationlevel"
       },
       {
         "id": "Extension.value[x]",

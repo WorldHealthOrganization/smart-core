@@ -32,7 +32,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/payment-method"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/method"
             ]
           }
         ]

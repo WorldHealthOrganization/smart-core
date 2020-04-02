@@ -1,7 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "payment-method",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/payment-method",
+  "id": "method",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/method",
+  "name": "method",
   "title": "Payment method",
   "status": "draft",
   "experimental": false,
@@ -30,7 +31,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/payment-method"
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/method"
       },
       {
         "id": "Extension.value[x]",

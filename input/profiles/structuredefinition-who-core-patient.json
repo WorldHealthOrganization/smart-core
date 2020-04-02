@@ -64,7 +64,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder-messages"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder"
             ]
           }
         ]
@@ -149,7 +149,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/consenttocontact"
             ]
           }
         ]
@@ -164,7 +164,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/highest-level-of-education-achieved"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/educationlevel"
             ]
           }
         ]
@@ -179,7 +179,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimated-age"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimatedage"
             ]
           }
         ]
@@ -194,7 +194,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance-coverage"
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance"
             ]
           }
         ]

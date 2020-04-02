@@ -1,11 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "communication-consent",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent",
-  "title": "Communication consent",
+  "id": "insurance",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance",
+  "name": "insurance",
+  "title": "Insurance coverage",
   "status": "draft",
   "experimental": false,
-  "description": "Indication that client gave consent to be contacted",
+  "description": "Does the client have insurance coverage?",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -17,8 +18,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Communication consent",
-        "definition": "Indication that client gave consent to be contacted",
+        "short": "Insurance coverage",
+        "definition": "Does the client have insurance coverage?",
         "min": 0,
         "max": "1"
       },
@@ -31,13 +32,13 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/communication-consent"
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "short": "Communication consent",
-        "definition": "Indication that client gave consent to be contacted",
+        "short": "Insurance coverage",
+        "definition": "Does the client have insurance coverage?",
         "min": 1,
         "type": [
           {

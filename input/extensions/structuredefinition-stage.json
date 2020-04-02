@@ -1,7 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "miscarriage-or-abortion-stage-of-pregnancy",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/miscarriage-or-abortion-stage-of-pregnancy",
+  "id": "stage",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/stage",
+  "name": "stage",
   "title": "Miscarriage or abortion stage of pregnancy",
   "status": "draft",
   "experimental": false,
@@ -40,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/miscarriage-or-abortion-stage-of-pregnancy"
+        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/stage"
       },
       {
         "id": "Extension.value[x]",

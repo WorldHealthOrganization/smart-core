@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "occupation",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/occupation",
-  "name": "WorkClassificationODH",
+  "name": "Occupation",
   "title": "Occupation",
   "status": "draft",
   "experimental": false,
