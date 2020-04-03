@@ -28,8 +28,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.effectivedateTime",
-        "path": "Observation.effectivedateTime",
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
         "code": [
           {
             "system": "http://loinc.org",

@@ -33,27 +33,8 @@
         }
       },
       {
-        "id": "DeviceUseStatement.timingdateTime",
-        "path": "DeviceUseStatement.timingdateTime",
-        "code": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "428987008",
-            "display": "Implant Date (SNOMED-CT)"
-          }
-        ],
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "DeviceUseStatement.timingdateTime",
-        "path": "DeviceUseStatement.timingdateTime",
+        "id": "DeviceUseStatement.timingDateTime",
+        "path": "DeviceUseStatement.timingDateTime",
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10",

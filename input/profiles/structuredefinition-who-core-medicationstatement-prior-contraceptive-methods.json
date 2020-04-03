@@ -32,18 +32,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.medicationCodeableConcept",
-        "path": "MedicationStatement.medicationCodeableConcept",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ],
-        "mustSupport": true
       }
     ]
   }

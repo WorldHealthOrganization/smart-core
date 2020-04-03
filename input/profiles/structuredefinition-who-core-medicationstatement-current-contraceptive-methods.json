@@ -23,8 +23,8 @@
         "mustSupport": false
       },
       {
-        "id": "MedicationStatement.effectivedateTime",
-        "path": "MedicationStatement.effectivedateTime",
+        "id": "MedicationStatement.effectiveDateTime",
+        "path": "MedicationStatement.effectiveDateTime",
         "min": 0,
         "max": "1",
         "type": [

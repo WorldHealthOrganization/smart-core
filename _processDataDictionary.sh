@@ -2,7 +2,7 @@
 #DO NOT EDIT WITH WINDOWS
 tooling_jar=tooling-1.0.4-SNAPSHOT-jar-with-dependencies.jar
 input_cache_path=./input-cache
-datadictionary_filename="DD.xlsx"
+datadictionary_filename="WHO-DD.xlsx"
 datadictionary_sheetname="Master-1.0"
 scope="Core"
 

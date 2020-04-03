@@ -38,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueinteger",
-        "path": "Observation.valueinteger",
+        "id": "Observation.valueInteger",
+        "path": "Observation.valueInteger",
         "code": [
           {
             "system": "http://loinc.org",

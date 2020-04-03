@@ -77,8 +77,8 @@
         "mustSupport": true
       },
       {
-        "id": "ServiceRequest.occurrencedateTime",
-        "path": "ServiceRequest.occurrencedateTime",
+        "id": "ServiceRequest.occurrenceDateTime",
+        "path": "ServiceRequest.occurrenceDateTime",
         "code": [
           {
             "system": "http://loinc.org",

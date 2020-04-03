@@ -224,7 +224,7 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.telecom:Telecom1.value",
+        "id": "Patient.telecom.value",
         "path": "Patient.telecom.value",
         "min": 0,
         "max": "1",

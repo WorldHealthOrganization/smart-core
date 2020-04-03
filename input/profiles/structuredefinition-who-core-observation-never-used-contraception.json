@@ -39,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valueboolean",
-        "path": "Observation.valueboolean",
+        "id": "Observation.valueBoolean",
+        "path": "Observation.valueBoolean",
         "code": [
           {
             "system": "http://snomed.info/sct",

@@ -39,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.valuedateTime",
-        "path": "Observation.valuedateTime",
+        "id": "Observation.valueDateTime",
+        "path": "Observation.valueDateTime",
         "code": [
           {
             "system": "http://snomed.info/sct",
