@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-deviceusestatement-intake-contraceptive-method",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method",
-  "title": "Implant Date",
+  "name": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)",
+  "title": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)",
   "status": "draft",
   "experimental": false,
   "description": "Date of last implant if currently using the method. ",
@@ -32,8 +33,27 @@
         }
       },
       {
-        "id": "DeviceUseStatement.timing[x]",
-        "path": "DeviceUseStatement.timing[x]",
+        "id": "DeviceUseStatement.timingdateTime",
+        "path": "DeviceUseStatement.timingdateTime",
+        "code": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "428987008",
+            "display": "Implant Date (SNOMED-CT)"
+          }
+        ],
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceUseStatement.timingdateTime",
+        "path": "DeviceUseStatement.timingdateTime",
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10",

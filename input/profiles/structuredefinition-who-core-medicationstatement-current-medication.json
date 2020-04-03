@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-current-medication",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medicationstatement-current-medication",
-  "title": "Other (specify)",
+  "name": "WHO-Core MedicationStatement (Current Medication)",
+  "title": "WHO-Core MedicationStatement (Current Medication)",
   "status": "draft",
   "experimental": false,
   "description": "Write in the medication not included in the list.",
@@ -35,15 +36,20 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.effective[x]",
-        "path": "MedicationStatement.effective[x]",
+        "id": "MedicationStatement.effectivedateTime",
+        "path": "MedicationStatement.effectivedateTime",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.medication[x]",
-        "path": "MedicationStatement.medication[x]",
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
         "min": 0,
         "max": "*",
         "type": [
@@ -58,8 +64,8 @@
         }
       },
       {
-        "id": "MedicationStatement.medication[x].text",
-        "path": "MedicationStatement.medication[x].text",
+        "id": "MedicationStatement.medicationstring.text",
+        "path": "MedicationStatement.medicationstring.text",
         "min": 0,
         "max": "1",
         "type": [

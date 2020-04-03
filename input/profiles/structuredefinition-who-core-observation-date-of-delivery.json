@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-date-of-delivery",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-date-of-delivery",
-  "title": "Date of delivery",
+  "name": "WHO-Core Observation (Date of Delivery)",
+  "title": "WHO-Core Observation (Date of Delivery)",
   "status": "draft",
   "experimental": false,
   "description": "For a postpartum woman, the date she recently delivered.",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valuedateTime",
+        "path": "Observation.valuedateTime",
         "code": [
           {
             "system": "http://loinc.org",

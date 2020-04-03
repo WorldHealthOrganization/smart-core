@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-time-postpartum",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-time-postpartum",
-  "title": "Time postpartum",
+  "name": "WHO-Core Observation (Time Postpartum)",
+  "title": "WHO-Core Observation (Time Postpartum)",
   "status": "draft",
   "experimental": false,
   "description": "For a postpartum woman, the amount of time since she delivered.",
@@ -38,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "code": [
           {
             "system": "http://snomed.info/sct",

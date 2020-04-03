@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-gender-based-violence-victim",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-gender-based-violence-victim",
-  "title": "Gender-based violence victim",
+  "name": "WHO-Core Observation (Gender-based Violence Victim)",
+  "title": "WHO-Core Observation (Gender-based Violence Victim)",
   "status": "draft",
   "experimental": false,
   "description": "History of exposure to gender-based violence",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueboolean",
+        "path": "Observation.valueboolean",
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10",

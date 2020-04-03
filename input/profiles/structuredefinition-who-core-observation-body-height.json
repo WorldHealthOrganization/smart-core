@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-body-height",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-body-height",
-  "title": "Body height",
+  "name": "WHO-Core Observation (Body Height)",
+  "title": "WHO-Core Observation (Body Height)",
   "status": "draft",
   "experimental": false,
   "description": "The client's height in centimetres.",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "code": [
           {
             "system": "http://loinc.org",

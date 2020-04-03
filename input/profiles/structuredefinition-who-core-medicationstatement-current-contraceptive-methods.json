@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-current-contraceptive-methods",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medicationstatement-current-contraceptive-methods",
-  "title": "Method at intake",
+  "name": "WHO-Core MedicationStatement (Current Contraceptive Methods)",
+  "title": "WHO-Core MedicationStatement (Current Contraceptive Methods)",
   "status": "draft",
   "experimental": false,
   "description": "Method the client reports currently using at intake. ",
@@ -22,8 +23,8 @@
         "mustSupport": false
       },
       {
-        "id": "MedicationStatement.effective[x]",
-        "path": "MedicationStatement.effective[x]",
+        "id": "MedicationStatement.effectivedateTime",
+        "path": "MedicationStatement.effectivedateTime",
         "min": 0,
         "max": "1",
         "type": [
@@ -34,8 +35,8 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.medication[x]",
-        "path": "MedicationStatement.medication[x]",
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
         "min": 0,
         "max": "*",
         "type": [

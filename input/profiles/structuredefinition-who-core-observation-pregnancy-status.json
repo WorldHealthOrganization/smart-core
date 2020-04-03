@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-pregnancy-status",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-pregnancy-status",
-  "title": "Pregnancy status",
+  "name": "WHO-Core Observation (Pregnancy Status)",
+  "title": "WHO-Core Observation (Pregnancy Status)",
   "status": "draft",
   "experimental": false,
   "description": "Pregnancy status at visit",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [

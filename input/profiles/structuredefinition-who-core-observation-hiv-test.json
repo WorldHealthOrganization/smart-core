@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-test",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-test",
-  "title": "HIV Test Result ",
+  "name": "WHO-Core Observation (HIV Test)",
+  "title": "WHO-Core Observation (HIV Test)",
   "status": "draft",
   "experimental": false,
   "description": "HIV status of client or not known.",
@@ -29,8 +30,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
+        "id": "Observation.effectivedateTime",
+        "path": "Observation.effectivedateTime",
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10",
@@ -55,8 +56,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [

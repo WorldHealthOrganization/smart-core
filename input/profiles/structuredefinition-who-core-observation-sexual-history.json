@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-sexual-history",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-sexual-history",
-  "title": "Ever had sex - Reported",
+  "name": "WHO-Core Observation (Sexual History)",
+  "title": "WHO-Core Observation (Sexual History)",
   "status": "draft",
   "experimental": false,
   "description": "If the client has been sexually active",
@@ -38,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueboolean",
+        "path": "Observation.valueboolean",
         "code": [
           {
             "system": "http://snomed.info/sct",

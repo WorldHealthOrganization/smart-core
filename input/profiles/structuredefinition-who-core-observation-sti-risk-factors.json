@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-sti-risk-factors",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-sti-risk-factors",
-  "title": "STI risk-assessment factors",
+  "name": "WHO-Core Observation (STI Risk Factors)",
+  "title": "WHO-Core Observation (STI Risk Factors)",
   "status": "draft",
   "experimental": false,
   "description": "STI risk factors relevant to the population (e.g., sexually active, new partner in the past three months, partner has an STI, etc.)",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [

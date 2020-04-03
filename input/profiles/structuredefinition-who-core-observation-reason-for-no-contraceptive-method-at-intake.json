@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-reason-for-no-contraceptive-method-at-intake",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake",
-  "title": "Reason for no contraceptive method - Reported at intake",
+  "name": "WHO-Core Observation (Reason for no contraceptive method at intake)",
+  "title": "WHO-Core Observation (Reason for no contraceptive method at intake)",
   "status": "draft",
   "experimental": false,
   "description": "If not currently using a method, the reason why.",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "*",
         "type": [

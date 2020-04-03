@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-status",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-status",
-  "title": "HIV Status",
+  "name": "WHO-Core Observation (HIV Status)",
+  "title": "WHO-Core Observation (HIV Status)",
   "status": "draft",
   "experimental": false,
   "description": "Finding of human immunodeficiency virus status",
@@ -38,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "code": [
           {
             "system": "http://snomed.info/sct",

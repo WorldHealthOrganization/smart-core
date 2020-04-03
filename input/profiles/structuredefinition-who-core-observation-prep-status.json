@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-prep-status",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-prep-status",
-  "title": "PrEP status",
+  "name": "WHO-Core Observation (PrEP Status)",
+  "title": "WHO-Core Observation (PrEP Status)",
   "status": "draft",
   "experimental": false,
   "fhirVersion": "4.0.1",
@@ -36,8 +37,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "code": [
           {
             "system": "http://who.int/cg/CodeSystem/extended-content",

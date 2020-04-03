@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-temperature",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-temperature",
-  "title": "Temperature",
+  "name": "WHO-Core Observation (Temperature)",
+  "title": "WHO-Core Observation (Temperature)",
   "status": "draft",
   "experimental": false,
   "description": "Temperature of the client in Celsius",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueQuantity",
+        "path": "Observation.valueQuantity",
         "code": [
           {
             "system": "http://loinc.org",

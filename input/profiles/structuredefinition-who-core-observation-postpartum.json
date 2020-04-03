@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-postpartum",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-postpartum",
-  "title": "Postpartum",
+  "name": "WHO-Core Observation (Postpartum)",
+  "title": "WHO-Core Observation (Postpartum)",
   "status": "draft",
   "experimental": false,
   "description": "Whether client delivered in the past 6 weeks.",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueboolean",
+        "path": "Observation.valueboolean",
         "code": [
           {
             "system": "http://loinc.org",

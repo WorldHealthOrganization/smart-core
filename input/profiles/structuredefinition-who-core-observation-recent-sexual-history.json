@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-recent-sexual-history",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-recent-sexual-history",
-  "title": "Recent unprotected sexual intercourse",
+  "name": "WHO-Core Observation (Recent Sexual History)",
+  "title": "WHO-Core Observation (Recent Sexual History)",
   "status": "draft",
   "experimental": false,
   "description": "Unprotected sexual intercourse",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueboolean",
+        "path": "Observation.valueboolean",
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10",

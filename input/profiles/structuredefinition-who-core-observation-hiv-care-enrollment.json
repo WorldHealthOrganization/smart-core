@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-care-enrollment",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-care-enrollment",
-  "title": "Enrollment date into HIV care",
+  "name": "WHO-Core Observation (HIV Care Enrollment)",
+  "title": "WHO-Core Observation (HIV Care Enrollment)",
   "status": "draft",
   "experimental": false,
   "fhirVersion": "4.0.1",
@@ -27,8 +28,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.effective[x]",
-        "path": "Observation.effective[x]",
+        "id": "Observation.effectivedateTime",
+        "path": "Observation.effectivedateTime",
         "code": [
           {
             "system": "http://loinc.org",

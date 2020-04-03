@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-number-of-births",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-number-of-births",
-  "title": "Number of births",
+  "name": "WHO-Core Observation (Number of births)",
+  "title": "WHO-Core Observation (Number of births)",
   "status": "draft",
   "experimental": false,
   "description": "The number of pregnancies reaching parity.",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueinteger",
+        "path": "Observation.valueinteger",
         "code": [
           {
             "system": "http://loinc.org",

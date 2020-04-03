@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-never-used-contraception",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-never-used-contraception",
-  "title": "Never used contraception",
+  "name": "WHO-Core Observation (Never used contraception)",
+  "title": "WHO-Core Observation (Never used contraception)",
   "status": "draft",
   "experimental": false,
   "description": "If the client has never previously used any modern method of contraception.",
@@ -38,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueboolean",
+        "path": "Observation.valueboolean",
         "code": [
           {
             "system": "http://snomed.info/sct",

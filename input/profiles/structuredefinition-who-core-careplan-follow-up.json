@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-careplan-follow-up",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-careplan-follow-up",
-  "title": "Follow up contact recommended date",
+  "name": "WHO-Core CarePlan (Follow-up)",
+  "title": "WHO-Core CarePlan (Follow-up)",
   "status": "draft",
   "experimental": false,
   "description": "A follow up outreach to the client is recommended",
@@ -35,8 +36,8 @@
         "mustSupport": true
       },
       {
-        "id": "CarePlan.activity.detail.scheduled[x]",
-        "path": "CarePlan.activity.detail.scheduled[x]",
+        "id": "CarePlan.activity.detail.scheduledTiming",
+        "path": "CarePlan.activity.detail.scheduledTiming",
         "min": 0,
         "max": "1",
         "type": [

@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-number-of-pregnancies",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-number-of-pregnancies",
-  "title": "Number of pregnancies",
+  "name": "WHO-Core Observation (Number of Pregnancies)",
+  "title": "WHO-Core Observation (Number of Pregnancies)",
   "status": "draft",
   "experimental": false,
   "description": "The number of pregnancies (gravidity), current and past, regardless of pregnancy outcome.",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueinteger",
+        "path": "Observation.valueinteger",
         "code": [
           {
             "system": "http://loinc.org",

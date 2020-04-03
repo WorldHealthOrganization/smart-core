@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-days-since-unprotected-sex",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-days-since-unprotected-sex",
-  "title": "Days since unprotected sex",
+  "name": "WHO-Core Observation (Days since Unprotected Sex)",
+  "title": "WHO-Core Observation (Days since Unprotected Sex)",
   "status": "draft",
   "experimental": false,
   "description": "Days since unprotected sex",
@@ -38,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valuedateTime",
+        "path": "Observation.valuedateTime",
         "code": [
           {
             "system": "http://snomed.info/sct",

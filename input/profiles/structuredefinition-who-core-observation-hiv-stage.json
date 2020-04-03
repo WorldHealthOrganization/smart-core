@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-stage",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-stage",
-  "title": "HIV Stage",
+  "name": "WHO-Core Observation (HIV Stage)",
+  "title": "WHO-Core Observation (HIV Stage)",
   "status": "draft",
   "experimental": false,
   "description": "WHO HIV clinical stage",
@@ -38,8 +39,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueCodeableConcept",
+        "path": "Observation.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [

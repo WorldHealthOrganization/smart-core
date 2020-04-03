@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-sexually-active",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-sexually-active",
-  "title": "Sexually active",
+  "name": "WHO-Core Observation (Sexually Active)",
+  "title": "WHO-Core Observation (Sexually Active)",
   "status": "draft",
   "experimental": false,
   "description": "Whether or not the client is sexually active. ",
@@ -37,8 +38,8 @@
         "mustSupport": true
       },
       {
-        "id": "Observation.value[x]",
-        "path": "Observation.value[x]",
+        "id": "Observation.valueboolean",
+        "path": "Observation.valueboolean",
         "code": [
           {
             "system": "http://loinc.org",

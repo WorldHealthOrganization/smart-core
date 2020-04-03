@@ -2,8 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-servicerequest-referral",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-servicerequest-referral",
-  "name": "referred_by",
-  "title": "Referred by",
+  "name": "WHO-Core ServiceRequest (Referral)",
+  "title": "WHO-Core ServiceRequest (Referral)",
   "status": "draft",
   "experimental": false,
   "description": "How the client was referred",
@@ -55,6 +55,21 @@
         }
       },
       {
+        "id": "ServiceRequest.extension:requesterType",
+        "path": "ServiceRequest.extension",
+        "sliceName": "requesterType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/requestertype"
+            ]
+          }
+        ]
+      },
+      {
         "id": "ServiceRequest.locationReference",
         "path": "ServiceRequest.locationReference",
         "min": 0,
@@ -62,8 +77,8 @@
         "mustSupport": true
       },
       {
-        "id": "ServiceRequest.occurrence[x]",
-        "path": "ServiceRequest.occurrence[x]",
+        "id": "ServiceRequest.occurrencedateTime",
+        "path": "ServiceRequest.occurrencedateTime",
         "code": [
           {
             "system": "http://loinc.org",
@@ -79,17 +94,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "ServiceRequest.requester",
-        "path": "ServiceRequest.requester",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/referred-by-values"
-        }
       }
     ]
   }

@@ -2,7 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-prior-contraceptive-methods",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medicationstatement-prior-contraceptive-methods",
-  "title": "Contraceptive history",
+  "name": "WHO-Core MedicationStatement (Prior Contraceptive Methods)",
+  "title": "WHO-Core MedicationStatement (Prior Contraceptive Methods)",
   "status": "draft",
   "experimental": false,
   "description": "Reported use of method at intake",
@@ -21,8 +22,20 @@
         "mustSupport": false
       },
       {
-        "id": "MedicationStatement.medication[x]",
-        "path": "MedicationStatement.medication[x]",
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.medicationCodeableConcept",
+        "path": "MedicationStatement.medicationCodeableConcept",
         "min": 0,
         "max": "*",
         "type": [
