@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "id": "drug-allergies-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/drug-allergies-values",
+  "name": "drug-allergies-values",
+  "title": "Drug allergies values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Drug allergies element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "la32-8",
+            "display": "None"
+          },
+          {
+            "code": "la12688-0",
+            "display": "Don't know"
+          }
+        ]
+      },
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "concept": [
+          {
+            "code": "70618",
+            "display": "Penicillin"
+          },
+          {
+            "code": "117466",
+            "display": "PrEP tenofovir disoproxil fumarate"
+          }
+        ]
+      },
+      {
+        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "concept": [
+          {
+            "code": "Other",
+            "display": "Other"
+          }
+        ]
+      }
+    ]
+  }
+}

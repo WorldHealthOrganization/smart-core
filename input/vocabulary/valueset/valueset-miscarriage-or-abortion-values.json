@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "id": "miscarriage-or-abortion-values",
+  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/miscarriage-or-abortion-values",
+  "name": "miscarriage-or-abortion-values",
+  "title": "Miscarriage or Abortion values",
+  "status": "draft",
+  "experimental": false,
+  "description": "Codes representing possible values for the Miscarriage or Abortion element",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA14272-1",
+            "display": "Miscarriage"
+          },
+          {
+            "code": "LA14668-0",
+            "display": "Abortion"
+          }
+        ]
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10",
+        "concept": [
+          {
+            "code": "O03.9",
+            "display": "Miscarriage"
+          },
+          {
+            "code": "O03.9",
+            "display": "Abortion"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "713651007",
+            "display": "Miscarriage"
+          },
+          {
+            "code": "363681007",
+            "display": "Abortion"
+          }
+        ]
+      }
+    ]
+  }
+}

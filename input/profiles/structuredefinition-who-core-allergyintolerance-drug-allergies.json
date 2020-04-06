@@ -6,7 +6,7 @@
   "title": "WHO-Core AllergyIntolerance (Drug Allergies)",
   "status": "draft",
   "experimental": false,
-  "description": "Any known medical allergies of the client.",
+  "description": "Write in the medication not included in the list.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -18,23 +18,25 @@
       {
         "id": "AllergyIntolerance",
         "path": "AllergyIntolerance",
-        "short": "Drug allergies",
+        "short": "Other (specify)",
         "mustSupport": false
       },
       {
         "id": "AllergyIntolerance.code",
         "path": "AllergyIntolerance.code",
-        "min": 1,
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/drug-allergies-values"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.text",
+        "path": "AllergyIntolerance.code.text",
+        "min": 0,
         "max": "1",
-        "fixedCodeableConcept": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "66374-0",
-              "display": "Drug allergies (LOINC)"
-            }
-          ]
-        },
         "mustSupport": true
       }
     ]

@@ -6,7 +6,7 @@
   "title": "WHO-Core AllergyIntolerance",
   "status": "draft",
   "experimental": false,
-  "description": "Write in the medication not included in the list.",
+  "description": "Any known medical allergies of the client.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -18,19 +18,12 @@
       {
         "id": "AllergyIntolerance",
         "path": "AllergyIntolerance",
-        "short": "Other (specify)",
+        "short": "Known allergies ",
         "mustSupport": false
       },
       {
         "id": "AllergyIntolerance.code",
         "path": "AllergyIntolerance.code",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "AllergyIntolerance.code.text",
-        "path": "AllergyIntolerance.code.text",
         "min": 0,
         "max": "1",
         "mustSupport": true
