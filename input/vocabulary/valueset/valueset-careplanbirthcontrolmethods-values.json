@@ -3,10 +3,10 @@
   "id": "careplanbirthcontrolmethods-values",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/careplanbirthcontrolmethods-values",
   "name": "careplanbirthcontrolmethods-values",
-  "title": "CarePlan-based Birth control method reported at intake values",
+  "title": "Prior contraceptive methods used - CarePlan-based values",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the CarePlan-based Birth control method reported at intake element",
+  "description": "Codes representing possible values for the Prior contraceptive methods used - CarePlan-based element",
   "immutable": true,
   "compose": {
     "include": [

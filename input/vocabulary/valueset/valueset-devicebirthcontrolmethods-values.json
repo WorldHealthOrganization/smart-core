@@ -3,10 +3,10 @@
   "id": "devicebirthcontrolmethods-values",
   "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/devicebirthcontrolmethods-values",
   "name": "devicebirthcontrolmethods-values",
-  "title": "Device-based Birth control method reported at intake values",
+  "title": "Contraceptive history - Device-based values",
   "status": "draft",
   "experimental": false,
-  "description": "Codes representing possible values for the Device-based Birth control method reported at intake element",
+  "description": "Codes representing possible values for the Contraceptive history - Device-based element",
   "immutable": true,
   "compose": {
     "include": [
