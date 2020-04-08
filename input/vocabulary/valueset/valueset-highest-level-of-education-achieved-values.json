@@ -11,6 +11,19 @@
   "compose": {
     "include": [
       {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-EducationLevel",
+        "concept": [
+          {
+            "code": "HS",
+            "display": "High School"
+          },
+          {
+            "code": "ELEM",
+            "display": "Elementary education"
+          }
+        ]
+      },
+      {
         "system": "http://who.int/cg/CodeSystem/extended-content",
         "concept": [
           {
