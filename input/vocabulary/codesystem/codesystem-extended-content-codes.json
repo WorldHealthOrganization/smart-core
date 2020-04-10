@@ -1,0 +1,119 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "extended-content-codes",
+  "url": "http://who.int/cg/CodeSystem/extended-content-codes",
+  "name": "extended-content_codes",
+  "title": "WHO Extended Codes CodeSystem codes",
+  "status": "draft",
+  "experimental": false,
+  "description": "Set of codes identified as being needed but not found in existing Code Systems",
+  "caseSensitive": true,
+  "content": "complete",
+  "concept": [
+    {
+      "code": "Returning Client",
+      "display": "Returning client",
+      "definition": "Visit type - Returning client"
+    },
+    {
+      "code": "Referral",
+      "display": "Referral",
+      "definition": "Visit type - Referral"
+    },
+    {
+      "code": "New Client",
+      "display": "New client",
+      "definition": "Visit type - New client"
+    },
+    {
+      "code": "First visit for symptoms",
+      "display": "First visit for symptoms",
+      "definition": "Visit type - First visit for symptoms"
+    },
+    {
+      "code": "STI Follow up",
+      "display": "Follow up for STI management",
+      "definition": "Visit type - Follow up for STI management"
+    },
+    {
+      "code": "Community",
+      "display": "Community",
+      "definition": "Referred by - Community"
+    },
+    {
+      "code": "Facility",
+      "display": "Facility",
+      "definition": "Referred by - Facility"
+    },
+    {
+      "code": "Levonorgestrel (LNG) two-rod implant",
+      "display": "Levonorgestrel (LNG) two-rod implant",
+      "definition": "Method at intake - Levonorgestrel (LNG) two-rod implant"
+    },
+    {
+      "code": "Other",
+      "display": "Other",
+      "definition": "Reason for no contraceptive method - Reported at intake - Other"
+    },
+    {
+      "code": "Other",
+      "display": "Other",
+      "definition": "HIV Test Result  - Other"
+    },
+    {
+      "code": "Don't know",
+      "display": "Don't know",
+      "definition": "Current medications - Don't know"
+    },
+    {
+      "code": "STI medication",
+      "display": "STI medication",
+      "definition": "Current medications - STI medication"
+    },
+    {
+      "code": "Other Antibiotics",
+      "display": "Other antibiotics",
+      "definition": "Current medications - Other antibiotics"
+    },
+    {
+      "code": "Other",
+      "display": "Other (specify)",
+      "definition": "Current medications - Other (specify)"
+    },
+    {
+      "code": "Other",
+      "display": "Other",
+      "definition": "Drug allergies - Other"
+    },
+    {
+      "code": "PrEP status",
+      "display": "PrEP status",
+      "definition": "PrEP status"
+    },
+    {
+      "code": "Antiretroviral regimen (date and dose)",
+      "display": "Antiretroviral regimen (date and dose)",
+      "definition": "Antiretroviral regimen (date and dose)"
+    },
+    {
+      "code": "NONE",
+      "display": "No education",
+      "definition": "Highest level of education achieved - No education"
+    },
+    {
+      "code": "Other",
+      "display": "Other (specify)",
+      "definition": "Occupation - Other (specify)"
+    },
+    {
+      "code": "G",
+      "display": "Government",
+      "definition": "Payment method - Government"
+    },
+    {
+      "code": "I",
+      "display": "Insurance",
+      "definition": "Payment method - Insurance"
+    }
+  ]
+}
