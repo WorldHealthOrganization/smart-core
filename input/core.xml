@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="core" />
-  <url value="http://fhir.org/guides/who/core/ImplementationGuide/core" />
+  <id value="fhir.who.core" />
+  <url value="http://fhir.org/guides/who/core/ImplementationGuide/fhir.who.core" />
   <version value="0.1.0" />
   <name value="Core" />
   <title value="WHO Core Implementation Guide" />
@@ -9,6 +9,12 @@
   <experimental value="false" />
   <date value="2017-02-06" />
   <publisher value="World Health Organization (WHO)" />
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
   <description value="WHO Core Implementation Guide" />
   <packageId value="fhir.who.core" />
   <license value="CC0-1.0" />
@@ -115,6 +121,10 @@
     <parameter>
       <code value="path-resource" />
       <value value="input/vocabulary/valueset"/>
+    </parameter>
+    <parameter>
+      <code value="path-suppressed-warnings" />
+      <value value="input/ignoreWarnings.txt" />
     </parameter>
     <!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
      <parameter>
