@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-body-height",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-body-height",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-height",
   "name": "WHO-Core Observation (Body Height)",
   "title": "WHO-Core Observation (Body Height)",
   "status": "draft",

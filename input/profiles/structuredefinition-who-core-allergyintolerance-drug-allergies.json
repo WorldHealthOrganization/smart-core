@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-allergyintolerance-drug-allergies",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-allergyintolerance-drug-allergies",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance-drug-allergies",
   "name": "WHO-Core AllergyIntolerance (Drug Allergies)",
   "title": "WHO-Core AllergyIntolerance (Drug Allergies)",
   "status": "draft",
@@ -29,7 +29,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/drug-allergies-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/drug-allergies-values"
         }
       },
       {

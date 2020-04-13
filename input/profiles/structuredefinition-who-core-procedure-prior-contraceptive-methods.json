@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-procedure-prior-contraceptive-methods",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-procedure-prior-contraceptive-methods",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-prior-contraceptive-methods",
   "name": "WHO-Core Procedure (Prior Contraceptive Methods)",
   "title": "WHO-Core Procedure (Prior Contraceptive Methods)",
   "status": "draft",
@@ -29,7 +29,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/procedurebirthcontrolmethods-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values"
         }
       }
     ]

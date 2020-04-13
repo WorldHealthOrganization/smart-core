@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-appointment-visit",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-appointment-visit",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-visit",
   "name": "WHO-Core Appointment (Visit)",
   "title": "WHO-Core Appointment (Visit)",
   "status": "draft",
@@ -30,7 +30,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/visit-type-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/visit-type-values"
         }
       },
       {

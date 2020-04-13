@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-care-enrollment",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-care-enrollment",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-care-enrollment",
   "name": "WHO-Core Observation (HIV Care Enrollment)",
   "title": "WHO-Core Observation (HIV Care Enrollment)",
   "status": "draft",

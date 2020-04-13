@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "method",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/method",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/method",
   "name": "method",
   "title": "Payment method",
   "status": "draft",
@@ -9,6 +9,12 @@
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Coverage"
+    }
+  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
@@ -31,7 +37,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/method"
+        "fixedUri": "http://fhir.org/guides/who/core/StructureDefinition/method"
       },
       {
         "id": "Extension.value[x]",
@@ -45,7 +51,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/payment-method-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/payment-method-values"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-deviceusestatement-prior-contraceptive-methods",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-deviceusestatement-prior-contraceptive-methods",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-prior-contraceptive-methods",
   "name": "WHO-Core DeviceUseStatement (Prior Contraceptive Methods)",
   "title": "WHO-Core DeviceUseStatement (Prior Contraceptive Methods)",
   "status": "draft",
@@ -29,7 +29,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/devicebirthcontrolmethods-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values"
         }
       }
     ]

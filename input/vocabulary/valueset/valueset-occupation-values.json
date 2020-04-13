@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "occupation-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/occupation-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/occupation-values",
   "name": "occupation-values",
   "title": "Occupation values",
   "status": "draft",

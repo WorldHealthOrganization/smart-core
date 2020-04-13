@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "highest-level-of-education-achieved-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/highest-level-of-education-achieved-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/highest-level-of-education-achieved-values",
   "name": "highest-level-of-education-achieved-values",
   "title": "Highest level of education achieved values",
   "status": "draft",

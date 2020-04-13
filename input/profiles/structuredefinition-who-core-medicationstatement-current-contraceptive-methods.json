@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-current-contraceptive-methods",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medicationstatement-current-contraceptive-methods",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-contraceptive-methods",
   "name": "WHO-Core MedicationStatement (Current Contraceptive Methods)",
   "title": "WHO-Core MedicationStatement (Current Contraceptive Methods)",
   "status": "draft",
@@ -47,7 +47,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/medicationbirthcontrolmethods-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values"
         }
       }
     ]

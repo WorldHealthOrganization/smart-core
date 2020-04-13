@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-never-used-contraception",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-never-used-contraception",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-never-used-contraception",
   "name": "WHO-Core Observation (Never used contraception)",
   "title": "WHO-Core Observation (Never used contraception)",
   "status": "draft",

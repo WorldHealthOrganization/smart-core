@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "stage",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/stage",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/stage",
   "name": "stage",
   "title": "Miscarriage or abortion stage of pregnancy",
   "status": "draft",
@@ -10,6 +10,12 @@
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    }
+  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
@@ -41,7 +47,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/stage"
+        "fixedUri": "http://fhir.org/guides/who/core/StructureDefinition/stage"
       },
       {
         "id": "Extension.value[x]",
@@ -56,7 +62,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values"
         }
       }
     ]

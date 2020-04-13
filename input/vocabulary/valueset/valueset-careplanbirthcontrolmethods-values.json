@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "careplanbirthcontrolmethods-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/careplanbirthcontrolmethods-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/careplanbirthcontrolmethods-values",
   "name": "careplanbirthcontrolmethods-values",
   "title": "Prior contraceptive methods used - CarePlan-based values",
   "status": "draft",

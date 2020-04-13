@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-gender-based-violence-victim",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-gender-based-violence-victim",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-victim",
   "name": "WHO-Core Observation (Gender-based Violence Victim)",
   "title": "WHO-Core Observation (Gender-based Violence Victim)",
   "status": "draft",

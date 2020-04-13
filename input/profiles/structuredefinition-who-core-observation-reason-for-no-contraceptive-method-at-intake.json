@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-reason-for-no-contraceptive-method-at-intake",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake",
   "name": "WHO-Core Observation (Reason for no contraceptive method at intake)",
   "title": "WHO-Core Observation (Reason for no contraceptive method at intake)",
   "status": "draft",
@@ -50,7 +50,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/nobirthcontrolmethod-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/nobirthcontrolmethod-values"
         }
       }
     ]

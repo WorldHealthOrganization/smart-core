@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-careplan-intake-contraceptive-method",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-careplan-intake-contraceptive-method",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-intake-contraceptive-method",
   "name": "WHO-Core CarePlan (Intake Contraceptive Method)",
   "title": "WHO-Core CarePlan (Intake Contraceptive Method)",
   "status": "draft",
@@ -30,7 +30,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/careplanbirthcontrolmethods-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/careplanbirthcontrolmethods-values"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-careplan-follow-up",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-careplan-follow-up",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-follow-up",
   "name": "WHO-Core CarePlan (Follow-up)",
   "title": "WHO-Core CarePlan (Follow-up)",
   "status": "draft",

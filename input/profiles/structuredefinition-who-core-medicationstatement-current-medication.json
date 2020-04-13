@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-current-medication",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-medicationstatement-current-medication",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-medication",
   "name": "WHO-Core MedicationStatement (Current Medication)",
   "title": "WHO-Core MedicationStatement (Current Medication)",
   "status": "draft",
@@ -60,7 +60,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/current-medications-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/current-medications-values"
         }
       },
       {

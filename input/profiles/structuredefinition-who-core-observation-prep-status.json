@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-prep-status",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-prep-status",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-prep-status",
   "name": "WHO-Core Observation (PrEP Status)",
   "title": "WHO-Core Observation (PrEP Status)",
   "status": "draft",

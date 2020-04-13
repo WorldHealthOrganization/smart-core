@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "payment-method-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/payment-method-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/payment-method-values",
   "name": "payment-method-values",
   "title": "Payment method values",
   "status": "draft",

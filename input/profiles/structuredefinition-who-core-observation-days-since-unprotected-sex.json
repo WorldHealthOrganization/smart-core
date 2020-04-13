@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-days-since-unprotected-sex",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-days-since-unprotected-sex",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-days-since-unprotected-sex",
   "name": "WHO-Core Observation (Days since Unprotected Sex)",
   "title": "WHO-Core Observation (Days since Unprotected Sex)",
   "status": "draft",

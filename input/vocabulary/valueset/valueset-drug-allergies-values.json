@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "drug-allergies-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/drug-allergies-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/drug-allergies-values",
   "name": "drug-allergies-values",
   "title": "Drug allergies values",
   "status": "draft",

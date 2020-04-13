@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-gender-based-violence-risk-factors",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-gender-based-violence-risk-factors",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-risk-factors",
   "name": "WHO-Core Observation (Gender-based Violence Risk Factors)",
   "title": "WHO-Core Observation (Gender-based Violence Risk Factors)",
   "status": "draft",

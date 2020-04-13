@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-coverage-insurance",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-coverage-insurance",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-coverage-insurance",
   "name": "WHO-Core Coverage (Insurance)",
   "title": "WHO-Core Coverage (Insurance)",
   "status": "draft",
@@ -31,7 +31,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/method"
+              "http://fhir.org/guides/who/core/StructureDefinition/method"
             ]
           }
         ]

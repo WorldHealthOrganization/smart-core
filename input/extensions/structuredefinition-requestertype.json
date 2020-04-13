@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "requestertype",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/requestertype",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/requestertype",
   "name": "requesterType",
   "title": "Referred by",
   "status": "draft",
@@ -10,6 +10,12 @@
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    }
+  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
@@ -33,7 +39,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/requestertype"
+        "fixedUri": "http://fhir.org/guides/who/core/StructureDefinition/requestertype"
       },
       {
         "id": "Extension.value[x]",
@@ -48,7 +54,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/referred-by-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/referred-by-values"
         }
       }
     ]

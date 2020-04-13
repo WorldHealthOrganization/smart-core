@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-bmi",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-bmi",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-bmi",
   "name": "WHO-Core Observation (BMI) ",
   "title": "WHO-Core Observation (BMI) ",
   "status": "draft",

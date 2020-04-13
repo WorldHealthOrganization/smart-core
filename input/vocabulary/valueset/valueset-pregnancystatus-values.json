@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "pregnancystatus-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/pregnancystatus-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/pregnancystatus-values",
   "name": "pregnancystatus-values",
   "title": "Pregnancy status values",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "devicebirthcontrolmethods-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/devicebirthcontrolmethods-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values",
   "name": "devicebirthcontrolmethods-values",
   "title": "Contraceptive history - Device-based values",
   "status": "draft",

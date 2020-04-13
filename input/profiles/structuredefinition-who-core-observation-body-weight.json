@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-body-weight",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-body-weight",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-weight",
   "name": "WHO-Core Observation (Body Weight)",
   "title": "WHO-Core Observation (Body Weight)",
   "status": "draft",

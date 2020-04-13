@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-last-normal-menses",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-last-normal-menses",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-last-normal-menses",
   "name": "WHO-Core Observation (Last Normal Menses)",
   "title": "WHO-Core Observation (Last Normal Menses)",
   "status": "draft",

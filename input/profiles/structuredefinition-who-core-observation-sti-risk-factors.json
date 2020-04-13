@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-sti-risk-factors",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-sti-risk-factors",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sti-risk-factors",
   "name": "WHO-Core Observation (STI Risk Factors)",
   "title": "WHO-Core Observation (STI Risk Factors)",
   "status": "draft",
@@ -50,7 +50,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/sti-risk-assessment-factors-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values"
         }
       }
     ]

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-breastfeeding",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-breastfeeding",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-breastfeeding",
   "name": "WHO-Core Observation (Breastfeeding)",
   "title": "WHO-Core Observation (Breastfeeding)",
   "status": "draft",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-deviceusestatement-intake-contraceptive-method",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method",
   "name": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)",
   "title": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)",
   "status": "draft",
@@ -29,7 +29,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/devicebirthcontrolmethods-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values"
         }
       },
       {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-servicerequest-referral",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-servicerequest-referral",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-servicerequest-referral",
   "name": "WHO-Core ServiceRequest (Referral)",
   "title": "WHO-Core ServiceRequest (Referral)",
   "status": "draft",
@@ -51,7 +51,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/reason-for-referral-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/reason-for-referral-values"
         }
       },
       {
@@ -64,7 +64,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/requestertype"
+              "http://fhir.org/guides/who/core/StructureDefinition/requestertype"
             ]
           }
         ]

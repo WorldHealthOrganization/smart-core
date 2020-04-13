@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "occupation",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/occupation",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/occupation",
   "name": "Occupation",
   "title": "Occupation",
   "status": "draft",
@@ -9,6 +9,12 @@
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
@@ -40,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/occupation"
+        "fixedUri": "http://fhir.org/guides/who/core/StructureDefinition/occupation"
       },
       {
         "id": "Extension.value[x]",
@@ -54,7 +60,7 @@
         ],
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/occupation-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/occupation-values"
         }
       }
     ]

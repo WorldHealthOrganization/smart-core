@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "hiv-test-result-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/hiv-test-result-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/hiv-test-result-values",
   "name": "hiv-test-result-values",
   "title": "HIV Test Result values",
   "status": "draft",

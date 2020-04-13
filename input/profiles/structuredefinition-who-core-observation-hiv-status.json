@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-status",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-status",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-status",
   "name": "WHO-Core Observation (HIV Status)",
   "title": "WHO-Core Observation (HIV Status)",
   "status": "draft",

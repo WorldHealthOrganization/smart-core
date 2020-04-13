@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "estimatedage",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimatedage",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/estimatedage",
   "name": "estimatedAge",
   "title": "Estimated age",
   "status": "draft",
@@ -10,6 +10,12 @@
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Patient"
+    }
+  ],
   "type": "Extension",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
   "derivation": "constraint",
@@ -33,7 +39,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimatedage"
+        "fixedUri": "http://fhir.org/guides/who/core/StructureDefinition/estimatedage"
       },
       {
         "id": "Extension.value[x]",

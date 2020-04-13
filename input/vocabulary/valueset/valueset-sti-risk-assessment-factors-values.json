@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "sti-risk-assessment-factors-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/sti-risk-assessment-factors-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values",
   "name": "sti-risk-assessment-factors-values",
   "title": "STI risk assessment factors values",
   "status": "draft",

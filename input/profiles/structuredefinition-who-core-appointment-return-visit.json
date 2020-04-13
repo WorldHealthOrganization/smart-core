@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-appointment-return-visit",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-appointment-return-visit",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-return-visit",
   "name": "WHO-Core Appointment (Return Visit)",
   "title": "WHO-Core Appointment (Return Visit)",
   "status": "draft",

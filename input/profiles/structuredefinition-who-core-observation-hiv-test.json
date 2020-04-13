@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-test",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-observation-hiv-test",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-test",
   "name": "WHO-Core Observation (HIV Test)",
   "title": "WHO-Core Observation (HIV Test)",
   "status": "draft",
@@ -18,7 +18,7 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "HIV Test Result ",
+        "short": "HIV Test Result",
         "comment": "Current options are from the HIV SI Data Dictionary annex. Should be synced with the HIV Accelerator Kit, once it is available.",
         "mustSupport": false
       },
@@ -68,7 +68,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/hiv-test-result-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/hiv-test-result-values"
         }
       }
     ]

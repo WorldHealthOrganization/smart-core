@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-allergyintolerance",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-allergyintolerance",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance",
   "name": "WHO-Core AllergyIntolerance",
   "title": "WHO-Core AllergyIntolerance",
   "status": "draft",
@@ -18,7 +18,7 @@
       {
         "id": "AllergyIntolerance",
         "path": "AllergyIntolerance",
-        "short": "Known allergies ",
+        "short": "Known allergies",
         "mustSupport": false
       },
       {

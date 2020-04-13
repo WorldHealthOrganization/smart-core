@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "procedurebirthcontrolmethods-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/procedurebirthcontrolmethods-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values",
   "name": "procedurebirthcontrolmethods-values",
   "title": "Prior contraceptive methods used - Procedure-based values",
   "status": "draft",

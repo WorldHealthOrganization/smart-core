@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "who-core-patient",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/who-core-patient",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-patient",
   "name": "WHO-Core Patient",
   "title": "WHO-Core Patient",
   "status": "draft",
@@ -58,7 +58,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/reminder"
+              "http://fhir.org/guides/who/core/StructureDefinition/reminder"
             ]
           }
         ]
@@ -108,7 +108,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/occupation"
+              "http://fhir.org/guides/who/core/StructureDefinition/occupation"
             ]
           }
         ]
@@ -123,7 +123,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/consenttocontact"
+              "http://fhir.org/guides/who/core/StructureDefinition/consenttocontact"
             ]
           }
         ]
@@ -138,7 +138,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/educationlevel"
+              "http://fhir.org/guides/who/core/StructureDefinition/educationlevel"
             ]
           }
         ]
@@ -153,7 +153,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/estimatedage"
+              "http://fhir.org/guides/who/core/StructureDefinition/estimatedage"
             ]
           }
         ]
@@ -168,7 +168,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/StructureDefinition/insurance"
+              "http://fhir.org/guides/who/core/StructureDefinition/insurance"
             ]
           }
         ]
@@ -181,7 +181,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/gender-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/gender-values"
         }
       },
       {
@@ -199,7 +199,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/marital-status-values"
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/marital-status-values"
         }
       },
       {

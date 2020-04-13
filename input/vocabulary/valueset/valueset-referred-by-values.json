@@ -1,7 +1,7 @@
 {
   "resourceType": "ValueSet",
   "id": "referred-by-values",
-  "url": "http://hl7.org/fhir/dbcg/core/ImplementationGuide/core/ValueSet/referred-by-values",
+  "url": "http://fhir.org/guides/who/core/ValueSet/referred-by-values",
   "name": "referred-by-values",
   "title": "Referred by values",
   "status": "draft",
