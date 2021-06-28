@@ -30,7 +30,7 @@ Debugging information is available here:
 
 ### Local Build
 
-The HL7 IG Publisher is committed to this repository to make building as easy as possible. To build locally, download the publisher tooling locally using the _updatePublisher script:
+The HL7 IG Publisher can be downloaded locally to make building as easy as possible. To build locally, download the publisher tooling locally using the _updatePublisher script:
 
     _updatePublisher
 
