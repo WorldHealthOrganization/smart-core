@@ -6,7 +6,6 @@
   "title": "WHO-Core Observation (Miscarriage or Abortion)",
   "status": "draft",
   "experimental": false,
-  "description": "If the woman had an abortion, when the abortion took place.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -14,51 +13,16 @@
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
-    "element": [
-      {
-        "id": "Observation",
-        "path": "Observation",
-        "short": "Date of miscarriage or abortion",
-        "mustSupport": false
-      },
-      {
-        "id": "Observation.code",
-        "path": "Observation.code",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-values"
-        }
-      },
-      {
-        "id": "Observation.extension:stage",
-        "path": "Observation.extension",
-        "sliceName": "stage",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://fhir.org/guides/who/core/StructureDefinition/stage"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Observation.valueDateTime",
-        "path": "Observation.valueDateTime",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      }
-    ]
+    "element": [ {
+      "id": "Observation",
+      "path": "Observation",
+      "mustSupport": false
+    }, {
+      "id": "Observation.code",
+      "path": "Observation.code",
+      "min": 0,
+      "max": "1",
+      "mustSupport": true
+    } ]
   }
 }
