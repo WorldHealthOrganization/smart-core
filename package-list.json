@@ -1,0 +1,22 @@
+{
+ "package-id" : "who.fhir.core",
+ "title" : "WHO Core Implementation Guide",
+ "canonical" : "http://fhir.org/guides/who/core",
+ "category": "Quality / CDS",
+ "introduction" : "This implementation guide defines core data element profiles for use across World Health Organization (WHO) computable guideline content.",
+ "list" : [{
+  "version" : "current",
+  "desc" : "Continuous Integration Build (latest in version control)",
+  "path" : "http://build.fhir.org/ig/WorldHealthOrganization/smart-core",
+  "status" : "ci-build",
+  "current" : true
+ }, {
+  "version" : "0.1.0",
+  "fhirversion": "4.0.1",
+  "date": "2021-04-15",
+  "desc" : "Release 1",
+  "path" : "http://fhir.org/guides/who/core",
+  "status": "active",
+  "sequence": "Release 1"
+ }]
+}

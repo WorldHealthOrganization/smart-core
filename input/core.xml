@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="fhir.who.core" />
-  <url value="http://fhir.org/guides/who/core/ImplementationGuide/fhir.who.core" />
+  <id value="who.fhir.core" />
+  <url value="http://fhir.org/guides/who/core/ImplementationGuide/who.fhir.core" />
   <version value="0.1.0" />
   <name value="Core" />
   <title value="WHO Core Implementation Guide" />
@@ -16,7 +16,7 @@
     </telecom>
   </contact>
   <description value="WHO Core Implementation Guide" />
-  <packageId value="fhir.who.core" />
+  <packageId value="who.fhir.core" />
   <license value="CC0-1.0" />
   <fhirVersion value="4.0.1" />
   <definition>
