@@ -2,7 +2,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="who.fhir.core" />
   <url value="http://fhir.org/guides/who/core/ImplementationGuide/who.fhir.core" />
-  <version value="0.1.0" />
+  <version value="0.2.0" />
   <name value="Core" />
   <title value="WHO Core Implementation Guide" />
   <status value="draft" />
