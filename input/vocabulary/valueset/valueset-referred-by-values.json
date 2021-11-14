@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "referred-by-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/referred-by-values",
-  "name": "referred-by-values",
+  "name": "ReferredbyValues",
   "title": "Referred by values",
   "status": "draft",
   "experimental": false,
@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codest",
         "concept": [
           {
             "code": "Community",

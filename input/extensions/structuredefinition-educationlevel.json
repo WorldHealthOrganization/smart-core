@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "educationlevel",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/educationlevel",
-  "name": "educationLevel",
+  "name": "EducationLevel",
   "title": "Highest level of education achieved",
   "status": "draft",
   "experimental": false,
@@ -24,7 +24,6 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "label": "EducationLevel",
         "short": "Highest level of education achieved",
         "definition": "The highest level of school the client has reached.",
         "min": 0,

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "nobirthcontrolmethod-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/nobirthcontrolmethod-values",
-  "name": "nobirthcontrolmethod-values",
+  "name": "NobirthcontrolmethodValues",
   "title": "Reason for no contraceptive method - Reported at intake values",
   "status": "draft",
   "experimental": false,
@@ -14,23 +14,23 @@
         "system": "http://loinc.org",
         "concept": [
           {
-            "code": "LA 14550-0",
+            "code": "LA14550-0",
             "display": "Sexual abstinence"
           },
           {
-            "code": "LA 27925-9",
+            "code": "LA27925-9",
             "display": "Same sex partner"
           },
           {
-            "code": "LA 46-8",
+            "code": "LA46-8",
             "display": "Other"
           },
           {
-            "code": "LA 27927-5",
+            "code": "LA27927-5",
             "display": "Sterile for non-contraceptive reasons"
           },
           {
-            "code": "LA 27928-3",
+            "code": "LA27928-3",
             "display": "Seeking pregnancy"
           }
         ]
@@ -90,10 +90,10 @@
         ]
       },
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
-            "code": "Other",
+            "code": "Other reason for no contraceptive method",
             "display": "Other"
           }
         ]

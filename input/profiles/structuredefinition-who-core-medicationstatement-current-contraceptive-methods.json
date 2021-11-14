@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-current-contraceptive-methods",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-contraceptive-methods",
-  "name": "WHO-Core MedicationStatement (Current Contraceptive Methods)",
+  "name": "WHOCoreMedicationStatementCurrentContraceptiveMethods",
   "title": "WHO-Core MedicationStatement (Current Contraceptive Methods)",
   "status": "draft",
   "experimental": false,
@@ -23,22 +23,10 @@
         "mustSupport": false
       },
       {
-        "id": "MedicationStatement.effectiveDateTime",
-        "path": "MedicationStatement.effectiveDateTime",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "dateTime"
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.medicationCodeableConcept",
         "path": "MedicationStatement.medicationCodeableConcept",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"
@@ -49,6 +37,18 @@
           "strength": "required",
           "valueSet": "http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values"
         }
+      },
+      {
+        "id": "MedicationStatement.effectiveDateTime",
+        "path": "MedicationStatement.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
       }
     ]
   }

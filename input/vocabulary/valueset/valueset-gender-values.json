@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "gender-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/gender-values",
-  "name": "gender-values",
+  "name": "GenderValues",
   "title": "Gender values",
   "status": "draft",
   "experimental": false,

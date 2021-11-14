@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "hiv-test-result-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/hiv-test-result-values",
-  "name": "hiv-test-result-values",
+  "name": "HIVTestResultValues",
   "title": "HIV Test Result values",
   "status": "draft",
   "experimental": false,
@@ -41,10 +41,10 @@
         ]
       },
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
-            "code": "Other",
+            "code": "Other HIV Test Result",
             "display": "Other"
           }
         ]

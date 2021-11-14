@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-number-of-pregnancies",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-number-of-pregnancies",
-  "name": "WHO-Core Observation (Number of Pregnancies)",
+  "name": "WHOCoreObservationNumberofPregnancies",
   "title": "WHO-Core Observation (Number of Pregnancies)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "11996-6",
-              "display": "Number of pregnancies (LOINC)"
+              "display": "[#] Pregnancies"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://loinc.org",
             "code": "11996-6",
-            "display": "Number of pregnancies (LOINC)"
+            "display": "[#] Pregnancies"
           }
         ],
         "min": 0,

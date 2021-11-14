@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "highest-level-of-education-achieved-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/highest-level-of-education-achieved-values",
-  "name": "highest-level-of-education-achieved-values",
+  "name": "HighestLevelofEducationAchievedValues",
   "title": "Highest level of education achieved values",
   "status": "draft",
   "experimental": false,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
             "code": "NONE",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-allergyintolerance-drug-allergies",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance-drug-allergies",
-  "name": "WHO-Core AllergyIntolerance (Drug Allergies)",
+  "name": "WHOCoreAllergyIntoleranceDrugAllergies",
   "title": "WHO-Core AllergyIntolerance (Drug Allergies)",
   "status": "draft",
   "experimental": false,
@@ -23,7 +23,7 @@
       "id": "AllergyIntolerance.code",
       "path": "AllergyIntolerance.code",
       "min": 0,
-      "max": "*",
+      "max": "1",
       "mustSupport": true
     } ]
   }

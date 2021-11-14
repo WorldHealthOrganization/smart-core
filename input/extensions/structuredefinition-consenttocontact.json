@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "consenttocontact",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/consenttocontact",
-  "name": "consentToContact",
+  "name": "ConsentToContact",
   "title": "Communication consent",
   "status": "draft",
   "experimental": false,

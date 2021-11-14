@@ -2,11 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-deviceusestatement-intake-contraceptive-method",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method",
-  "name": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)",
+  "name": "WHOCoreDeviceUseStatementIntakeContraceptiveMethod",
   "title": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)",
   "status": "draft",
   "experimental": false,
-  "description": "Date of last implant if currently using the method. ",
+  "description": "Date of last implant if currently using the method.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -22,23 +22,12 @@
         "mustSupport": false
       },
       {
-        "id": "DeviceUseStatement.device.type",
-        "path": "DeviceUseStatement.device.type",
-        "min": 0,
-        "max": "*",
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values"
-        }
-      },
-      {
         "id": "DeviceUseStatement.timingDateTime",
         "path": "DeviceUseStatement.timingDateTime",
         "code": [
           {
             "system": "http://hl7.org/fhir/sid/icd-10",
-            "code": "z30.430",
+            "code": "Z30.430",
             "display": "IUD Insertion Date (ICD-10-WHO)"
           }
         ],
@@ -50,6 +39,22 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "DeviceUseStatement.device",
+        "path": "DeviceUseStatement.device",
+        "mustSupport": true
+      },
+      {
+        "id": "DeviceUseStatement.device.type",
+        "path": "DeviceUseStatement.device.type",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values"
+        }
       }
     ]
   }

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "procedurebirthcontrolmethods-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values",
-  "name": "procedurebirthcontrolmethods-values",
+  "name": "ProcedurebirthcontrolmethodsValues",
   "title": "Prior contraceptive methods used - Procedure-based values",
   "status": "draft",
   "experimental": false,

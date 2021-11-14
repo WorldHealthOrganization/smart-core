@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-stage",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-stage",
-  "name": "WHO-Core Observation (HIV Stage)",
+  "name": "WHOCoreObservationHIVStage",
   "title": "WHO-Core Observation (HIV Stage)",
   "status": "draft",
   "experimental": false,
@@ -32,7 +32,7 @@
             {
               "system": "http://loinc.org",
               "code": "45233-4",
-              "display": "HIV Stage (LOINC)"
+              "display": "World Health Organization HIV stage"
             }
           ]
         },

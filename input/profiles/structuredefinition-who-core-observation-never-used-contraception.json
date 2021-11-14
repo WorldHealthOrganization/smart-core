@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-never-used-contraception",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-never-used-contraception",
-  "name": "WHO-Core Observation (Never used contraception)",
+  "name": "WHOCoreObservationNeverusedcontraception",
   "title": "WHO-Core Observation (Never used contraception)",
   "status": "draft",
   "experimental": false,
@@ -32,7 +32,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "473387004",
-              "display": "Never used contraception (SNOMED-CT)"
+              "display": "Never used contraception"
             }
           ]
         },
@@ -45,7 +45,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "473387004",
-            "display": "Never used contraception (SNOMED-CT)"
+            "display": "Never used contraception"
           }
         ],
         "min": 0,

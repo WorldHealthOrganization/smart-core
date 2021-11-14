@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-careplan-follow-up",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-follow-up",
-  "name": "WHO-Core CarePlan (Follow-up)",
+  "name": "WHOCoreCarePlanFollowup",
   "title": "WHO-Core CarePlan (Follow-up)",
   "status": "draft",
   "experimental": false,
@@ -28,7 +28,7 @@
           {
             "system": "http://hl7.org/fhir/resource-types",
             "code": "CommunicationRequest",
-            "display": "Follow up recommended (FHIR)"
+            "display": "CommunicationRequest"
           }
         ],
         "min": 0,

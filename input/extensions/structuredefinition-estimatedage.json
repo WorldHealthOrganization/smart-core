@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "estimatedage",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/estimatedage",
-  "name": "estimatedAge",
+  "name": "EstimatedAge",
   "title": "Estimated age",
   "status": "draft",
   "experimental": false,
@@ -24,7 +24,6 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "label": "age_entered",
         "short": "Estimated age",
         "definition": "If DOB is unknown, enter the client's age. Note displaying the client's age in years.",
         "min": 0,

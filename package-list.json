@@ -1,5 +1,5 @@
 {
- "package-id" : "who.fhir.core",
+ "package-id" : "fhir.who.core",
  "title" : "WHO Core Implementation Guide",
  "canonical" : "http://fhir.org/guides/who/core",
  "category": "Quality / CDS",

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-procedure-intake-contraceptive-method",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-intake-contraceptive-method",
-  "name": "WHO-Core Procedure (Intake Contraceptive Method)",
+  "name": "WHOCoreProcedureIntakeContraceptiveMethod",
   "title": "WHO-Core Procedure (Intake Contraceptive Method)",
   "status": "draft",
   "experimental": false,
@@ -25,7 +25,7 @@
         "id": "Procedure.code",
         "path": "Procedure.code",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "mustSupport": true,
         "binding": {
           "strength": "required",

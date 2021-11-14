@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-recent-sexual-history",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-recent-sexual-history",
-  "name": "WHO-Core Observation (Recent Sexual History)",
+  "name": "WHOCoreObservationRecentSexualHistory",
   "title": "WHO-Core Observation (Recent Sexual History)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://hl7.org/fhir/sid/icd-10",
               "code": "Z72.5",
-              "display": "Recent unprotected sexual intercourse (ICD-10-WHO)"
+              "display": "High-risk sexual behaviour"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://hl7.org/fhir/sid/icd-10",
             "code": "Z72.5",
-            "display": "Recent unprotected sexual intercourse (ICD-10-WHO)"
+            "display": "High-risk sexual behaviour"
           }
         ],
         "min": 0,

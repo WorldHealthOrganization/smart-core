@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-temperature",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-temperature",
-  "name": "WHO-Core Observation (Temperature)",
+  "name": "WHOCoreObservationTemperature",
   "title": "WHO-Core Observation (Temperature)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "8310-5",
-              "display": "Temperature (LOINC)"
+              "display": "Body temperature"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://loinc.org",
             "code": "8310-5",
-            "display": "Temperature (LOINC)"
+            "display": "Body temperature"
           }
         ],
         "min": 0,

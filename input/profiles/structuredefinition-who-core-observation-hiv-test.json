@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-test",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-test",
-  "name": "WHO-Core Observation (HIV Test)",
+  "name": "WHOCoreObservationHIVTest",
   "title": "WHO-Core Observation (HIV Test)",
   "status": "draft",
   "experimental": false,
@@ -36,7 +36,7 @@
           {
             "system": "http://hl7.org/fhir/sid/icd-10",
             "code": "Z11.4",
-            "display": "Date of Last HIV Screen (ICD-10-WHO)"
+            "display": "Special screening examination for human immunodeficiency virus [HIV]"
           }
         ],
         "min": 0,
@@ -46,13 +46,6 @@
             "code": "dateTime"
           }
         ],
-        "mustSupport": true
-      },
-      {
-        "id": "Observation.method",
-        "path": "Observation.method",
-        "min": 0,
-        "max": "1",
         "mustSupport": true
       },
       {
@@ -70,6 +63,13 @@
           "strength": "required",
           "valueSet": "http://fhir.org/guides/who/core/ValueSet/hiv-test-result-values"
         }
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
       }
     ]
   }

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-postpartum",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-postpartum",
-  "name": "WHO-Core Observation (Postpartum)",
+  "name": "WHOCoreObservationPostpartum",
   "title": "WHO-Core Observation (Postpartum)",
   "status": "draft",
   "experimental": false,

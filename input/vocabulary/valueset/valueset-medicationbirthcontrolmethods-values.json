@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "medicationbirthcontrolmethods-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values",
-  "name": "medicationbirthcontrolmethods-values",
+  "name": "MedicationBirthControlMethodsValues",
   "title": "Medication-based Birth control method reported at intake values",
   "status": "draft",
   "experimental": false,

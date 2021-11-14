@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-date-of-delivery",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-date-of-delivery",
-  "name": "WHO-Core Observation (Date of Delivery)",
+  "name": "WHOCoreObservationDateofDelivery",
   "title": "WHO-Core Observation (Date of Delivery)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "LP70949-0",
-              "display": "Date of delivery (LOINC)"
+              "display": "Delivery date"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://loinc.org",
             "code": "LP70949-0",
-            "display": "Date of delivery (LOINC)"
+            "display": "Delivery date"
           }
         ],
         "min": 0,

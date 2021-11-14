@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "reminder",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/reminder",
-  "name": "reminder",
+  "name": "Reminder",
   "title": "Reminder messages",
   "status": "draft",
   "experimental": false,

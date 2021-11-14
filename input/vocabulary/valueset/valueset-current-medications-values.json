@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "current-medications-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/current-medications-values",
-  "name": "current-medications-values",
+  "name": "CurrentMedicationsValues",
   "title": "Current medications values",
   "status": "draft",
   "experimental": false,
@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
             "code": "Don't know",
@@ -26,7 +26,7 @@
             "display": "Other antibiotics"
           },
           {
-            "code": "Other",
+            "code": "Other current medications",
             "display": "Other (specify)"
           }
         ]

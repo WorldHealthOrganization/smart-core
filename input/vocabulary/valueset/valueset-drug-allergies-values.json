@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "drug-allergies-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/drug-allergies-values",
-  "name": "drug-allergies-values",
+  "name": "DrugAllergiesValues",
   "title": "Drug allergies values",
   "status": "draft",
   "experimental": false,
@@ -37,10 +37,10 @@
         ]
       },
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
-            "code": "Other",
+            "code": "Other drug allergies",
             "display": "Other"
           }
         ]

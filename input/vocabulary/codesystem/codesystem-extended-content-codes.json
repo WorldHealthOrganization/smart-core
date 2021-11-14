@@ -1,8 +1,8 @@
 {
   "resourceType": "CodeSystem",
   "id": "extended-content-codes",
-  "url": "http://who.int/cg/CodeSystem/extended-content-codes",
-  "name": "extended-content_codes",
+  "url": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
+  "name": "ExtendedContentCodes",
   "title": "WHO Extended Codes CodeSystem codes",
   "status": "draft",
   "experimental": false,
@@ -51,12 +51,12 @@
       "definition": "Method at intake - Levonorgestrel (LNG) two-rod implant"
     },
     {
-      "code": "Other",
+      "code": "Other reason for no contraceptive method",
       "display": "Other",
       "definition": "Reason for no contraceptive method - Reported at intake - Other"
     },
     {
-      "code": "Other",
+      "code": "Other HIV Test Result",
       "display": "Other",
       "definition": "HIV Test Result - Other"
     },
@@ -76,12 +76,12 @@
       "definition": "Current medications - Other antibiotics"
     },
     {
-      "code": "Other",
+      "code": "Other current medications",
       "display": "Other (specify)",
       "definition": "Current medications - Other (specify)"
     },
     {
-      "code": "Other",
+      "code": "Other drug allergies",
       "display": "Other",
       "definition": "Drug allergies - Other"
     },
@@ -101,7 +101,7 @@
       "definition": "Highest level of education achieved - No education"
     },
     {
-      "code": "Other",
+      "code": "Other occupation",
       "display": "Other (specify)",
       "definition": "Occupation - Other (specify)"
     },

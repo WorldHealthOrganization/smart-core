@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "hiv-stage-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/hiv-stage-values",
-  "name": "hiv-stage-values",
+  "name": "HIVStageValues",
   "title": "HIV Stage values",
   "status": "draft",
   "experimental": false,

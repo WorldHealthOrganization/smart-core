@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-gender-based-violence-victim",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-victim",
-  "name": "WHO-Core Observation (Gender-based Violence Victim)",
+  "name": "WHOCoreObservationGenderbasedViolenceVictim",
   "title": "WHO-Core Observation (Gender-based Violence Victim)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://hl7.org/fhir/sid/icd-10",
               "code": "Z91.8",
-              "display": "Gender-based violence victim (ICD-10-WHO)"
+              "display": "Personal history of other specified risk-factors, not elsewhere classified"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://hl7.org/fhir/sid/icd-10",
             "code": "Z91.8",
-            "display": "Gender-based violence victim (ICD-10-WHO)"
+            "display": "Personal history of other specified risk-factors, not elsewhere classified"
           }
         ],
         "min": 0,

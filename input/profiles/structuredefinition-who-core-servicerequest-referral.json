@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-servicerequest-referral",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-servicerequest-referral",
-  "name": "WHO-Core ServiceRequest (Referral)",
+  "name": "WHOCoreServiceRequestReferral",
   "title": "WHO-Core ServiceRequest (Referral)",
   "status": "draft",
   "experimental": false,
@@ -18,16 +18,23 @@
       {
         "id": "ServiceRequest",
         "path": "ServiceRequest",
-        "label": "referred_by",
         "short": "Referred by",
         "mustSupport": false
       },
       {
-        "id": "ServiceRequest.authoredOn",
-        "path": "ServiceRequest.authoredOn",
+        "id": "ServiceRequest.extension:requesterType",
+        "path": "ServiceRequest.extension",
+        "sliceName": "requesterType",
         "min": 0,
         "max": "1",
-        "mustSupport": true
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.org/guides/who/core/StructureDefinition/requestertype"
+            ]
+          }
+        ]
       },
       {
         "id": "ServiceRequest.category",
@@ -36,7 +43,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "134403003",
-            "display": "Emergency referral (SNOMED-CT)"
+            "display": "Urgent referral"
           }
         ],
         "min": 0,
@@ -55,35 +62,13 @@
         }
       },
       {
-        "id": "ServiceRequest.extension:requesterType",
-        "path": "ServiceRequest.extension",
-        "sliceName": "requesterType",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://fhir.org/guides/who/core/StructureDefinition/requestertype"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "ServiceRequest.locationReference",
-        "path": "ServiceRequest.locationReference",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
         "id": "ServiceRequest.occurrenceDateTime",
         "path": "ServiceRequest.occurrenceDateTime",
         "code": [
           {
             "system": "http://loinc.org",
             "code": "57202-4",
-            "display": "Date of scheduled referral appointment (LOINC)"
+            "display": "Date of Referral"
           }
         ],
         "min": 0,
@@ -93,6 +78,20 @@
             "code": "dateTime"
           }
         ],
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ServiceRequest.locationReference",
+        "path": "ServiceRequest.locationReference",
+        "min": 0,
+        "max": "1",
         "mustSupport": true
       }
     ]

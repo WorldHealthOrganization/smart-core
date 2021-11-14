@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "devicebirthcontrolmethods-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values",
-  "name": "devicebirthcontrolmethods-values",
+  "name": "DeviceBirthControlMethodsValues",
   "title": "Contraceptive history - Device-based values",
   "status": "draft",
   "experimental": false,
@@ -114,7 +114,7 @@
         ]
       },
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
             "code": "Levonorgestrel (LNG) two-rod implant",

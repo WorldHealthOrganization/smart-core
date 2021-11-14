@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-pregnancy-status",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-pregnancy-status",
-  "name": "WHO-Core Observation (Pregnancy Status)",
+  "name": "WHOCoreObservationPregnancyStatus",
   "title": "WHO-Core Observation (Pregnancy Status)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "82810-3",
-              "display": "Pregnancy status (LOINC)"
+              "display": "Pregnancy status"
             }
           ]
         },

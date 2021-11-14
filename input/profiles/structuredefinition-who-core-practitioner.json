@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-practitioner",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-practitioner",
-  "name": "WHO-Core Practitioner",
+  "name": "WHOCorePractitioner",
   "title": "WHO-Core Practitioner",
   "status": "draft",
   "experimental": false,
@@ -22,15 +22,15 @@
         "mustSupport": false
       },
       {
-        "id": "Practitioner.address",
-        "path": "Practitioner.address",
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Practitioner.name",
-        "path": "Practitioner.name",
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
         "min": 0,
         "max": "1",
         "mustSupport": true

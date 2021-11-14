@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-time-postpartum",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-time-postpartum",
-  "name": "WHO-Core Observation (Time Postpartum)",
+  "name": "WHOCoreObservationTimePostpartum",
   "title": "WHO-Core Observation (Time Postpartum)",
   "status": "draft",
   "experimental": false,
@@ -32,7 +32,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "86569001",
-              "display": "Time postpartum (SNOMED-CT)"
+              "display": "Postpartum state"
             }
           ]
         },
@@ -45,7 +45,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "86569001",
-            "display": "Time postpartum (SNOMED-CT)"
+            "display": "Postpartum state"
           }
         ],
         "min": 0,

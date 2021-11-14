@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "who-core-observation-reason-for-no-contraceptive-method-at-intake",
-  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake",
-  "name": "WHO-Core Observation (Reason for no contraceptive method at intake)",
+  "id": "who-core-observation-reason-no-contraceptive-method",
+  "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-reason-no-contraceptive-method",
+  "name": "WHOCoreObservationReasonfornocontraceptivemethodatintake",
   "title": "WHO-Core Observation (Reason for no contraceptive method at intake)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "86650-9",
-              "display": "Reason for no contraceptive method - Reported at intake (LOINC)"
+              "display": "Reason no birth control at intake"
             }
           ]
         },
@@ -41,7 +41,7 @@
         "id": "Observation.valueCodeableConcept",
         "path": "Observation.valueCodeableConcept",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"

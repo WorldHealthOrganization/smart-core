@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-body-weight",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-weight",
-  "name": "WHO-Core Observation (Body Weight)",
+  "name": "WHOCoreObservationBodyWeight",
   "title": "WHO-Core Observation (Body Weight)",
   "status": "draft",
   "experimental": false,
@@ -32,7 +32,7 @@
             {
               "system": "http://loinc.org",
               "code": "29463-7",
-              "display": "Body weight (LOINC)"
+              "display": "Body weight"
             }
           ]
         },
@@ -45,7 +45,7 @@
           {
             "system": "http://loinc.org",
             "code": "29463-7",
-            "display": "Body weight (LOINC)"
+            "display": "Body weight"
           }
         ],
         "min": 0,

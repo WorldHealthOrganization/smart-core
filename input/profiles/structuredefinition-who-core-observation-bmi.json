@@ -2,8 +2,8 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-bmi",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-bmi",
-  "name": "WHO-Core Observation (BMI) ",
-  "title": "WHO-Core Observation (BMI) ",
+  "name": "WHOCoreObservationBMI",
+  "title": "WHO-Core Observation (BMI)",
   "status": "draft",
   "experimental": false,
   "description": "Body mass index (BMI) is calculated by taking weight in kg divided by the squared height in meters, i.e., kg/m^2.",
@@ -32,7 +32,7 @@
             {
               "system": "http://loinc.org",
               "code": "39156-5",
-              "display": "Body mass index (BMI) (LOINC)"
+              "display": "Body mass index (BMI) [Ratio]"
             }
           ]
         },
@@ -45,7 +45,7 @@
           {
             "system": "http://loinc.org",
             "code": "39156-5",
-            "display": "Body mass index (BMI) (LOINC)"
+            "display": "Body mass index (BMI) [Ratio]"
           }
         ],
         "min": 0,

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "marital-status-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/marital-status-values",
-  "name": "marital-status-values",
+  "name": "MaritalStatusValues",
   "title": "Marital Status values",
   "status": "draft",
   "experimental": false,

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "miscarriage-or-abortion-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-values",
-  "name": "miscarriage-or-abortion-values",
+  "name": "MiscarriageorAbortionValues",
   "title": "Miscarriage or Abortion values",
   "status": "draft",
   "experimental": false,

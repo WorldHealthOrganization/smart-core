@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-last-normal-menses",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-last-normal-menses",
-  "name": "WHO-Core Observation (Last Normal Menses)",
+  "name": "WHOCoreObservationLastNormalMenses",
   "title": "WHO-Core Observation (Last Normal Menses)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "248957007",
-              "display": "Start date of last normal menses (SNOMED-CT)"
+              "display": "Menstruation"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "248957007",
-            "display": "Start date of last normal menses (SNOMED-CT)"
+            "display": "Menstruation"
           }
         ],
         "min": 0,

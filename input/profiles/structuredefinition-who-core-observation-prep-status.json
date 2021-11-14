@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-prep-status",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-prep-status",
-  "name": "WHO-Core Observation (PrEP Status)",
+  "name": "WHOCoreObservationPrEPStatus",
   "title": "WHO-Core Observation (PrEP Status)",
   "status": "draft",
   "experimental": false,
+  "description": "PrEP Status",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -28,9 +29,9 @@
         "fixedCodeableConcept": {
           "coding": [
             {
-              "system": "http://who.int/cg/CodeSystem/extended-content",
+              "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
               "code": "PrEP status",
-              "display": "PrEP status (FHIR)"
+              "display": "PrEP status"
             }
           ]
         },
@@ -41,9 +42,9 @@
         "path": "Observation.valueCodeableConcept",
         "code": [
           {
-            "system": "http://who.int/cg/CodeSystem/extended-content",
+            "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
             "code": "PrEP status",
-            "display": "PrEP status (FHIR)"
+            "display": "PrEP status"
           }
         ],
         "min": 0,

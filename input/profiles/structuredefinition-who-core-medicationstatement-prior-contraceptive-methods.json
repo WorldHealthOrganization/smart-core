@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-medicationstatement-prior-contraceptive-methods",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-prior-contraceptive-methods",
-  "name": "WHO-Core MedicationStatement (Prior Contraceptive Methods)",
+  "name": "WHOCoreMedicationStatementPriorContraceptiveMethods",
   "title": "WHO-Core MedicationStatement (Prior Contraceptive Methods)",
   "status": "draft",
   "experimental": false,
@@ -22,10 +22,10 @@
         "mustSupport": false
       },
       {
-        "id": "MedicationStatement.medicationCodeableConcept",
-        "path": "MedicationStatement.medicationCodeableConcept",
-        "min": 0,
-        "max": "*",
+        "id": "MedicationStatement.medication[x]",
+        "path": "MedicationStatement.medication[x]",
+        "min": 1,
+        "max": "1",
         "type": [
           {
             "code": "CodeableConcept"

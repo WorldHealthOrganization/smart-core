@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-body-height",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-height",
-  "name": "WHO-Core Observation (Body Height)",
+  "name": "WHOCoreObservationBodyHeight",
   "title": "WHO-Core Observation (Body Height)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "8302-2",
-              "display": "Body height (LOINC)"
+              "display": "Body height"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://loinc.org",
             "code": "8302-2",
-            "display": "Body height (LOINC)"
+            "display": "Body height"
           }
         ],
         "min": 0,

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "payment-method-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/payment-method-values",
-  "name": "payment-method-values",
+  "name": "PaymentMethodValues",
   "title": "Payment method values",
   "status": "draft",
   "experimental": false,
@@ -11,7 +11,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
             "code": "G",

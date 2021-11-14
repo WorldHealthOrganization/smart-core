@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-hiv-care-enrollment",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-care-enrollment",
-  "name": "WHO-Core Observation (HIV Care Enrollment)",
+  "name": "WHOCoreObservationHIVCareEnrollment",
   "title": "WHO-Core Observation (HIV Care Enrollment)",
   "status": "draft",
   "experimental": false,
+  "description": "HIV Care Enrollment",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -34,7 +35,7 @@
           {
             "system": "http://loinc.org",
             "code": "45235-9",
-            "display": "Enrollment date into HIV care (LOINC)"
+            "display": "Date original clinic HIV treatment start"
           }
         ],
         "min": 0,

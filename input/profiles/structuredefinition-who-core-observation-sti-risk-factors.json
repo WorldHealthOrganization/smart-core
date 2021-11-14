@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-sti-risk-factors",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sti-risk-factors",
-  "name": "WHO-Core Observation (STI Risk Factors)",
+  "name": "WHOCoreObservationSTIRiskFactors",
   "title": "WHO-Core Observation (STI Risk Factors)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "LA6508-1",
-              "display": "STI risk assessment factors (LOINC)"
+              "display": "STI Outpatient"
             }
           ]
         },

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "occupation-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/occupation-values",
-  "name": "occupation-values",
+  "name": "OccupationValues",
   "title": "Occupation values",
   "status": "draft",
   "experimental": false,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "system": "http://who.int/cg/CodeSystem/extended-content",
+        "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
             "code": "Other",

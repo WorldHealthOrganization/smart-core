@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-sexual-history",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sexual-history",
-  "name": "WHO-Core Observation (Sexual History)",
+  "name": "WHOCoreObservationSexualHistory",
   "title": "WHO-Core Observation (Sexual History)",
   "status": "draft",
   "experimental": false,
@@ -32,7 +32,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "68732003",
-              "display": "Ever had sex - Reported (SNOMED-CT)"
+              "display": "Non-virginal state"
             }
           ]
         },
@@ -45,7 +45,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "68732003",
-            "display": "Ever had sex - Reported (SNOMED-CT)"
+            "display": "Non-virginal state"
           }
         ],
         "min": 0,

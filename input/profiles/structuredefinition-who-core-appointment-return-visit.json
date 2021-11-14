@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-appointment-return-visit",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-return-visit",
-  "name": "WHO-Core Appointment (Return Visit)",
+  "name": "WHOCoreAppointmentReturnVisit",
   "title": "WHO-Core Appointment (Return Visit)",
   "status": "draft",
   "experimental": false,
@@ -28,7 +28,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "185353001",
-            "display": "Return Visit Appointment (SNOMED-CT)"
+            "display": "Appointment date"
           }
         ],
         "min": 0,

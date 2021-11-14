@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-days-since-unprotected-sex",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-days-since-unprotected-sex",
-  "name": "WHO-Core Observation (Days since Unprotected Sex)",
+  "name": "WHOCoreObservationDayssinceUnprotectedSex",
   "title": "WHO-Core Observation (Days since Unprotected Sex)",
   "status": "draft",
   "experimental": false,
@@ -32,7 +32,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "2314005",
-              "display": "Days since unprotected sex (SNOMED-CT)"
+              "display": "Unprotected sexual intercourse"
             }
           ]
         },
@@ -45,7 +45,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "2314005",
-            "display": "Days since unprotected sex (SNOMED-CT)"
+            "display": "Unprotected sexual intercourse"
           }
         ],
         "min": 0,

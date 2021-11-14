@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-breastfeeding",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-breastfeeding",
-  "name": "WHO-Core Observation (Breastfeeding)",
+  "name": "WHOCoreObservationBreastfeeding",
   "title": "WHO-Core Observation (Breastfeeding)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://snomed.info/sct",
               "code": "413712001",
-              "display": "Breastfeeding (SNOMED-CT)"
+              "display": "Breastfeeding (mother)"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://snomed.info/sct",
             "code": "413712001",
-            "display": "Breastfeeding (SNOMED-CT)"
+            "display": "Breastfeeding (mother)"
           }
         ],
         "min": 0,

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-observation-number-of-births",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-number-of-births",
-  "name": "WHO-Core Observation (Number of births)",
+  "name": "WHOCoreObservationNumberofbirths",
   "title": "WHO-Core Observation (Number of births)",
   "status": "draft",
   "experimental": false,
@@ -31,7 +31,7 @@
             {
               "system": "http://loinc.org",
               "code": "11640-0",
-              "display": "Number of births (LOINC)"
+              "display": "[#] Births total"
             }
           ]
         },
@@ -44,7 +44,7 @@
           {
             "system": "http://loinc.org",
             "code": "11640-0",
-            "display": "Number of births (LOINC)"
+            "display": "[#] Births total"
           }
         ],
         "min": 0,

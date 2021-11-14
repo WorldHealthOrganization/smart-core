@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-allergyintolerance",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance",
-  "name": "WHO-Core AllergyIntolerance",
+  "name": "WHOCoreAllergyIntolerance",
   "title": "WHO-Core AllergyIntolerance",
   "status": "draft",
   "experimental": false,

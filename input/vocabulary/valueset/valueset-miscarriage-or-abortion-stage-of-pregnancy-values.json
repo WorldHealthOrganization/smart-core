@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "id": "miscarriage-or-abortion-stage-of-pregnancy-values",
   "url": "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values",
-  "name": "miscarriage-or-abortion-stage-of-pregnancy-values",
+  "name": "MiscarriageorAbortionStageofPregnancyValues",
   "title": "Miscarriage or abortion stage of pregnancy values",
   "status": "draft",
   "experimental": false,

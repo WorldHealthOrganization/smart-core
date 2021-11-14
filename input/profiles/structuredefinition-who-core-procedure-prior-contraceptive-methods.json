@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "who-core-procedure-prior-contraceptive-methods",
   "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-prior-contraceptive-methods",
-  "name": "WHO-Core Procedure (Prior Contraceptive Methods)",
+  "name": "WHOCoreProcedurePriorContraceptiveMethods",
   "title": "WHO-Core Procedure (Prior Contraceptive Methods)",
   "status": "draft",
   "experimental": false,
@@ -25,7 +25,7 @@
         "id": "Procedure.code",
         "path": "Procedure.code",
         "min": 0,
-        "max": "*",
+        "max": "1",
         "mustSupport": true,
         "binding": {
           "strength": "required",
