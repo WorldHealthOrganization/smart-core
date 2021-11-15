@@ -68,6 +68,11 @@
         <title value="Downloads" />
         <generation value="html" />
       </page>
+      <page>
+        <nameUrl value="license.html" />
+        <title value="License" />
+        <generation value="markdown" />
+      </page>
     </page>
     <parameter>
       <code value="apply-publisher"/>
