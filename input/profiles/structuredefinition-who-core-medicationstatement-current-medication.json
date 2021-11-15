@@ -56,7 +56,7 @@
           {
             "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
             "code": "Antiretroviral regimen (date and dose)",
-            "display": "Antiretroviral regimen (date and dose) (FHIR)"
+            "display": "Antiretroviral regimen (date and dose)"
           }
         ],
         "min": 0,
