@@ -27,7 +27,7 @@
         "system": "http://fhir.org/guides/who/core/CodeSystem/extended-content-codes",
         "concept": [
           {
-            "code": "Other",
+            "code": "Other occupation",
             "display": "Other (specify)"
           }
         ]
