@@ -6,6 +6,7 @@ The profiles here define shared data elements used within content implementation
 
 The current draft of the implementation guide is available [here](http://build.fhir.org/ig/WorldHealthOrganization/smart-core/).
 
+
 The guide is published under a Creative Commons [license](LICENSE.md).
 
 ## Change Management and Roadmap
