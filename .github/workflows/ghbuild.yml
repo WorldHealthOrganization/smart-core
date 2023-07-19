@@ -9,6 +9,9 @@
 # 2023-01-22: use checkout action v3, and JamesIves/github-pages-deploy-action@v4
 # 2023-07-19: squash commits on gh-pages (no history needed there)
 
+## PLEASE DON'T COPY THIS CODE TO YOUR IGs, UNLESS YOU NEED TO CHANGE IT
+## THIS IS A REUSABLE WORLFLOW AND SHOULD BE CALLED, NOT COPIED
+
 # To use: Make sure that:
 ## your repo has a branch called gh-pages
 ## github pages are activated for the repository
