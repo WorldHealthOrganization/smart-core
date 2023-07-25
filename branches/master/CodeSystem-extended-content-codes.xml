@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="extended-content-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://who.int/cg/CodeSystem/extended-content-codes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">Returning Client<a name="extended-content-codes-ReturningClient"> </a></td><td>Returning client</td><td>Visit type - Returning client</td></tr><tr><td style="white-space:nowrap">Referral<a name="extended-content-codes-Referral"> </a></td><td>Referral</td><td>Visit type - Referral</td></tr><tr><td style="white-space:nowrap">New Client<a name="extended-content-codes-NewClient"> </a></td><td>New client</td><td>Visit type - New client</td></tr><tr><td style="white-space:nowrap">First visit for symptoms<a name="extended-content-codes-Firstvisitforsymptoms"> </a></td><td>First visit for symptoms</td><td>Visit type - First visit for symptoms</td></tr><tr><td style="white-space:nowrap">STI Follow up<a name="extended-content-codes-STIFollowup"> </a></td><td>Follow up for STI management</td><td>Visit type - Follow up for STI management</td></tr><tr><td style="white-space:nowrap">Community<a name="extended-content-codes-Community"> </a></td><td>Community</td><td>Referred by - Community</td></tr><tr><td style="white-space:nowrap">Facility<a name="extended-content-codes-Facility"> </a></td><td>Facility</td><td>Referred by - Facility</td></tr><tr><td style="white-space:nowrap">Levonorgestrel (LNG) two-rod implant<a name="extended-content-codes-Levonorgestrel.40LNG.41two-rodimplant"> </a></td><td>Levonorgestrel (LNG) two-rod implant</td><td>Method at intake - Levonorgestrel (LNG) two-rod implant</td></tr><tr><td style="white-space:nowrap">Other<a name="extended-content-codes-Other"> </a></td><td>Other</td><td>Reason for no contraceptive method - Reported at intake - Other</td></tr><tr><td style="white-space:nowrap">Other<a name="extended-content-codes-Other"> </a></td><td>Other</td><td>HIV Test Result - Other</td></tr><tr><td style="white-space:nowrap">Don't know<a name="extended-content-codes-Don.39tknow"> </a></td><td>Don't know</td><td>Current medications - Don't know</td></tr><tr><td style="white-space:nowrap">STI medication<a name="extended-content-codes-STImedication"> </a></td><td>STI medication</td><td>Current medications - STI medication</td></tr><tr><td style="white-space:nowrap">Other Antibiotics<a name="extended-content-codes-OtherAntibiotics"> </a></td><td>Other antibiotics</td><td>Current medications - Other antibiotics</td></tr><tr><td style="white-space:nowrap">Other<a name="extended-content-codes-Other"> </a></td><td>Other (specify)</td><td>Current medications - Other (specify)</td></tr><tr><td style="white-space:nowrap">Other<a name="extended-content-codes-Other"> </a></td><td>Other</td><td>Drug allergies - Other</td></tr><tr><td style="white-space:nowrap">PrEP status<a name="extended-content-codes-PrEPstatus"> </a></td><td>PrEP status</td><td>PrEP status</td></tr><tr><td style="white-space:nowrap">Antiretroviral regimen (date and dose)<a name="extended-content-codes-Antiretroviralregimen.40dateanddose.41"> </a></td><td>Antiretroviral regimen (date and dose)</td><td>Antiretroviral regimen (date and dose)</td></tr><tr><td style="white-space:nowrap">NONE<a name="extended-content-codes-NONE"> </a></td><td>No education</td><td>Highest level of education achieved - No education</td></tr><tr><td style="white-space:nowrap">Other<a name="extended-content-codes-Other"> </a></td><td>Other (specify)</td><td>Occupation - Other (specify)</td></tr><tr><td style="white-space:nowrap">G<a name="extended-content-codes-G"> </a></td><td>Government</td><td>Payment method - Government</td></tr><tr><td style="white-space:nowrap">I<a name="extended-content-codes-I"> </a></td><td>Insurance</td><td>Payment method - Insurance</td></tr></table></div>
+  </text>
+  <url value="http://who.int/cg/CodeSystem/extended-content-codes"/>
+  <version value="0.2.0"/>
+  <name value="extended-content_codes"/>
+  <title value="WHO Extended Codes CodeSystem codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Set of codes identified as being needed but not found in existing Code Systems"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="Returning Client"/>
+    <display value="Returning client"/>
+    <definition value="Visit type - Returning client"/>
+  </concept>
+  <concept>
+    <code value="Referral"/>
+    <display value="Referral"/>
+    <definition value="Visit type - Referral"/>
+  </concept>
+  <concept>
+    <code value="New Client"/>
+    <display value="New client"/>
+    <definition value="Visit type - New client"/>
+  </concept>
+  <concept>
+    <code value="First visit for symptoms"/>
+    <display value="First visit for symptoms"/>
+    <definition value="Visit type - First visit for symptoms"/>
+  </concept>
+  <concept>
+    <code value="STI Follow up"/>
+    <display value="Follow up for STI management"/>
+    <definition value="Visit type - Follow up for STI management"/>
+  </concept>
+  <concept>
+    <code value="Community"/>
+    <display value="Community"/>
+    <definition value="Referred by - Community"/>
+  </concept>
+  <concept>
+    <code value="Facility"/>
+    <display value="Facility"/>
+    <definition value="Referred by - Facility"/>
+  </concept>
+  <concept>
+    <code value="Levonorgestrel (LNG) two-rod implant"/>
+    <display value="Levonorgestrel (LNG) two-rod implant"/>
+    <definition value="Method at intake - Levonorgestrel (LNG) two-rod implant"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other"/>
+    <definition value="Reason for no contraceptive method - Reported at intake - Other"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other"/>
+    <definition value="HIV Test Result - Other"/>
+  </concept>
+  <concept>
+    <code value="Don't know"/>
+    <display value="Don't know"/>
+    <definition value="Current medications - Don't know"/>
+  </concept>
+  <concept>
+    <code value="STI medication"/>
+    <display value="STI medication"/>
+    <definition value="Current medications - STI medication"/>
+  </concept>
+  <concept>
+    <code value="Other Antibiotics"/>
+    <display value="Other antibiotics"/>
+    <definition value="Current medications - Other antibiotics"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other (specify)"/>
+    <definition value="Current medications - Other (specify)"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other"/>
+    <definition value="Drug allergies - Other"/>
+  </concept>
+  <concept>
+    <code value="PrEP status"/>
+    <display value="PrEP status"/>
+    <definition value="PrEP status"/>
+  </concept>
+  <concept>
+    <code value="Antiretroviral regimen (date and dose)"/>
+    <display value="Antiretroviral regimen (date and dose)"/>
+    <definition value="Antiretroviral regimen (date and dose)"/>
+  </concept>
+  <concept>
+    <code value="NONE"/>
+    <display value="No education"/>
+    <definition value="Highest level of education achieved - No education"/>
+  </concept>
+  <concept>
+    <code value="Other"/>
+    <display value="Other (specify)"/>
+    <definition value="Occupation - Other (specify)"/>
+  </concept>
+  <concept>
+    <code value="G"/>
+    <display value="Government"/>
+    <definition value="Payment method - Government"/>
+  </concept>
+  <concept>
+    <code value="I"/>
+    <display value="Insurance"/>
+    <definition value="Payment method - Insurance"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="visit-type-values"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://who.int/cg/CodeSystem/extended-content</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Returning Client</td><td>Returning client</td></tr><tr><td>Referral</td><td>Referral</td></tr><tr><td>New Client</td><td>New client</td></tr><tr><td>First visit for symptoms</td><td>First visit for symptoms</td></tr><tr><td>STI Follow up</td><td>Follow up for STI management</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0276.html"><code>http://terminology.hl7.org/CodeSystem/v2-0276</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0276.html#v2-0276-FOLLOWUP">FOLLOWUP</a></td><td>Follow up appointment</td><td>A follow up visit from a previous appointment</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/who/core/ValueSet/visit-type-values"/>
+  <version value="0.2.0"/>
+  <name value="visit-type-values"/>
+  <title value="Visit type values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Visit type element"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://who.int/cg/CodeSystem/extended-content"/>
+      <concept>
+        <code value="Returning Client"/>
+        <display value="Returning client"/>
+      </concept>
+      <concept>
+        <code value="Referral"/>
+        <display value="Referral"/>
+      </concept>
+      <concept>
+        <code value="New Client"/>
+        <display value="New client"/>
+      </concept>
+      <concept>
+        <code value="First visit for symptoms"/>
+        <display value="First visit for symptoms"/>
+      </concept>
+      <concept>
+        <code value="STI Follow up"/>
+        <display value="Follow up for STI management"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+      <concept>
+        <code value="FOLLOWUP"/>
+        <display value="Follow up appointment"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,353 @@
+{
+  "package": "who.fhir.core",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/consenttocontact",
+      "title": "Communication consent",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/educationlevel",
+      "title": "Highest level of education achieved",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/estimatedage",
+      "title": "Estimated age",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/insurance",
+      "title": "Insurance coverage",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/method",
+      "title": "Payment method",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/occupation",
+      "title": "Occupation",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/reminder",
+      "title": "Reminder messages",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/requestertype",
+      "title": "Referred by",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.org/guides/who/core/StructureDefinition/stage",
+      "title": "Miscarriage or abortion stage of pregnancy",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance",
+        "title": "WHO-Core AllergyIntolerance"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance-drug-allergies",
+        "title": "WHO-Core AllergyIntolerance (Drug Allergies)"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-return-visit",
+        "title": "WHO-Core Appointment (Return Visit)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-visit",
+        "title": "WHO-Core Appointment (Visit)"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-follow-up",
+        "title": "WHO-Core CarePlan (Follow-up)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-intake-contraceptive-method",
+        "title": "WHO-Core CarePlan (Intake Contraceptive Method)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-prior-contraceptive-methods",
+        "title": "WHO-Core CarePlan (Prior Contraceptive Methods)"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-coverage-insurance",
+        "title": "WHO-Core Coverage (Insurance)"
+      }
+    ],
+    "DeviceUseStatement": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method",
+        "title": "WHO-Core DeviceUseStatement (Intake Contraceptive Method)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-prior-contraceptive-methods",
+        "title": "WHO-Core DeviceUseStatement (Prior Contraceptive Methods)"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-contraceptive-methods",
+        "title": "WHO-Core MedicationStatement (Current Contraceptive Methods)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-medication",
+        "title": "WHO-Core MedicationStatement (Current Medication)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-prior-contraceptive-methods",
+        "title": "WHO-Core MedicationStatement (Prior Contraceptive Methods)"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-bmi",
+        "title": "WHO-Core Observation (BMI) "
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-height",
+        "title": "WHO-Core Observation (Body Height)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-weight",
+        "title": "WHO-Core Observation (Body Weight)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-breastfeeding",
+        "title": "WHO-Core Observation (Breastfeeding)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-clinical-observations",
+        "title": "WHO-Core Observation (Clinical Observations)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-date-of-delivery",
+        "title": "WHO-Core Observation (Date of Delivery)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-days-since-unprotected-sex",
+        "title": "WHO-Core Observation (Days since Unprotected Sex)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-risk-factors",
+        "title": "WHO-Core Observation (Gender-based Violence Risk Factors)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-victim",
+        "title": "WHO-Core Observation (Gender-based Violence Victim)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-care-enrollment",
+        "title": "WHO-Core Observation (HIV Care Enrollment)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-stage",
+        "title": "WHO-Core Observation (HIV Stage)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-status",
+        "title": "WHO-Core Observation (HIV Status)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-test",
+        "title": "WHO-Core Observation (HIV Test)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-last-normal-menses",
+        "title": "WHO-Core Observation (Last Normal Menses)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-miscarriage-or-abortion",
+        "title": "WHO-Core Observation (Miscarriage or Abortion)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-never-used-contraception",
+        "title": "WHO-Core Observation (Never used contraception)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-number-of-births",
+        "title": "WHO-Core Observation (Number of births)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-number-of-pregnancies",
+        "title": "WHO-Core Observation (Number of Pregnancies)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-postpartum",
+        "title": "WHO-Core Observation (Postpartum)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-pregnancy-status",
+        "title": "WHO-Core Observation (Pregnancy Status)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-prep-status",
+        "title": "WHO-Core Observation (PrEP Status)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake",
+        "title": "WHO-Core Observation (Reason for no contraceptive method at intake)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-recent-sexual-history",
+        "title": "WHO-Core Observation (Recent Sexual History)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sexual-history",
+        "title": "WHO-Core Observation (Sexual History)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sexually-active",
+        "title": "WHO-Core Observation (Sexually Active)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sti-risk-factors",
+        "title": "WHO-Core Observation (STI Risk Factors)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-temperature",
+        "title": "WHO-Core Observation (Temperature)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-time-postpartum",
+        "title": "WHO-Core Observation (Time Postpartum)"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-patient",
+        "title": "WHO-Core Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-practitioner",
+        "title": "WHO-Core Practitioner"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-intake-contraceptive-method",
+        "title": "WHO-Core Procedure (Intake Contraceptive Method)"
+      },
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-prior-contraceptive-methods",
+        "title": "WHO-Core Procedure (Prior Contraceptive Methods)"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.org/guides/who/core/StructureDefinition/who-core-servicerequest-referral",
+        "title": "WHO-Core ServiceRequest (Referral)"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.org/guides/who/core/StructureDefinition/consenttocontact": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/educationlevel": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/estimatedage": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/insurance": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/method": [
+      "Coverage"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/occupation": [
+      "Patient"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/reminder": [
+      "Patient.communication"
+    ],
+    "http://fhir.org/guides/who/core/StructureDefinition/requestertype": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}

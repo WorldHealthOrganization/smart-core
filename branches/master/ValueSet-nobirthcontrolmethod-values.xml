@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="nobirthcontrolmethod-values"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA 14550-0/">LA 14550-0</a></td><td>Sexual abstinence</td></tr><tr><td><a href="https://loinc.org/LA 27925-9/">LA 27925-9</a></td><td>Same sex partner</td></tr><tr><td><a href="https://loinc.org/LA 46-8/">LA 46-8</a></td><td>Other</td></tr><tr><td><a href="https://loinc.org/LA 27927-5/">LA 27927-5</a></td><td>Sterile for non-contraceptive reasons</td></tr><tr><td><a href="https://loinc.org/LA 27928-3/">LA 27928-3</a></td><td>Seeking pregnancy</td></tr></table></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/162171002">162171002</a></td><td>Sexual abstinence</td></tr><tr><td><a href="http://snomed.info/id/77386006">77386006</a></td><td>Currently pregnant</td></tr><tr><td><a href="http://snomed.info/id/454361000124100">454361000124100</a></td><td>Same sex partner</td></tr><tr><td><a href="http://snomed.info/id/74964007">74964007</a></td><td>Other</td></tr><tr><td><a href="http://snomed.info/id/182856006">182856006</a></td><td>Out of stock</td></tr><tr><td><a href="http://snomed.info/id/15296000">15296000</a></td><td>Sterile for non-contraceptive reasons</td></tr><tr><td><a href="http://snomed.info/id/9789007">9789007</a></td><td>Sterile for non-contraceptive reasons</td></tr><tr><td><a href="http://snomed.info/id/454411000124108">454411000124108</a></td><td>Seeking pregnancy</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>T38.4</td><td>Side effects from contraception</td></tr><tr><td>Z76.89</td><td>Out of stock</td></tr><tr><td>Z31.9</td><td>Sterile for non-contraceptive reasons</td></tr></table></li><li>Include these codes as defined in <code>http://who.int/cg/CodeSystem/extended-content</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Other</td><td>Other</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/who/core/ValueSet/nobirthcontrolmethod-values"/>
+  <version value="0.2.0"/>
+  <name value="nobirthcontrolmethod-values"/>
+  <title value="Reason for no contraceptive method - Reported at intake values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Reason for no contraceptive method - Reported at intake element"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA 14550-0"/>
+        <display value="Sexual abstinence"/>
+      </concept>
+      <concept>
+        <code value="LA 27925-9"/>
+        <display value="Same sex partner"/>
+      </concept>
+      <concept>
+        <code value="LA 46-8"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="LA 27927-5"/>
+        <display value="Sterile for non-contraceptive reasons"/>
+      </concept>
+      <concept>
+        <code value="LA 27928-3"/>
+        <display value="Seeking pregnancy"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="162171002"/>
+        <display value="Sexual abstinence"/>
+      </concept>
+      <concept>
+        <code value="77386006"/>
+        <display value="Currently pregnant"/>
+      </concept>
+      <concept>
+        <code value="454361000124100"/>
+        <display value="Same sex partner"/>
+      </concept>
+      <concept>
+        <code value="74964007"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="182856006"/>
+        <display value="Out of stock"/>
+      </concept>
+      <concept>
+        <code value="15296000"/>
+        <display value="Sterile for non-contraceptive reasons"/>
+      </concept>
+      <concept>
+        <code value="9789007"/>
+        <display value="Sterile for non-contraceptive reasons"/>
+      </concept>
+      <concept>
+        <code value="454411000124108"/>
+        <display value="Seeking pregnancy"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <concept>
+        <code value="T38.4"/>
+        <display value="Side effects from contraception"/>
+      </concept>
+      <concept>
+        <code value="Z76.89"/>
+        <display value="Out of stock"/>
+      </concept>
+      <concept>
+        <code value="Z31.9"/>
+        <display value="Sterile for non-contraceptive reasons"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://who.int/cg/CodeSystem/extended-content"/>
+      <concept>
+        <code value="Other"/>
+        <display value="Other"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

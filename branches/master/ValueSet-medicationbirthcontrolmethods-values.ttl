@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medicationbirthcontrolmethods-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/169450001\">169450001</a></td><td>No Medication-based method</td></tr><tr><td><a href=\"http://snomed.info/id/709457002\">709457002</a></td><td>DMPA-SC \nDMPA, administered subcutaneously</td></tr><tr><td><a href=\"http://snomed.info/id/782025007\">782025007</a></td><td>Norethisterone enanthate (NET-EN) injectable</td></tr><tr><td><a href=\"http://snomed.info/id/702587005\">702587005</a></td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href=\"http://snomed.info/id/275813002\">275813002</a></td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href=\"http://snomed.info/id/169467008\">169467008</a></td><td>Progestogen-only pills (POP)</td></tr><tr><td><a href=\"http://snomed.info/id/268458002\">268458002</a></td><td>Combined oral contraceptives (COCs)</td></tr><tr><td><a href=\"http://snomed.info/id/89780004\">89780004</a></td><td>Combined injectable contraception</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA27907-7/\">LA27907-7</a></td><td>DMPA-IM \n DMPA, administered intramuscularly</td></tr><tr><td><a href=\"https://loinc.org/LA16573-0/\">LA16573-0</a></td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href=\"https://loinc.org/LA27909-3/\">LA27909-3</a></td><td>Progestogen-only pills (POP)</td></tr><tr><td><a href=\"https://loinc.org/LA27908-5/\">LA27908-5</a></td><td>Combined oral contraceptives (COCs)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1359235</td><td>Norethisterone enanthate (NET-EN) injectable</td></tr><tr><td>483325</td><td>Emergency contraceptive pills (ECPs)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "medicationbirthcontrolmethods-values"] ; # 
+  fhir:title [ fhir:v "Medication-based Birth control method reported at intake values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Medication-based Birth control method reported at intake element"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "169450001" ] ;
+         fhir:display [ fhir:v "No Medication-based method" ]
+       ] [
+         fhir:code [ fhir:v "709457002" ] ;
+         fhir:display [ fhir:v "DMPA-SC \nDMPA, administered subcutaneously" ]
+       ] [
+         fhir:code [ fhir:v "782025007" ] ;
+         fhir:display [ fhir:v "Norethisterone enanthate (NET-EN) injectable" ]
+       ] [
+         fhir:code [ fhir:v "702587005" ] ;
+         fhir:display [ fhir:v "Emergency contraceptive pills (ECPs)" ]
+       ] [
+         fhir:code [ fhir:v "275813002" ] ;
+         fhir:display [ fhir:v "Emergency contraceptive pills (ECPs)" ]
+       ] [
+         fhir:code [ fhir:v "169467008" ] ;
+         fhir:display [ fhir:v "Progestogen-only pills (POP)" ]
+       ] [
+         fhir:code [ fhir:v "268458002" ] ;
+         fhir:display [ fhir:v "Combined oral contraceptives (COCs)" ]
+       ] [
+         fhir:code [ fhir:v "89780004" ] ;
+         fhir:display [ fhir:v "Combined injectable contraception" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA27907-7" ] ;
+         fhir:display [ fhir:v "DMPA-IM \n DMPA, administered intramuscularly" ]
+       ] [
+         fhir:code [ fhir:v "LA16573-0" ] ;
+         fhir:display [ fhir:v "Emergency contraceptive pills (ECPs)" ]
+       ] [
+         fhir:code [ fhir:v "LA27909-3" ] ;
+         fhir:display [ fhir:v "Progestogen-only pills (POP)" ]
+       ] [
+         fhir:code [ fhir:v "LA27908-5" ] ;
+         fhir:display [ fhir:v "Combined oral contraceptives (COCs)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1359235" ] ;
+         fhir:display [ fhir:v "Norethisterone enanthate (NET-EN) injectable" ]
+       ] [
+         fhir:code [ fhir:v "483325" ] ;
+         fhir:display [ fhir:v "Emergency contraceptive pills (ECPs)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

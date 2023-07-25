@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ValueSet/drug-allergies-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "drug-allergies-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/la32-8/\">la32-8</a></td><td>None</td></tr><tr><td><a href=\"https://loinc.org/la12688-0/\">la12688-0</a></td><td>Don't know</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>70618</td><td>Penicillin</td></tr><tr><td>117466</td><td>PrEP tenofovir disoproxil fumarate</td></tr></table></li><li>Include these codes as defined in <code>http://who.int/cg/CodeSystem/extended-content</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Other</td><td>Other</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ValueSet/drug-allergies-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "drug-allergies-values"] ; # 
+  fhir:title [ fhir:v "Drug allergies values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Drug allergies element"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "la32-8" ] ;
+         fhir:display [ fhir:v "None" ]
+       ] [
+         fhir:code [ fhir:v "la12688-0" ] ;
+         fhir:display [ fhir:v "Don't know" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "70618" ] ;
+         fhir:display [ fhir:v "Penicillin" ]
+       ] [
+         fhir:code [ fhir:v "117466" ] ;
+         fhir:display [ fhir:v "PrEP tenofovir disoproxil fumarate" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://who.int/cg/CodeSystem/extended-content"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Other" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

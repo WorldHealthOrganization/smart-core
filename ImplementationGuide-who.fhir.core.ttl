@@ -1,0 +1,1462 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ImplementationGuide/who.fhir.core> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "who.fhir.core"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Core</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/who/core/ImplementationGuide/who.fhir.core</pre><div><p>WHO Core Implementation Guide</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ImplementationGuide/who.fhir.core"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "Core"] ; # 
+  fhir:title [ fhir:v "WHO Core Implementation Guide"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2017-02-06"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WHO Core Implementation Guide"] ; # 
+  fhir:packageId [ fhir:v "who.fhir.core"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "5.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2019+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CI Build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.org/guides/who/core/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "copyrightyear" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2019+" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "releaselabel" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CI Build" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-suppressed-warnings" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "autoload-resources" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-liquid" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "input/liquid" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-qa" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/qa" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-temp" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "temp/pages" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-output" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "output" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "path-history" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://fhir.org/guides/who/core/history.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-html" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-md" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "template-page-md.html" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-contact" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-context" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-copyright" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-jurisdiction" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-license" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-publisher" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-version" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "active-tables" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "fmm-definition" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "propagate-status" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "excludelogbinaryformat" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "tabbed-snapshots" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:grouping ( [
+       fhir:name [ fhir:v "WHO Core Implementation Guide Package" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/CodeSystem/extended-content-codes> ;
+         fhir:reference [ fhir:v "CodeSystem/extended-content-codes" ]
+       ] ;
+       fhir:name [ fhir:v "WHO Extended Codes CodeSystem codes" ] ;
+       fhir:description [ fhir:v "Set of codes identified as being needed but not found in existing Code Systems" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-values> ;
+         fhir:reference [ fhir:v "ValueSet/miscarriage-or-abortion-values" ]
+       ] ;
+       fhir:name [ fhir:v "Miscarriage or Abortion values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Miscarriage or Abortion element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/nobirthcontrolmethod-values> ;
+         fhir:reference [ fhir:v "ValueSet/nobirthcontrolmethod-values" ]
+       ] ;
+       fhir:name [ fhir:v "Reason for no contraceptive method - Reported at intake values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Reason for no contraceptive method - Reported at intake element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/marital-status-values> ;
+         fhir:reference [ fhir:v "ValueSet/marital-status-values" ]
+       ] ;
+       fhir:name [ fhir:v "Marital Status values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Marital Status element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/hiv-test-result-values> ;
+         fhir:reference [ fhir:v "ValueSet/hiv-test-result-values" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Test Result values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the HIV Test Result element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values> ;
+         fhir:reference [ fhir:v "ValueSet/medicationbirthcontrolmethods-values" ]
+       ] ;
+       fhir:name [ fhir:v "Medication-based Birth control method reported at intake values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Medication-based Birth control method reported at intake element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values> ;
+         fhir:reference [ fhir:v "ValueSet/sti-risk-assessment-factors-values" ]
+       ] ;
+       fhir:name [ fhir:v "STI risk assessment factors values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the STI risk assessment factors element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/hiv-stage-values> ;
+         fhir:reference [ fhir:v "ValueSet/hiv-stage-values" ]
+       ] ;
+       fhir:name [ fhir:v "HIV Stage values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the HIV Stage element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/pregnancystatus-values> ;
+         fhir:reference [ fhir:v "ValueSet/pregnancystatus-values" ]
+       ] ;
+       fhir:name [ fhir:v "Pregnancy status values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Pregnancy status element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/referred-by-values> ;
+         fhir:reference [ fhir:v "ValueSet/referred-by-values" ]
+       ] ;
+       fhir:name [ fhir:v "Referred by values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Referred by element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values> ;
+         fhir:reference [ fhir:v "ValueSet/procedurebirthcontrolmethods-values" ]
+       ] ;
+       fhir:name [ fhir:v "Prior contraceptive methods used - Procedure-based values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Prior contraceptive methods used - Procedure-based element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/drug-allergies-values> ;
+         fhir:reference [ fhir:v "ValueSet/drug-allergies-values" ]
+       ] ;
+       fhir:name [ fhir:v "Drug allergies values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Drug allergies element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values> ;
+         fhir:reference [ fhir:v "ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values" ]
+       ] ;
+       fhir:name [ fhir:v "Miscarriage or abortion stage of pregnancy values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Miscarriage or abortion stage of pregnancy element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/visit-type-values> ;
+         fhir:reference [ fhir:v "ValueSet/visit-type-values" ]
+       ] ;
+       fhir:name [ fhir:v "Visit type values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Visit type element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/reason-for-referral-values> ;
+         fhir:reference [ fhir:v "ValueSet/reason-for-referral-values" ]
+       ] ;
+       fhir:name [ fhir:v "Reason for referral values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Reason for referral element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/occupation-values> ;
+         fhir:reference [ fhir:v "ValueSet/occupation-values" ]
+       ] ;
+       fhir:name [ fhir:v "Occupation values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Occupation element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/gender-values> ;
+         fhir:reference [ fhir:v "ValueSet/gender-values" ]
+       ] ;
+       fhir:name [ fhir:v "Gender values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Gender element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/careplanbirthcontrolmethods-values> ;
+         fhir:reference [ fhir:v "ValueSet/careplanbirthcontrolmethods-values" ]
+       ] ;
+       fhir:name [ fhir:v "Prior contraceptive methods used - CarePlan-based values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Prior contraceptive methods used - CarePlan-based element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/devicebirthcontrolmethods-values> ;
+         fhir:reference [ fhir:v "ValueSet/devicebirthcontrolmethods-values" ]
+       ] ;
+       fhir:name [ fhir:v "Contraceptive history - Device-based values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Contraceptive history - Device-based element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/current-medications-values> ;
+         fhir:reference [ fhir:v "ValueSet/current-medications-values" ]
+       ] ;
+       fhir:name [ fhir:v "Current medications values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Current medications element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/highest-level-of-education-achieved-values> ;
+         fhir:reference [ fhir:v "ValueSet/highest-level-of-education-achieved-values" ]
+       ] ;
+       fhir:name [ fhir:v "Highest level of education achieved values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Highest level of education achieved element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/ValueSet/payment-method-values> ;
+         fhir:reference [ fhir:v "ValueSet/payment-method-values" ]
+       ] ;
+       fhir:name [ fhir:v "Payment method values" ] ;
+       fhir:description [ fhir:v "Codes representing possible values for the Payment method element" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Occupation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/insurance> ;
+         fhir:reference [ fhir:v "StructureDefinition/insurance" ]
+       ] ;
+       fhir:name [ fhir:v "Insurance coverage" ] ;
+       fhir:description [ fhir:v "Does the client have insurance coverage?" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/estimatedage> ;
+         fhir:reference [ fhir:v "StructureDefinition/estimatedage" ]
+       ] ;
+       fhir:name [ fhir:v "Estimated age" ] ;
+       fhir:description [ fhir:v "If DOB is unknown, enter the client's age. Note displaying the client's age in years." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/method> ;
+         fhir:reference [ fhir:v "StructureDefinition/method" ]
+       ] ;
+       fhir:name [ fhir:v "Payment method" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/reminder> ;
+         fhir:reference [ fhir:v "StructureDefinition/reminder" ]
+       ] ;
+       fhir:name [ fhir:v "Reminder messages" ] ;
+       fhir:description [ fhir:v "Whether client wants to receive text or other messages as follow-up for family planning" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/consenttocontact> ;
+         fhir:reference [ fhir:v "StructureDefinition/consenttocontact" ]
+       ] ;
+       fhir:name [ fhir:v "Communication consent" ] ;
+       fhir:description [ fhir:v "Indication that client gave consent to be contacted" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/requestertype> ;
+         fhir:reference [ fhir:v "StructureDefinition/requestertype" ]
+       ] ;
+       fhir:name [ fhir:v "Referred by" ] ;
+       fhir:description [ fhir:v "How the client was referred" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/stage> ;
+         fhir:reference [ fhir:v "StructureDefinition/stage" ]
+       ] ;
+       fhir:name [ fhir:v "Miscarriage or abortion stage of pregnancy" ] ;
+       fhir:description [ fhir:v "If the woman recently had a miscarriage or abortion, when in the pregnancy the abortion took place." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/educationlevel> ;
+         fhir:reference [ fhir:v "StructureDefinition/educationlevel" ]
+       ] ;
+       fhir:name [ fhir:v "Highest level of education achieved" ] ;
+       fhir:description [ fhir:v "The highest level of school the client has reached." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-time-postpartum> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-time-postpartum" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Time Postpartum)" ] ;
+       fhir:description [ fhir:v "For a postpartum woman, the amount of time since she delivered." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-medicationstatement-current-medication" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core MedicationStatement (Current Medication)" ] ;
+       fhir:description [ fhir:v "Write in the medication not included in the list." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-height> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-body-height" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Body Height)" ] ;
+       fhir:description [ fhir:v "The client's height in centimetres." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-intake-contraceptive-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-careplan-intake-contraceptive-method" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core CarePlan (Intake Contraceptive Method)" ] ;
+       fhir:description [ fhir:v "Method the client reports currently using at intake." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-temperature> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-temperature" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Temperature)" ] ;
+       fhir:description [ fhir:v "Temperature of the client in Celsius" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-prior-contraceptive-methods> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-careplan-prior-contraceptive-methods" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core CarePlan (Prior Contraceptive Methods)" ] ;
+       fhir:description [ fhir:v "Contraceptive methods the client has a history of using" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-last-normal-menses> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-last-normal-menses" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Last Normal Menses)" ] ;
+       fhir:description [ fhir:v "First day of last normal menses." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-body-weight> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-body-weight" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Body Weight)" ] ;
+       fhir:description [ fhir:v "The client's current weight in kilograms." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-coverage-insurance> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-coverage-insurance" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Coverage (Insurance)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-deviceusestatement-intake-contraceptive-method" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core DeviceUseStatement (Intake Contraceptive Method)" ] ;
+       fhir:description [ fhir:v "Date of last implant if currently using the method." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-bmi> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-bmi" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (BMI) " ] ;
+       fhir:description [ fhir:v "Body mass index (BMI) is calculated by taking weight in kg divided by the squared height in meters, i.e., kg/m^2." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-deviceusestatement-prior-contraceptive-methods> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-deviceusestatement-prior-contraceptive-methods" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core DeviceUseStatement (Prior Contraceptive Methods)" ] ;
+       fhir:description [ fhir:v "Reported use of method at intake" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-risk-factors> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-gender-based-violence-risk-factors" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Gender-based Violence Risk Factors)" ] ;
+       fhir:description [ fhir:v "Gender-based violence risk factors relevant to the population." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sexual-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-sexual-history" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Sexual History)" ] ;
+       fhir:description [ fhir:v "If the client has been sexually active" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-prior-contraceptive-methods> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-medicationstatement-prior-contraceptive-methods" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core MedicationStatement (Prior Contraceptive Methods)" ] ;
+       fhir:description [ fhir:v "Reported use of method at intake" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sexually-active> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-sexually-active" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Sexually Active)" ] ;
+       fhir:description [ fhir:v "Whether or not the client is sexually active." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-miscarriage-or-abortion> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-miscarriage-or-abortion" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Miscarriage or Abortion)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-never-used-contraception> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-never-used-contraception" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Never used contraception)" ] ;
+       fhir:description [ fhir:v "If the client has never previously used any modern method of contraception." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-prep-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-prep-status" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (PrEP Status)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-stage> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-hiv-stage" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (HIV Stage)" ] ;
+       fhir:description [ fhir:v "WHO HIV clinical stage" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-test> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-hiv-test" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (HIV Test)" ] ;
+       fhir:description [ fhir:v "HIV status of client or not known." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-hiv-status" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (HIV Status)" ] ;
+       fhir:description [ fhir:v "Finding of human immunodeficiency virus status" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-hiv-care-enrollment> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-hiv-care-enrollment" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (HIV Care Enrollment)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-recent-sexual-history> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-recent-sexual-history" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Recent Sexual History)" ] ;
+       fhir:description [ fhir:v "Unprotected sexual intercourse" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-sti-risk-factors> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-sti-risk-factors" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (STI Risk Factors)" ] ;
+       fhir:description [ fhir:v "STI risk factors relevant to the population (e.g., sexually active, new partner in the past three months, partner has an STI, etc.)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance-drug-allergies> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-allergyintolerance-drug-allergies" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core AllergyIntolerance (Drug Allergies)" ] ;
+       fhir:description [ fhir:v "Any known medical allergies of the client." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-reason-for-no-contraceptive-method-at-intake" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Reason for no contraceptive method at intake)" ] ;
+       fhir:description [ fhir:v "If not currently using a method, the reason why." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-servicerequest-referral> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-servicerequest-referral" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core ServiceRequest (Referral)" ] ;
+       fhir:description [ fhir:v "How the client was referred" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-pregnancy-status> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-pregnancy-status" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Pregnancy Status)" ] ;
+       fhir:description [ fhir:v "Pregnancy status at visit" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-breastfeeding> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-breastfeeding" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Breastfeeding)" ] ;
+       fhir:description [ fhir:v "Select if a woman is currently breastfeeding." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-prior-contraceptive-methods> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-procedure-prior-contraceptive-methods" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Procedure (Prior Contraceptive Methods)" ] ;
+       fhir:description [ fhir:v "Contraceptive methods the client has a history of using" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-days-since-unprotected-sex> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-days-since-unprotected-sex" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Days since Unprotected Sex)" ] ;
+       fhir:description [ fhir:v "Days since unprotected sex" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-practitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-practitioner" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Practitioner" ] ;
+       fhir:description [ fhir:v "The provider that served the client." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-procedure-intake-contraceptive-method> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-procedure-intake-contraceptive-method" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Procedure (Intake Contraceptive Method)" ] ;
+       fhir:description [ fhir:v "Date of sterilization, if not reversed." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-number-of-pregnancies> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-number-of-pregnancies" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Number of Pregnancies)" ] ;
+       fhir:description [ fhir:v "The number of pregnancies (gravidity), current and past, regardless of pregnancy outcome." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-medicationstatement-current-contraceptive-methods> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-medicationstatement-current-contraceptive-methods" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core MedicationStatement (Current Contraceptive Methods)" ] ;
+       fhir:description [ fhir:v "Method the client reports currently using at intake." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-number-of-births> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-number-of-births" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Number of births)" ] ;
+       fhir:description [ fhir:v "The number of pregnancies reaching parity." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-gender-based-violence-victim> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-gender-based-violence-victim" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Gender-based Violence Victim)" ] ;
+       fhir:description [ fhir:v "History of exposure to gender-based violence" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-allergyintolerance> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-allergyintolerance" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core AllergyIntolerance" ] ;
+       fhir:description [ fhir:v "Any known medical allergies of the client." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-postpartum> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-postpartum" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Postpartum)" ] ;
+       fhir:description [ fhir:v "Whether client delivered in the past 6 weeks." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-date-of-delivery> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-date-of-delivery" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Date of Delivery)" ] ;
+       fhir:description [ fhir:v "For a postpartum woman, the date she recently delivered." ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-visit> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-appointment-visit" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Appointment (Visit)" ] ;
+       fhir:description [ fhir:v "The date and time of the client's visit" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-careplan-follow-up> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-careplan-follow-up" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core CarePlan (Follow-up)" ] ;
+       fhir:description [ fhir:v "A follow up outreach to the client is recommended" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-appointment-return-visit> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-appointment-return-visit" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Appointment (Return Visit)" ] ;
+       fhir:description [ fhir:v "Date and time of return visit appointment" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-patient" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Patient" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://fhir.org/guides/who/core/StructureDefinition/who-core-observation-clinical-observations> ;
+         fhir:reference [ fhir:v "StructureDefinition/who-core-observation-clinical-observations" ]
+       ] ;
+       fhir:name [ fhir:v "WHO-Core Observation (Clinical Observations)" ] ;
+       fhir:description [ fhir:v "Observations made during an exam or visit." ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "toc.html"^^xsd:anyURI ]
+       ] ) ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "profiles.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "profiles.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Profiles" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "extensions.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "extensions.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Extensions" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "terminology.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "terminology.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Terminology" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "downloads.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Downloads" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/pagecontent" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources/activitydefinition" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources/capabilitystatement" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources/library" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources/measure" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources/plandefinition" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources/questionnaire" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary/codesystem" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary/valueset" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

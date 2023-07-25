@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hiv-stage-values"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/103415007">103415007</a></td><td>1</td></tr><tr><td><a href="http://snomed.info/id/103416008">103416008</a></td><td>2</td></tr><tr><td><a href="http://snomed.info/id/103417004">103417004</a></td><td>3</td></tr><tr><td><a href="http://snomed.info/id/103418009">103418009</a></td><td>4</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/who/core/ValueSet/hiv-stage-values"/>
+  <version value="0.2.0"/>
+  <name value="hiv-stage-values"/>
+  <title value="HIV Stage values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the HIV Stage element"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="103415007"/>
+        <display value="1"/>
+      </concept>
+      <concept>
+        <code value="103416008"/>
+        <display value="2"/>
+      </concept>
+      <concept>
+        <code value="103417004"/>
+        <display value="3"/>
+      </concept>
+      <concept>
+        <code value="103418009"/>
+        <display value="4"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

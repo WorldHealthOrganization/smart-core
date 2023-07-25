@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ValueSet/nobirthcontrolmethod-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "nobirthcontrolmethod-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA 14550-0/\">LA 14550-0</a></td><td>Sexual abstinence</td></tr><tr><td><a href=\"https://loinc.org/LA 27925-9/\">LA 27925-9</a></td><td>Same sex partner</td></tr><tr><td><a href=\"https://loinc.org/LA 46-8/\">LA 46-8</a></td><td>Other</td></tr><tr><td><a href=\"https://loinc.org/LA 27927-5/\">LA 27927-5</a></td><td>Sterile for non-contraceptive reasons</td></tr><tr><td><a href=\"https://loinc.org/LA 27928-3/\">LA 27928-3</a></td><td>Seeking pregnancy</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/162171002\">162171002</a></td><td>Sexual abstinence</td></tr><tr><td><a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>Currently pregnant</td></tr><tr><td><a href=\"http://snomed.info/id/454361000124100\">454361000124100</a></td><td>Same sex partner</td></tr><tr><td><a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Other</td></tr><tr><td><a href=\"http://snomed.info/id/182856006\">182856006</a></td><td>Out of stock</td></tr><tr><td><a href=\"http://snomed.info/id/15296000\">15296000</a></td><td>Sterile for non-contraceptive reasons</td></tr><tr><td><a href=\"http://snomed.info/id/9789007\">9789007</a></td><td>Sterile for non-contraceptive reasons</td></tr><tr><td><a href=\"http://snomed.info/id/454411000124108\">454411000124108</a></td><td>Seeking pregnancy</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>T38.4</td><td>Side effects from contraception</td></tr><tr><td>Z76.89</td><td>Out of stock</td></tr><tr><td>Z31.9</td><td>Sterile for non-contraceptive reasons</td></tr></table></li><li>Include these codes as defined in <code>http://who.int/cg/CodeSystem/extended-content</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Other</td><td>Other</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ValueSet/nobirthcontrolmethod-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "nobirthcontrolmethod-values"] ; # 
+  fhir:title [ fhir:v "Reason for no contraceptive method - Reported at intake values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Reason for no contraceptive method - Reported at intake element"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA 14550-0" ] ;
+         fhir:display [ fhir:v "Sexual abstinence" ]
+       ] [
+         fhir:code [ fhir:v "LA 27925-9" ] ;
+         fhir:display [ fhir:v "Same sex partner" ]
+       ] [
+         fhir:code [ fhir:v "LA 46-8" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] [
+         fhir:code [ fhir:v "LA 27927-5" ] ;
+         fhir:display [ fhir:v "Sterile for non-contraceptive reasons" ]
+       ] [
+         fhir:code [ fhir:v "LA 27928-3" ] ;
+         fhir:display [ fhir:v "Seeking pregnancy" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "162171002" ] ;
+         fhir:display [ fhir:v "Sexual abstinence" ]
+       ] [
+         fhir:code [ fhir:v "77386006" ] ;
+         fhir:display [ fhir:v "Currently pregnant" ]
+       ] [
+         fhir:code [ fhir:v "454361000124100" ] ;
+         fhir:display [ fhir:v "Same sex partner" ]
+       ] [
+         fhir:code [ fhir:v "74964007" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] [
+         fhir:code [ fhir:v "182856006" ] ;
+         fhir:display [ fhir:v "Out of stock" ]
+       ] [
+         fhir:code [ fhir:v "15296000" ] ;
+         fhir:display [ fhir:v "Sterile for non-contraceptive reasons" ]
+       ] [
+         fhir:code [ fhir:v "9789007" ] ;
+         fhir:display [ fhir:v "Sterile for non-contraceptive reasons" ]
+       ] [
+         fhir:code [ fhir:v "454411000124108" ] ;
+         fhir:display [ fhir:v "Seeking pregnancy" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "T38.4" ] ;
+         fhir:display [ fhir:v "Side effects from contraception" ]
+       ] [
+         fhir:code [ fhir:v "Z76.89" ] ;
+         fhir:display [ fhir:v "Out of stock" ]
+       ] [
+         fhir:code [ fhir:v "Z31.9" ] ;
+         fhir:display [ fhir:v "Sterile for non-contraceptive reasons" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://who.int/cg/CodeSystem/extended-content"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Other" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

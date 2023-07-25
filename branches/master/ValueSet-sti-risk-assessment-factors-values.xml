@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="sti-risk-assessment-factors-values"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/449344001">449344001</a></td><td>Sex worker</td></tr><tr><td><a href="http://snomed.info/id/171128005">171128005</a></td><td>Referral for STI screening</td></tr><tr><td><a href="http://snomed.info/id/228467001">228467001</a></td><td>Casual sexual partner</td></tr><tr><td><a href="http://snomed.info/id/473386008">473386008</a></td><td>No condom use during sex</td></tr><tr><td><a href="http://snomed.info/id/225516002">225516002</a></td><td>Patient with multiple sexual partners</td></tr></table></li><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Z20.6</td><td>Sex with HIV+ person</td></tr><tr><td>z13.9</td><td>Referral for STI screening</td></tr><tr><td>Z72.51</td><td>Patient with multiple sexual partners</td></tr><tr><td>Z72.52</td><td>Patient with multiple sexual partners</td></tr><tr><td>Z72.53</td><td>Patient with multiple sexual partners</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values"/>
+  <version value="0.2.0"/>
+  <name value="sti-risk-assessment-factors-values"/>
+  <title value="STI risk assessment factors values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the STI risk assessment factors element"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="449344001"/>
+        <display value="Sex worker"/>
+      </concept>
+      <concept>
+        <code value="171128005"/>
+        <display value="Referral for STI screening"/>
+      </concept>
+      <concept>
+        <code value="228467001"/>
+        <display value="Casual sexual partner"/>
+      </concept>
+      <concept>
+        <code value="473386008"/>
+        <display value="No condom use during sex"/>
+      </concept>
+      <concept>
+        <code value="225516002"/>
+        <display value="Patient with multiple sexual partners"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+      <concept>
+        <code value="Z20.6"/>
+        <display value="Sex with HIV+ person"/>
+      </concept>
+      <concept>
+        <code value="z13.9"/>
+        <display value="Referral for STI screening"/>
+      </concept>
+      <concept>
+        <code value="Z72.51"/>
+        <display value="Patient with multiple sexual partners"/>
+      </concept>
+      <concept>
+        <code value="Z72.52"/>
+        <display value="Patient with multiple sexual partners"/>
+      </concept>
+      <concept>
+        <code value="Z72.53"/>
+        <display value="Patient with multiple sexual partners"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

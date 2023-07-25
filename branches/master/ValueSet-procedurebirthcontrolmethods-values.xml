@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="procedurebirthcontrolmethods-values"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/169450001">169450001</a></td><td>No Procedure-based method</td></tr><tr><td><a href="http://snomed.info/id/275572005">275572005</a></td><td>Female sterilization</td></tr><tr><td><a href="http://snomed.info/id/60890002">60890002</a></td><td>Female sterilization</td></tr><tr><td><a href="http://snomed.info/id/22523008">22523008</a></td><td>Male sterilization</td></tr><tr><td><a href="http://snomed.info/id/399141000">399141000</a></td><td>Male sterilization</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA27905-1/">LA27905-1</a></td><td>Female sterilization</td></tr><tr><td><a href="https://loinc.org/LA14534-4/">LA14534-4</a></td><td>Male sterilization</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values"/>
+  <version value="0.2.0"/>
+  <name value="procedurebirthcontrolmethods-values"/>
+  <title value="Prior contraceptive methods used - Procedure-based values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Prior contraceptive methods used - Procedure-based element"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="169450001"/>
+        <display value="No Procedure-based method"/>
+      </concept>
+      <concept>
+        <code value="275572005"/>
+        <display value="Female sterilization"/>
+      </concept>
+      <concept>
+        <code value="60890002"/>
+        <display value="Female sterilization"/>
+      </concept>
+      <concept>
+        <code value="22523008"/>
+        <display value="Male sterilization"/>
+      </concept>
+      <concept>
+        <code value="399141000"/>
+        <display value="Male sterilization"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA27905-1"/>
+        <display value="Female sterilization"/>
+      </concept>
+      <concept>
+        <code value="LA14534-4"/>
+        <display value="Male sterilization"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

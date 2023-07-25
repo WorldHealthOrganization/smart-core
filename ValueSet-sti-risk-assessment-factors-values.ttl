@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "sti-risk-assessment-factors-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/449344001\">449344001</a></td><td>Sex worker</td></tr><tr><td><a href=\"http://snomed.info/id/171128005\">171128005</a></td><td>Referral for STI screening</td></tr><tr><td><a href=\"http://snomed.info/id/228467001\">228467001</a></td><td>Casual sexual partner</td></tr><tr><td><a href=\"http://snomed.info/id/473386008\">473386008</a></td><td>No condom use during sex</td></tr><tr><td><a href=\"http://snomed.info/id/225516002\">225516002</a></td><td>Patient with multiple sexual partners</td></tr></table></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Z20.6</td><td>Sex with HIV+ person</td></tr><tr><td>z13.9</td><td>Referral for STI screening</td></tr><tr><td>Z72.51</td><td>Patient with multiple sexual partners</td></tr><tr><td>Z72.52</td><td>Patient with multiple sexual partners</td></tr><tr><td>Z72.53</td><td>Patient with multiple sexual partners</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "sti-risk-assessment-factors-values"] ; # 
+  fhir:title [ fhir:v "STI risk assessment factors values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the STI risk assessment factors element"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "449344001" ] ;
+         fhir:display [ fhir:v "Sex worker" ]
+       ] [
+         fhir:code [ fhir:v "171128005" ] ;
+         fhir:display [ fhir:v "Referral for STI screening" ]
+       ] [
+         fhir:code [ fhir:v "228467001" ] ;
+         fhir:display [ fhir:v "Casual sexual partner" ]
+       ] [
+         fhir:code [ fhir:v "473386008" ] ;
+         fhir:display [ fhir:v "No condom use during sex" ]
+       ] [
+         fhir:code [ fhir:v "225516002" ] ;
+         fhir:display [ fhir:v "Patient with multiple sexual partners" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Z20.6" ] ;
+         fhir:display [ fhir:v "Sex with HIV+ person" ]
+       ] [
+         fhir:code [ fhir:v "z13.9" ] ;
+         fhir:display [ fhir:v "Referral for STI screening" ]
+       ] [
+         fhir:code [ fhir:v "Z72.51" ] ;
+         fhir:display [ fhir:v "Patient with multiple sexual partners" ]
+       ] [
+         fhir:code [ fhir:v "Z72.52" ] ;
+         fhir:display [ fhir:v "Patient with multiple sexual partners" ]
+       ] [
+         fhir:code [ fhir:v "Z72.53" ] ;
+         fhir:display [ fhir:v "Patient with multiple sexual partners" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

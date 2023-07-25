@@ -1,0 +1,829 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "fd26eb64-b5e8-45e7-8471-f5485bc4a154",
+  "meta" : {
+    "lastUpdated" : "2023-07-25T14:01:36.084+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>http://hl7.org/fhir/sid/icd-10 version 2019-covid-expanded</li><li>Loinc v2.74</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA14272-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA14272-1/\">LA14272-1</a></td><td>http://loinc.org</td><td>Miscarriage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA14668-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA14668-0/\">LA14668-0</a></td><td>http://loinc.org</td><td>Abortion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-O03.9\"> </a>\u00a0\u00a0O03.9</td><td>http://hl7.org/fhir/sid/icd-10</td><td>Miscarriage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-713651007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/713651007\">713651007</a></td><td>http://snomed.info/sct</td><td>Miscarriage</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-363681007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/363681007\">363681007</a></td><td>http://snomed.info/sct</td><td>Abortion</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-values",
+      "version" : "0.2.0",
+      "name" : "miscarriage-or-abortion-values",
+      "title" : "Miscarriage or Abortion values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:69dce13a-6821-4a2f-a89c-aa4a98bcf5de",
+        "timestamp" : "2023-07-25T14:07:44+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA14272-1",
+          "display" : "Miscarriage"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA14668-0",
+          "display" : "Abortion"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "O03.9",
+          "display" : "Miscarriage"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "713651007",
+          "display" : "Miscarriage"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "363681007",
+          "display" : "Abortion"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/marital-status-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html\">MaritalStatus v2.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Unmarried</td><td><div><p>Currently not in a marriage contract.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M\">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Married</td><td><div><p>A current marriage contract is active</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D\">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Divorced</td><td><div><p>Marriage contract has been declared dissolved and inactive</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W\">W</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Widowed</td><td><div><p>The spouse has died</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/marital-status-values",
+      "version" : "0.2.0",
+      "name" : "marital-status-values",
+      "title" : "Marital Status values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:628cc261-7978-4088-bebe-2d61295caff8",
+        "timestamp" : "2023-07-25T14:07:45.909Z",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "U",
+          "display" : "Unmarried"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "M",
+          "display" : "Married"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "D",
+          "display" : "Divorced"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "W",
+          "display" : "Widowed"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 14 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>RxNorm version ??</li><li>Loinc v2.74</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169450001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/169450001\">169450001</a></td><td>http://snomed.info/sct</td><td>No Medication-based method</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-709457002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/709457002\">709457002</a></td><td>http://snomed.info/sct</td><td>DMPA-SC \nDMPA, administered subcutaneously</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-782025007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/782025007\">782025007</a></td><td>http://snomed.info/sct</td><td>Norethisterone enanthate (NET-EN) injectable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-702587005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/702587005\">702587005</a></td><td>http://snomed.info/sct</td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-275813002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275813002\">275813002</a></td><td>http://snomed.info/sct</td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169467008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/169467008\">169467008</a></td><td>http://snomed.info/sct</td><td>Progestogen-only pills (POP)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-268458002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/268458002\">268458002</a></td><td>http://snomed.info/sct</td><td>Combined oral contraceptives (COCs)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-89780004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/89780004\">89780004</a></td><td>http://snomed.info/sct</td><td>Combined injectable contraception</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27907-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27907-7/\">LA27907-7</a></td><td>http://loinc.org</td><td>DMPA-IM \n DMPA, administered intramuscularly</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA16573-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA16573-0/\">LA16573-0</a></td><td>http://loinc.org</td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27909-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27909-3/\">LA27909-3</a></td><td>http://loinc.org</td><td>Progestogen-only pills (POP)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27908-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27908-5/\">LA27908-5</a></td><td>http://loinc.org</td><td>Combined oral contraceptives (COCs)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-1359235\"> </a>\u00a0\u00a01359235</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>Norethisterone enanthate (NET-EN) injectable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---www.nlm.nih.gov-research-umls-rxnorm-483325\"> </a>\u00a0\u00a0483325</td><td>http://www.nlm.nih.gov/research/umls/rxnorm</td><td>Emergency contraceptive pills (ECPs)</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values",
+      "version" : "0.2.0",
+      "name" : "medicationbirthcontrolmethods-values",
+      "title" : "Medication-based Birth control method reported at intake values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:cdc7fb2b-4c3e-4487-b156-48fd1bc6a204",
+        "timestamp" : "2023-07-25T14:07:46+00:00",
+        "total" : 14,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://www.nlm.nih.gov/research/umls/rxnorm|??"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "169450001",
+          "display" : "No Medication-based method"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "709457002",
+          "display" : "DMPA-SC \nDMPA, administered subcutaneously"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "782025007",
+          "display" : "Norethisterone enanthate (NET-EN) injectable"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "702587005",
+          "display" : "Emergency contraceptive pills (ECPs)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "275813002",
+          "display" : "Emergency contraceptive pills (ECPs)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "169467008",
+          "display" : "Progestogen-only pills (POP)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "268458002",
+          "display" : "Combined oral contraceptives (COCs)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "89780004",
+          "display" : "Combined injectable contraception"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27907-7",
+          "display" : "DMPA-IM \n DMPA, administered intramuscularly"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA16573-0",
+          "display" : "Emergency contraceptive pills (ECPs)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27909-3",
+          "display" : "Progestogen-only pills (POP)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27908-5",
+          "display" : "Combined oral contraceptives (COCs)"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "1359235",
+          "display" : "Norethisterone enanthate (NET-EN) injectable"
+        },
+        {
+          "system" : "http://www.nlm.nih.gov/research/umls/rxnorm",
+          "code" : "483325",
+          "display" : "Emergency contraceptive pills (ECPs)"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>http://hl7.org/fhir/sid/icd-10 version 2019-covid-expanded</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-449344001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/449344001\">449344001</a></td><td>http://snomed.info/sct</td><td>Sex worker</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-171128005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/171128005\">171128005</a></td><td>http://snomed.info/sct</td><td>Referral for STI screening</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-228467001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/228467001\">228467001</a></td><td>http://snomed.info/sct</td><td>Casual sexual partner</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-473386008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/473386008\">473386008</a></td><td>http://snomed.info/sct</td><td>No condom use during sex</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-225516002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/225516002\">225516002</a></td><td>http://snomed.info/sct</td><td>Patient with multiple sexual partners</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-sid-icd-10-Z20.6\"> </a>\u00a0\u00a0Z20.6</td><td>http://hl7.org/fhir/sid/icd-10</td><td>Sex with HIV+ person</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/sti-risk-assessment-factors-values",
+      "version" : "0.2.0",
+      "name" : "sti-risk-assessment-factors-values",
+      "title" : "STI risk assessment factors values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:d66dbe74-bd17-481a-b805-f070c6185b4a",
+        "timestamp" : "2023-07-25T14:07:46+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/sid/icd-10|2019-covid-expanded"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "449344001",
+          "display" : "Sex worker"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "171128005",
+          "display" : "Referral for STI screening"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "228467001",
+          "display" : "Casual sexual partner"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "473386008",
+          "display" : "No condom use during sex"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "225516002",
+          "display" : "Patient with multiple sexual partners"
+        },
+        {
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "Z20.6",
+          "display" : "Sex with HIV+ person"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/hiv-stage-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-103415007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/103415007\">103415007</a></td><td>http://snomed.info/sct</td><td>1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-103416008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/103416008\">103416008</a></td><td>http://snomed.info/sct</td><td>2</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-103417004\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/103417004\">103417004</a></td><td>http://snomed.info/sct</td><td>3</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-103418009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/103418009\">103418009</a></td><td>http://snomed.info/sct</td><td>4</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/hiv-stage-values",
+      "version" : "0.2.0",
+      "name" : "hiv-stage-values",
+      "title" : "HIV Stage values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:dbebf72c-1ec6-457b-b589-5423e7c9fef5",
+        "timestamp" : "2023-07-25T14:07:46+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "103415007",
+          "display" : "1"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "103416008",
+          "display" : "2"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "103417004",
+          "display" : "3"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "103418009",
+          "display" : "4"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/pregnancystatus-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA15173-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA15173-0/\">LA15173-0</a></td><td>http://loinc.org</td><td>Pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26683-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA26683-5/\">LA26683-5</a></td><td>http://loinc.org</td><td>Not pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA4489-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA4489-6/\">LA4489-6</a></td><td>http://loinc.org</td><td>Unknown</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-77386006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/77386006\">77386006</a></td><td>http://snomed.info/sct</td><td>Pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-60001007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/60001007\">60001007</a></td><td>http://snomed.info/sct</td><td>Not pregnant</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-261665006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>http://snomed.info/sct</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/pregnancystatus-values",
+      "version" : "0.2.0",
+      "name" : "pregnancystatus-values",
+      "title" : "Pregnancy status values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:c16d340a-320b-429d-b275-aba48233794d",
+        "timestamp" : "2023-07-25T14:07:46+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA15173-0",
+          "display" : "Pregnant"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26683-5",
+          "display" : "Not pregnant"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA4489-6",
+          "display" : "Unknown"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "77386006",
+          "display" : "Pregnant"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "60001007",
+          "display" : "Not pregnant"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "261665006",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169450001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/169450001\">169450001</a></td><td>http://snomed.info/sct</td><td>No Procedure-based method</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-275572005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/275572005\">275572005</a></td><td>http://snomed.info/sct</td><td>Female sterilization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-60890002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/60890002\">60890002</a></td><td>http://snomed.info/sct</td><td>Female sterilization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-22523008\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/22523008\">22523008</a></td><td>http://snomed.info/sct</td><td>Male sterilization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-399141000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/399141000\">399141000</a></td><td>http://snomed.info/sct</td><td>Male sterilization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27905-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27905-1/\">LA27905-1</a></td><td>http://loinc.org</td><td>Female sterilization</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA14534-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA14534-4/\">LA14534-4</a></td><td>http://loinc.org</td><td>Male sterilization</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values",
+      "version" : "0.2.0",
+      "name" : "procedurebirthcontrolmethods-values",
+      "title" : "Prior contraceptive methods used - Procedure-based values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:8d2f8f15-8079-4500-850b-bb5552b06e81",
+        "timestamp" : "2023-07-25T14:07:47+00:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "169450001",
+          "display" : "No Procedure-based method"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "275572005",
+          "display" : "Female sterilization"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "60890002",
+          "display" : "Female sterilization"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "22523008",
+          "display" : "Male sterilization"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "399141000",
+          "display" : "Male sterilization"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27905-1",
+          "display" : "Female sterilization"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA14534-4",
+          "display" : "Male sterilization"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 8 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA21197-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA21197-1/\">LA21197-1</a></td><td>http://loinc.org</td><td>Second trimester</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA21198-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA21198-9/\">LA21198-9</a></td><td>http://loinc.org</td><td>Immediate post-septic abortion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-19169002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/19169002\">19169002</a></td><td>http://snomed.info/sct</td><td>First trimester</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255246003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/255246003\">255246003</a></td><td>http://snomed.info/sct</td><td>First trimester</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-85116003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/85116003\">85116003</a></td><td>http://snomed.info/sct</td><td>Second trimester</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255247007\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/255247007\">255247007</a></td><td>http://snomed.info/sct</td><td>Second trimester</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-67465009\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/67465009\">67465009</a></td><td>http://snomed.info/sct</td><td>Immediate post-septic abortion</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-255248002\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/255248002\">255248002</a></td><td>http://snomed.info/sct</td><td>Immediate post-septic abortion</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/miscarriage-or-abortion-stage-of-pregnancy-values",
+      "version" : "0.2.0",
+      "name" : "miscarriage-or-abortion-stage-of-pregnancy-values",
+      "title" : "Miscarriage or abortion stage of pregnancy values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:ecd1df9e-de41-441e-971a-e964fab81af6",
+        "timestamp" : "2023-07-25T14:07:48+00:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA21197-1",
+          "display" : "Second trimester"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA21198-9",
+          "display" : "Immediate post-septic abortion"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "19169002",
+          "display" : "First trimester"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "255246003",
+          "display" : "First trimester"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "85116003",
+          "display" : "Second trimester"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "255247007",
+          "display" : "Second trimester"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "67465009",
+          "display" : "Immediate post-septic abortion"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "255248002",
+          "display" : "Immediate post-septic abortion"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/reason-for-referral-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jan 2023</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-86395003\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/86395003\">86395003</a></td><td>http://snomed.info/sct</td><td>Family planning procedure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-305930006\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/305930006\">305930006</a></td><td>http://snomed.info/sct</td><td>Family planning procedure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-306228005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306228005\">306228005</a></td><td>http://snomed.info/sct</td><td>Screening referral</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-306206005\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/306206005\">306206005</a></td><td>http://snomed.info/sct</td><td>Other referral</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/reason-for-referral-values",
+      "version" : "0.2.0",
+      "name" : "reason-for-referral-values",
+      "title" : "Reason for referral values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:6cfa42b8-ab84-4b80-9e18-f8e618298b05",
+        "timestamp" : "2023-07-25T14:07:49+00:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "86395003",
+          "display" : "Family planning procedure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "305930006",
+          "display" : "Family planning procedure"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "306228005",
+          "display" : "Screening referral"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "306206005",
+          "display" : "Other referral"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/gender-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender v4.0.1 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-female\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female\">female</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Female</td><td><div><p>Female.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-male\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male\">male</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Male</td><td><div><p>Male.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-administrative-gender-other\"> </a>\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-other\">other</a></td><td>http://hl7.org/fhir/administrative-gender</td><td>Other</td><td><div><p>Other.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/gender-values",
+      "version" : "0.2.0",
+      "name" : "gender-values",
+      "title" : "Gender values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:7ff37dfe-b4d2-47d5-bd45-1a32a19d5e4c",
+        "timestamp" : "2023-07-25T14:07:49+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/administrative-gender|4.0.1"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female",
+          "display" : "Female"
+        },
+        {
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "male",
+          "display" : "Male"
+        },
+        {
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://fhir.org/guides/who/core/ValueSet/careplanbirthcontrolmethods-values",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>SNOMED CT International edition 31-Jan 2023</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169450001\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/169450001\">169450001</a></td><td>http://snomed.info/sct</td><td>No CarePlan-based method</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-169513000\"> </a>\u00a0\u00a0<a href=\"http://snomed.info/id/169513000\">169513000</a></td><td>http://snomed.info/sct</td><td>Withdrawal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA14549-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA14549-2/\">LA14549-2</a></td><td>http://loinc.org</td><td>Withdrawal</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27918-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27918-4/\">LA27918-4</a></td><td>http://loinc.org</td><td>Fertility awareness-based methods (FAB)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27919-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27919-2/\">LA27919-2</a></td><td>http://loinc.org</td><td>Lactational amenorrhea method (LAM)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA27920-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA27920-0/\">LA27920-0</a></td><td>http://loinc.org</td><td>Male relying on female method</td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/core/ValueSet/careplanbirthcontrolmethods-values",
+      "version" : "0.2.0",
+      "name" : "careplanbirthcontrolmethods-values",
+      "title" : "Prior contraceptive methods used - CarePlan-based values",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2023-07-25T14:01:36+00:00",
+      "immutable" : true,
+      "expansion" : {
+        "identifier" : "urn:uuid:fbd750f3-7998-4f5c-b8e4-78b3f26f641b",
+        "timestamp" : "2023-07-25T14:07:49+00:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.74"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "169450001",
+          "display" : "No CarePlan-based method"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "169513000",
+          "display" : "Withdrawal"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA14549-2",
+          "display" : "Withdrawal"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27918-4",
+          "display" : "Fertility awareness-based methods (FAB)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27919-2",
+          "display" : "Lactational amenorrhea method (LAM)"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA27920-0",
+          "display" : "Male relying on female method"
+        }]
+      }
+    }
+  }]
+}

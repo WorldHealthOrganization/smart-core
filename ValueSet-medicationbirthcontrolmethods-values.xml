@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medicationbirthcontrolmethods-values"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/169450001">169450001</a></td><td>No Medication-based method</td></tr><tr><td><a href="http://snomed.info/id/709457002">709457002</a></td><td>DMPA-SC 
+DMPA, administered subcutaneously</td></tr><tr><td><a href="http://snomed.info/id/782025007">782025007</a></td><td>Norethisterone enanthate (NET-EN) injectable</td></tr><tr><td><a href="http://snomed.info/id/702587005">702587005</a></td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href="http://snomed.info/id/275813002">275813002</a></td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href="http://snomed.info/id/169467008">169467008</a></td><td>Progestogen-only pills (POP)</td></tr><tr><td><a href="http://snomed.info/id/268458002">268458002</a></td><td>Combined oral contraceptives (COCs)</td></tr><tr><td><a href="http://snomed.info/id/89780004">89780004</a></td><td>Combined injectable contraception</td></tr></table></li><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA27907-7/">LA27907-7</a></td><td>DMPA-IM 
+ DMPA, administered intramuscularly</td></tr><tr><td><a href="https://loinc.org/LA16573-0/">LA16573-0</a></td><td>Emergency contraceptive pills (ECPs)</td></tr><tr><td><a href="https://loinc.org/LA27909-3/">LA27909-3</a></td><td>Progestogen-only pills (POP)</td></tr><tr><td><a href="https://loinc.org/LA27908-5/">LA27908-5</a></td><td>Combined oral contraceptives (COCs)</td></tr></table></li><li>Include these codes as defined in <a href="http://www.nlm.nih.gov/research/umls/rxnorm"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1359235</td><td>Norethisterone enanthate (NET-EN) injectable</td></tr><tr><td>483325</td><td>Emergency contraceptive pills (ECPs)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.org/guides/who/core/ValueSet/medicationbirthcontrolmethods-values"/>
+  <version value="0.2.0"/>
+  <name value="medicationbirthcontrolmethods-values"/>
+  <title value="Medication-based Birth control method reported at intake values"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-07-25T14:01:36+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="Codes representing possible values for the Medication-based Birth control method reported at intake element"/>
+  <immutable value="true"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="169450001"/>
+        <display value="No Medication-based method"/>
+      </concept>
+      <concept>
+        <code value="709457002"/>
+        <display value="DMPA-SC &#xA;DMPA, administered subcutaneously"/>
+      </concept>
+      <concept>
+        <code value="782025007"/>
+        <display value="Norethisterone enanthate (NET-EN) injectable"/>
+      </concept>
+      <concept>
+        <code value="702587005"/>
+        <display value="Emergency contraceptive pills (ECPs)"/>
+      </concept>
+      <concept>
+        <code value="275813002"/>
+        <display value="Emergency contraceptive pills (ECPs)"/>
+      </concept>
+      <concept>
+        <code value="169467008"/>
+        <display value="Progestogen-only pills (POP)"/>
+      </concept>
+      <concept>
+        <code value="268458002"/>
+        <display value="Combined oral contraceptives (COCs)"/>
+      </concept>
+      <concept>
+        <code value="89780004"/>
+        <display value="Combined injectable contraception"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA27907-7"/>
+        <display value="DMPA-IM &#xA; DMPA, administered intramuscularly"/>
+      </concept>
+      <concept>
+        <code value="LA16573-0"/>
+        <display value="Emergency contraceptive pills (ECPs)"/>
+      </concept>
+      <concept>
+        <code value="LA27909-3"/>
+        <display value="Progestogen-only pills (POP)"/>
+      </concept>
+      <concept>
+        <code value="LA27908-5"/>
+        <display value="Combined oral contraceptives (COCs)"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+      <concept>
+        <code value="1359235"/>
+        <display value="Norethisterone enanthate (NET-EN) injectable"/>
+      </concept>
+      <concept>
+        <code value="483325"/>
+        <display value="Emergency contraceptive pills (ECPs)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

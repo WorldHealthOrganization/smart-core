@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ValueSet/current-medications-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "current-medications-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://who.int/cg/CodeSystem/extended-content</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Don't know</td><td>Don't know</td></tr><tr><td>STI medication</td><td>STI medication</td></tr><tr><td>Other Antibiotics</td><td>Other antibiotics</td></tr><tr><td>Other</td><td>Other (specify)</td></tr></table></li><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/788081006\">788081006</a></td><td>Antivirals</td></tr><tr><td><a href=\"http://snomed.info/id/788075003\">788075003</a></td><td>Antiretrovirals</td></tr><tr><td><a href=\"http://snomed.info/id/409516001\">409516001</a></td><td>PrEP</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ValueSet/current-medications-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "current-medications-values"] ; # 
+  fhir:title [ fhir:v "Current medications values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Current medications element"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://who.int/cg/CodeSystem/extended-content"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "Don't know" ] ;
+         fhir:display [ fhir:v "Don't know" ]
+       ] [
+         fhir:code [ fhir:v "STI medication" ] ;
+         fhir:display [ fhir:v "STI medication" ]
+       ] [
+         fhir:code [ fhir:v "Other Antibiotics" ] ;
+         fhir:display [ fhir:v "Other antibiotics" ]
+       ] [
+         fhir:code [ fhir:v "Other" ] ;
+         fhir:display [ fhir:v "Other (specify)" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "788081006" ] ;
+         fhir:display [ fhir:v "Antivirals" ]
+       ] [
+         fhir:code [ fhir:v "788075003" ] ;
+         fhir:display [ fhir:v "Antiretrovirals" ]
+       ] [
+         fhir:code [ fhir:v "409516001" ] ;
+         fhir:display [ fhir:v "PrEP" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "procedurebirthcontrolmethods-values"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/169450001\">169450001</a></td><td>No Procedure-based method</td></tr><tr><td><a href=\"http://snomed.info/id/275572005\">275572005</a></td><td>Female sterilization</td></tr><tr><td><a href=\"http://snomed.info/id/60890002\">60890002</a></td><td>Female sterilization</td></tr><tr><td><a href=\"http://snomed.info/id/22523008\">22523008</a></td><td>Male sterilization</td></tr><tr><td><a href=\"http://snomed.info/id/399141000\">399141000</a></td><td>Male sterilization</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA27905-1/\">LA27905-1</a></td><td>Female sterilization</td></tr><tr><td><a href=\"https://loinc.org/LA14534-4/\">LA14534-4</a></td><td>Male sterilization</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.org/guides/who/core/ValueSet/procedurebirthcontrolmethods-values"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "procedurebirthcontrolmethods-values"] ; # 
+  fhir:title [ fhir:v "Prior contraceptive methods used - Procedure-based values"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes representing possible values for the Prior contraceptive methods used - Procedure-based element"] ; # 
+  fhir:immutable [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "169450001" ] ;
+         fhir:display [ fhir:v "No Procedure-based method" ]
+       ] [
+         fhir:code [ fhir:v "275572005" ] ;
+         fhir:display [ fhir:v "Female sterilization" ]
+       ] [
+         fhir:code [ fhir:v "60890002" ] ;
+         fhir:display [ fhir:v "Female sterilization" ]
+       ] [
+         fhir:code [ fhir:v "22523008" ] ;
+         fhir:display [ fhir:v "Male sterilization" ]
+       ] [
+         fhir:code [ fhir:v "399141000" ] ;
+         fhir:display [ fhir:v "Male sterilization" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LA27905-1" ] ;
+         fhir:display [ fhir:v "Female sterilization" ]
+       ] [
+         fhir:code [ fhir:v "LA14534-4" ] ;
+         fhir:display [ fhir:v "Male sterilization" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

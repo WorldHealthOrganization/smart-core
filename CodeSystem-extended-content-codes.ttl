@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/core/CodeSystem/extended-content-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "extended-content-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://who.int/cg/CodeSystem/extended-content-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">Returning Client<a name=\"extended-content-codes-ReturningClient\"> </a></td><td>Returning client</td><td>Visit type - Returning client</td></tr><tr><td style=\"white-space:nowrap\">Referral<a name=\"extended-content-codes-Referral\"> </a></td><td>Referral</td><td>Visit type - Referral</td></tr><tr><td style=\"white-space:nowrap\">New Client<a name=\"extended-content-codes-NewClient\"> </a></td><td>New client</td><td>Visit type - New client</td></tr><tr><td style=\"white-space:nowrap\">First visit for symptoms<a name=\"extended-content-codes-Firstvisitforsymptoms\"> </a></td><td>First visit for symptoms</td><td>Visit type - First visit for symptoms</td></tr><tr><td style=\"white-space:nowrap\">STI Follow up<a name=\"extended-content-codes-STIFollowup\"> </a></td><td>Follow up for STI management</td><td>Visit type - Follow up for STI management</td></tr><tr><td style=\"white-space:nowrap\">Community<a name=\"extended-content-codes-Community\"> </a></td><td>Community</td><td>Referred by - Community</td></tr><tr><td style=\"white-space:nowrap\">Facility<a name=\"extended-content-codes-Facility\"> </a></td><td>Facility</td><td>Referred by - Facility</td></tr><tr><td style=\"white-space:nowrap\">Levonorgestrel (LNG) two-rod implant<a name=\"extended-content-codes-Levonorgestrel.40LNG.41two-rodimplant\"> </a></td><td>Levonorgestrel (LNG) two-rod implant</td><td>Method at intake - Levonorgestrel (LNG) two-rod implant</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"extended-content-codes-Other\"> </a></td><td>Other</td><td>Reason for no contraceptive method - Reported at intake - Other</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"extended-content-codes-Other\"> </a></td><td>Other</td><td>HIV Test Result - Other</td></tr><tr><td style=\"white-space:nowrap\">Don't know<a name=\"extended-content-codes-Don.39tknow\"> </a></td><td>Don't know</td><td>Current medications - Don't know</td></tr><tr><td style=\"white-space:nowrap\">STI medication<a name=\"extended-content-codes-STImedication\"> </a></td><td>STI medication</td><td>Current medications - STI medication</td></tr><tr><td style=\"white-space:nowrap\">Other Antibiotics<a name=\"extended-content-codes-OtherAntibiotics\"> </a></td><td>Other antibiotics</td><td>Current medications - Other antibiotics</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"extended-content-codes-Other\"> </a></td><td>Other (specify)</td><td>Current medications - Other (specify)</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"extended-content-codes-Other\"> </a></td><td>Other</td><td>Drug allergies - Other</td></tr><tr><td style=\"white-space:nowrap\">PrEP status<a name=\"extended-content-codes-PrEPstatus\"> </a></td><td>PrEP status</td><td>PrEP status</td></tr><tr><td style=\"white-space:nowrap\">Antiretroviral regimen (date and dose)<a name=\"extended-content-codes-Antiretroviralregimen.40dateanddose.41\"> </a></td><td>Antiretroviral regimen (date and dose)</td><td>Antiretroviral regimen (date and dose)</td></tr><tr><td style=\"white-space:nowrap\">NONE<a name=\"extended-content-codes-NONE\"> </a></td><td>No education</td><td>Highest level of education achieved - No education</td></tr><tr><td style=\"white-space:nowrap\">Other<a name=\"extended-content-codes-Other\"> </a></td><td>Other (specify)</td><td>Occupation - Other (specify)</td></tr><tr><td style=\"white-space:nowrap\">G<a name=\"extended-content-codes-G\"> </a></td><td>Government</td><td>Payment method - Government</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"extended-content-codes-I\"> </a></td><td>Insurance</td><td>Payment method - Insurance</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://who.int/cg/CodeSystem/extended-content-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "extended-content_codes"] ; # 
+  fhir:title [ fhir:v "WHO Extended Codes CodeSystem codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-07-25T14:01:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "World Health Organization (WHO)"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Set of codes identified as being needed but not found in existing Code Systems"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "Returning Client" ] ;
+     fhir:display [ fhir:v "Returning client" ] ;
+     fhir:definition [ fhir:v "Visit type - Returning client" ]
+  ] [
+     fhir:code [ fhir:v "Referral" ] ;
+     fhir:display [ fhir:v "Referral" ] ;
+     fhir:definition [ fhir:v "Visit type - Referral" ]
+  ] [
+     fhir:code [ fhir:v "New Client" ] ;
+     fhir:display [ fhir:v "New client" ] ;
+     fhir:definition [ fhir:v "Visit type - New client" ]
+  ] [
+     fhir:code [ fhir:v "First visit for symptoms" ] ;
+     fhir:display [ fhir:v "First visit for symptoms" ] ;
+     fhir:definition [ fhir:v "Visit type - First visit for symptoms" ]
+  ] [
+     fhir:code [ fhir:v "STI Follow up" ] ;
+     fhir:display [ fhir:v "Follow up for STI management" ] ;
+     fhir:definition [ fhir:v "Visit type - Follow up for STI management" ]
+  ] [
+     fhir:code [ fhir:v "Community" ] ;
+     fhir:display [ fhir:v "Community" ] ;
+     fhir:definition [ fhir:v "Referred by - Community" ]
+  ] [
+     fhir:code [ fhir:v "Facility" ] ;
+     fhir:display [ fhir:v "Facility" ] ;
+     fhir:definition [ fhir:v "Referred by - Facility" ]
+  ] [
+     fhir:code [ fhir:v "Levonorgestrel (LNG) two-rod implant" ] ;
+     fhir:display [ fhir:v "Levonorgestrel (LNG) two-rod implant" ] ;
+     fhir:definition [ fhir:v "Method at intake - Levonorgestrel (LNG) two-rod implant" ]
+  ] [
+     fhir:code [ fhir:v "Other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Reason for no contraceptive method - Reported at intake - Other" ]
+  ] [
+     fhir:code [ fhir:v "Other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "HIV Test Result - Other" ]
+  ] [
+     fhir:code [ fhir:v "Don't know" ] ;
+     fhir:display [ fhir:v "Don't know" ] ;
+     fhir:definition [ fhir:v "Current medications - Don't know" ]
+  ] [
+     fhir:code [ fhir:v "STI medication" ] ;
+     fhir:display [ fhir:v "STI medication" ] ;
+     fhir:definition [ fhir:v "Current medications - STI medication" ]
+  ] [
+     fhir:code [ fhir:v "Other Antibiotics" ] ;
+     fhir:display [ fhir:v "Other antibiotics" ] ;
+     fhir:definition [ fhir:v "Current medications - Other antibiotics" ]
+  ] [
+     fhir:code [ fhir:v "Other" ] ;
+     fhir:display [ fhir:v "Other (specify)" ] ;
+     fhir:definition [ fhir:v "Current medications - Other (specify)" ]
+  ] [
+     fhir:code [ fhir:v "Other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "Drug allergies - Other" ]
+  ] [
+     fhir:code [ fhir:v "PrEP status" ] ;
+     fhir:display [ fhir:v "PrEP status" ] ;
+     fhir:definition [ fhir:v "PrEP status" ]
+  ] [
+     fhir:code [ fhir:v "Antiretroviral regimen (date and dose)" ] ;
+     fhir:display [ fhir:v "Antiretroviral regimen (date and dose)" ] ;
+     fhir:definition [ fhir:v "Antiretroviral regimen (date and dose)" ]
+  ] [
+     fhir:code [ fhir:v "NONE" ] ;
+     fhir:display [ fhir:v "No education" ] ;
+     fhir:definition [ fhir:v "Highest level of education achieved - No education" ]
+  ] [
+     fhir:code [ fhir:v "Other" ] ;
+     fhir:display [ fhir:v "Other (specify)" ] ;
+     fhir:definition [ fhir:v "Occupation - Other (specify)" ]
+  ] [
+     fhir:code [ fhir:v "G" ] ;
+     fhir:display [ fhir:v "Government" ] ;
+     fhir:definition [ fhir:v "Payment method - Government" ]
+  ] [
+     fhir:code [ fhir:v "I" ] ;
+     fhir:display [ fhir:v "Insurance" ] ;
+     fhir:definition [ fhir:v "Payment method - Insurance" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
